@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Session;
 //    return view('welcome');
 //})->name('home');
 Route::get('/', function () {
-    return view('welcome');
+    return view('comingsoon.comingsoon-bg-video');
 });
 
 Route::get('/dashboard', function () {

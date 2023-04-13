@@ -7,11 +7,11 @@
     <meta name="description" content="Cuba admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
     <meta name="keywords" content="admin template, Cuba admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{asset('assets/images/favicon.png')}}" type="image/x-icon">
-    <title>KinoTalk @yield('title')</title>
-	@include('layouts.comingsoon.css')
-	@yield('style')
+    <link rel="icon" href="<?php echo e(asset('assets/images/favicon.png')); ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo e(asset('assets/images/favicon.png')); ?>" type="image/x-icon">
+    <title>KinoTalk <?php echo $__env->yieldContent('title'); ?></title>
+	<?php echo $__env->make('layouts.comingsoon.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+	<?php echo $__env->yieldContent('style'); ?>
   </head>
   <body>
     <!-- Loader starts-->
@@ -27,8 +27,9 @@
     </div>
     <!-- Loader ends-->
     <!-- page-wrapper Start-->
-    @yield('content')
+    <?php echo $__env->yieldContent('content'); ?>
     <!-- latest jquery-->
-    @include('layouts.comingsoon.script')
+    <?php echo $__env->make('layouts.comingsoon.script', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
   </body>
 </html>
+<?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/layouts/comingsoon/master.blade.php ENDPATH**/ ?>
