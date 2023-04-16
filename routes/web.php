@@ -14,9 +14,9 @@ Route::get('/', function () {
     return view('comingsoon.comingsoon-bg-video');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/home',[HomeController::class, 'index'])->name('home');

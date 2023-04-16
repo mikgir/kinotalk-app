@@ -28,7 +28,7 @@
             @endif
         </div>
     @endif
-    @include('layouts.navigation')
+{{--    @include('layouts.navigation')--}}
         @yield('main')
 
         @yield('script')

@@ -1,13 +1,13 @@
-@extends('layouts.authentication.master')
-@section('title', 'Sign-up')
+<?php $__env->startSection('title', 'Sign-up'); ?>
 
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 <div class="container-fluid p-0">
    <div class="row m-0">
       <div class="col-12 p-0">
          <div class="login-card">
             <div>
-               <div><a class="logo" href="{{ route('home') }}"><img class="img-fluid for-light" src="{{asset('assets/images/logo/login.png')}}" alt="looginpage"><img class="img-fluid for-dark" src="{{asset('assets/images/logo/logo_dark.png')}}" alt="looginpage"></a></div>
+               <div><a class="logo" href="<?php echo e(route('home')); ?>"><img class="img-fluid for-light" src="<?php echo e(asset('assets/images/logo/login.png')); ?>" alt="looginpage"><img class="img-fluid for-dark" src="<?php echo e(asset('assets/images/logo/logo_dark.png')); ?>" alt="looginpage"></a></div>
                <div class="login-main">
                   <form class="theme-form">
                      <h4>Create your account</h4>
@@ -43,7 +43,7 @@
                      <div class="social mt-4">
                         <div class="btn-showcase"><a class="btn btn-light" href="https://www.linkedin.com/login" target="_blank"><i class="txt-linkedin" data-feather="linkedin"></i> LinkedIn </a><a class="btn btn-light" href="https://twitter.com/login?lang=en" target="_blank"><i class="txt-twitter" data-feather="twitter"></i>twitter</a><a class="btn btn-light" href="https://www.facebook.com/" target="_blank"><i class="txt-fb" data-feather="facebook"></i>facebook</a></div>
                      </div>
-                     <p class="mt-4 mb-0">Already have an account?<a class="ms-2" href="{{ route('login') }}">Sign in</a></p>
+                     <p class="mt-4 mb-0">Already have an account?<a class="ms-2" href="<?php echo e(route('login')); ?>">Sign in</a></p>
                   </form>
                </div>
             </div>
@@ -51,5 +51,9 @@
       </div>
    </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('script'); ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.authentication.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/authentication/sign-up.blade.php ENDPATH**/ ?>

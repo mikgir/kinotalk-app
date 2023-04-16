@@ -13,7 +13,7 @@
 <?php unset($__defined_vars); ?>
 
 <?php if($status): ?>
-    <div <?php echo e($attributes->merge(['class' => 'font-medium text-sm text-green-600 dark:text-green-400'])); ?>>
+    <div <?php echo e($attributes->merge(['class' => 'font-50 color-green'])); ?>>
         <?php echo e($status); ?>
 
     </div>

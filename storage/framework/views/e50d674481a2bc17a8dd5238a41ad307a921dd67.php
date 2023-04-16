@@ -233,13 +233,16 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="flex items-center justify-end mt-4">
-                                    <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800"
+                                <h6 class="text-muted mt-4 or">Or signup with</h6>
+                                <div class="social mt-4">
+                                    <div class="btn-showcase"><a class="btn btn-light" href="https://www.linkedin.com/login" target="_blank"><i class="txt-linkedin" data-feather="linkedin"></i> LinkedIn </a><a class="btn btn-light" href="https://twitter.com/login?lang=en" target="_blank"><i class="txt-twitter" data-feather="twitter"></i>twitter</a><a class="btn btn-light" href="https://www.facebook.com/" target="_blank"><i class="txt-fb" data-feather="facebook"></i>facebook</a></div>
+                                </div>
+                                <div class="mt-4 mb-0">
+                                    <a class="link-dark"
                                            href="<?php echo e(route('login')); ?>">
                                             <?php echo e(__('Already registered?')); ?>
 
-                                        </a>
+                                    </a>
 
                                     <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.primary-button','data' => ['class' => 'btn btn-primary btn-block']] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
@@ -286,10 +289,7 @@
                             
                             
                             
-                            
-                            
-                            
-                            
+
                             
                             
                         </div>
