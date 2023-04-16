@@ -1,5 +1,6 @@
 <?php $__env->startSection('title', 'Sign-up'); ?>
 
+
 <?php $__env->startSection('content'); ?>
 <div class="container-fluid p-0">
    <div class="row m-0">
@@ -52,5 +53,7 @@
 </div>
 <?php $__env->stopSection(); ?>
 
+<?php $__env->startSection('script'); ?>
+<?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.authentication.master', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/authentication/sign-up.blade.php ENDPATH**/ ?>

@@ -1,3 +1,4 @@
+
 <title><?php echo e(config('app.name', 'Laravel')); ?></title>
 
 <?php $__env->startSection('style'); ?>
