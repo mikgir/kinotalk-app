@@ -22,12 +22,23 @@
                      <h4>Sign in to account</h4>
                      <p>Enter your email & password to login</p>
                      <div class="form-group">
-                        <label class="col-form-label">Email Address</label>
-                        <input class="form-control" type="email" required="" placeholder="Test@gmail.com">
+                         <x-input-label for="email" :value="__('Email')" />
+                         <x-text-input id="email" class="form-control" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
+                         <x-input-error :messages="$errors->get('email')" class="mt-2" />
+{{--                        <label class="col-form-label">Email Address</label>--}}
+{{--                        <input class="form-control" type="email" required="" placeholder="Test@gmail.com">--}}
                      </div>
                      <div class="form-group">
-                        <label class="col-form-label">Password</label>
-                        <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">
+                         <x-input-label for="password" :value="__('Password')" />
+
+                         <x-text-input id="password" class="form-control"
+                                       type="password"
+                                       name="password"
+                                       required autocomplete="current-password" />
+
+                         <x-input-error :messages="$errors->get('password')" class="mt-2" />
+{{--                        <label class="col-form-label">Password</label>--}}
+{{--                        <input class="form-control" type="password" name="login[password]" required="" placeholder="*********">--}}
                         <div class="show-hide"><span class="show">                         </span></div>
                      </div>
                      <div class="form-group mb-0">
