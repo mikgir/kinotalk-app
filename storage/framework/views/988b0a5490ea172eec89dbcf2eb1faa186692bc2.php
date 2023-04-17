@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>" xmlns:livewire="">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,28 +10,35 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="<?php echo e(asset('assets/css/vendors/bootstrap.css')); ?>">
+        <?php echo \Livewire\Livewire::styles(); ?>
+
         <?php echo $__env->yieldContent('style'); ?>
-        <!-- Scripts -->
 
     </head>
     <body>
-    <?php if(Route::has('login')): ?>
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-            <?php if(auth()->guard()->check()): ?>
-                <a href="<?php echo e(url('/home')); ?>" class="text-sm text-gray-700 underline">Home</a>
-            <?php else: ?>
-                <a href="<?php echo e(route('login')); ?>" class="text-sm text-gray-700 underline">Login</a>
 
-                <?php if(Route::has('register')): ?>
-                    <a href="<?php echo e(route('register')); ?>" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                <?php endif; ?>
-            <?php endif; ?>
-        </div>
-    <?php endif; ?>
+    <?php echo $__env->make('layouts.temp_navigation', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+       <?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('front.main-page', [])->html();
+} elseif ($_instance->childHasBeenRendered('MO0BoSA')) {
+    $componentId = $_instance->getRenderedChildComponentId('MO0BoSA');
+    $componentTag = $_instance->getRenderedChildComponentTagName('MO0BoSA');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('MO0BoSA');
+} else {
+    $response = \Livewire\Livewire::mount('front.main-page', []);
+    $html = $response->html();
+    $_instance->logRenderedChild('MO0BoSA', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
 
-        <?php echo $__env->yieldContent('main'); ?>
 
-        <?php echo $__env->yieldContent('script'); ?>
+    <?php echo \Livewire\Livewire::scripts(); ?>
+
+    <?php echo $__env->yieldContent('script'); ?>
     </body>
 </html>
 <?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/layouts/guest.blade.php ENDPATH**/ ?>
