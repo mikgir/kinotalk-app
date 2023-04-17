@@ -1,3 +1,4 @@
+
 <?php $__env->startSection('title', 'Ecommerce'); ?>
 
 <?php $__env->startSection('css'); ?>
