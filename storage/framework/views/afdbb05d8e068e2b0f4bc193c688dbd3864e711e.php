@@ -8,4 +8,4 @@
          </div>
      </div>
  </footer>
-<?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/layouts/simple/footer.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/layouts/admin/footer.blade.php ENDPATH**/ ?>

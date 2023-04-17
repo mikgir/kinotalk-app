@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" xmlns:livewire="">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,27 +10,18 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="{{asset('assets/css/vendors/bootstrap.css')}}">
+        <livewire:styles />
         @yield('style')
-        <!-- Scripts -->
-{{--        @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
+
     </head>
     <body>
-    @if (Route::has('login'))
-        <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-            @auth
-                <a href="{{ url('/home') }}" class="text-sm text-gray-700 underline">Home</a>
-            @else
-                <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
 
-                @if (Route::has('register'))
-                    <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                @endif
-            @endif
-        </div>
-    @endif
-{{--    @include('layouts.navigation')--}}
-        @yield('main')
+    @include('layouts.temp_navigation')
+       <livewire:front.main-page/>
 
-        @yield('script')
+
+    <livewire:scripts />
+    @yield('script')
     </body>
 </html>

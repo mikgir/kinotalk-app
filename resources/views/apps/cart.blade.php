@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Cart')
 
 @section('css')
@@ -88,7 +88,7 @@
                               <td>$12456</td>
                             </tr>
                             <tr>
-                              <td colspan="4">                                           
+                              <td colspan="4">
                                 <div class="input-group">
                                   <input class="form-control me-2" type="text" placeholder="Enter coupan code"><a class="btn btn-primary" href="#">Apply</a>
                                 </div>

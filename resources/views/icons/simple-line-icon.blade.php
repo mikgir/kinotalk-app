@@ -1,8 +1,8 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Simple-line Icons')
 
 @section('css')
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/simple-line-icon.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/admin-line-icon.css')}}">
 @endsection
 
 @section('style')

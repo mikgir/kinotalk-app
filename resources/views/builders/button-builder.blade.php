@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Button Builder')
 
 @section('css')
@@ -4099,9 +4099,9 @@
                                         </div>
                                         <div class="box" id="htmlBox">
                                             <div class="code-wrapper bg-transparent">
-                                                <pre class="well"><code class="language-markup button-html" id="htmlCode">&lt;a href="#" class="btn btn-success 
-btn-lg"&gt;&lt;i class="icon-edit 
-icon-white"&gt;&lt;/i&gt; Bootstrap 
+                                                <pre class="well"><code class="language-markup button-html" id="htmlCode">&lt;a href="#" class="btn btn-success
+btn-lg"&gt;&lt;i class="icon-edit
+icon-white"&gt;&lt;/i&gt; Bootstrap
 Button Generator&lt;/a&gt;</code></pre>
                                                 <div class="copy"><a id="copyHTML" href="javascript:void(0);"
                                                         data-clipboard-action="copy"

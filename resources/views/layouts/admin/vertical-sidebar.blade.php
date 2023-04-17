@@ -72,7 +72,7 @@
 							<i data-feather="git-pull-request"> </i><span>{{ trans('lang.File manager') }}</span>
 						</a>
 					</li>
-					<li class="sidebar-list">  
+					<li class="sidebar-list">
 						<label class="badge badge-info">{{ trans('lang.Latest') }}</label>
 						<a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName()=='kanban' ? 'active' : '' }}" href="{{route('kanban')}}">
 							<i data-feather="monitor"> </i><span>{{ trans('lang.Kanban Board') }}</span>
@@ -260,7 +260,7 @@
 							<li><a href="{{route('popover')}}" class="{{ Route::currentRouteName()=='popover' ? 'active' : '' }}">Popover</a></li>
 							<li><a href="{{route('tooltip')}}" class="{{ Route::currentRouteName()=='tooltip' ? 'active' : '' }}">Tooltip</a></li>
 							<li><a href="{{route('loader')}}" class="{{ Route::currentRouteName()=='loader' ? 'active' : '' }}">Spinners</a></li>
-							<li><a href="{{route('dropdown')}}" class="{{ Route::currentRouteName()=='dropdown' ? 'active' : '' }}">Dropdown</a></li>  
+							<li><a href="{{route('dropdown')}}" class="{{ Route::currentRouteName()=='dropdown' ? 'active' : '' }}">Dropdown</a></li>
 							<li><a href="{{route('accordion')}}" class="{{ Route::currentRouteName()=='accordion' ? 'active' : '' }}">Accordion</a></li>
 							<li>
 								<a class="submenu-title {{ in_array(Route::currentRouteName(), ['tab-bootstrap','tab-material']) ? 'active' : '' }}" href="#">Tabs
@@ -342,7 +342,7 @@
 							<li><a href="{{route('themify-icon')}}" class="{{ Route::currentRouteName()=='themify-icon' ? 'active' : '' }}">Thimify Icon</a></li>
 							<li><a href="{{route('feather-icon')}}" class="{{ Route::currentRouteName()=='feather-icon' ? 'active' : '' }}">Feather icon</a></li>
 							<li><a href="{{route('whether-icon')}}" class="{{ Route::currentRouteName()=='whether-icon' ? 'active' : '' }}">Whether Icon</a></li>
-							<li><a href="{{route('simple-line-icon')}}" class="{{ Route::currentRouteName()=='simple-line-icon' ? 'active' : '' }}">Simple line Icon</a></li>
+							<li><a href="{{route('admin-line-icon')}}" class="{{ Route::currentRouteName()=='admin-line-icon' ? 'active' : '' }}">Simple line Icon</a></li>
 							<li><a href="{{route('material-design-icon')}}" class="{{ Route::currentRouteName()=='material-design-icon' ? 'active' : '' }}">Material Design Icon</a></li>
 							<li><a href="{{route('pe7-icon')}}" class="{{ Route::currentRouteName()=='pe7-icon' ? 'active' : '' }}">pe7 icon</a></li>
 							<li><a href="{{route('typicons-icon')}}" class="{{ Route::currentRouteName()=='typicons-icon' ? 'active' : '' }}">Typicons icon</a></li>
@@ -365,7 +365,7 @@
 						<a class="sidebar-link sidebar-title {{request()->route()->getPrefix() == '/charts' ? 'active' : '' }}" href="#"><i data-feather="bar-chart"></i><span>{{ trans('lang.Charts') }}</span>
 							<div class="according-menu"><i class="fa fa-angle-{{request()->route()->getPrefix() == '/charts' ? 'down' : 'right' }}"></i></div>
 						</a>
-						<ul class="sidebar-submenu" style="display: {{ request()->route()->getPrefix() == '/charts' ? 'block;' : 'none;' }}"> 
+						<ul class="sidebar-submenu" style="display: {{ request()->route()->getPrefix() == '/charts' ? 'block;' : 'none;' }}">
 							<li><a href="{{route('echarts')}}" class="{{ Route::currentRouteName()=='echarts' ? 'active' : '' }}">Echarts</a></li>
 							<li><a href="{{route('chart-apex')}}" class="{{ Route::currentRouteName()=='chart-apex' ? 'active' : '' }}">Apex Chart</a></li>
 		                    <li><a href="{{route('chart-google')}}" class="{{ Route::currentRouteName()=='chart-google' ? 'active' : '' }}">Google Chart</a></li>
@@ -384,7 +384,7 @@
                      		<p>{{ trans('lang.All neccesory pages added') }}</p>
 						</div>
 					</li>
-					
+
 					<li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName()=='sample-page' ? 'active' : '' }}" href="{{route('sample-page')}}"><i data-feather="file-text"> </i><span>{{ trans('lang.Sample page') }}</span></a></li>
 					<li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName()=='internationalization' ? 'active' : '' }}" href="{{route('internationalization')}}"><i data-feather="globe"> </i><span>{{ trans('lang.Internationalization') }}</span></a></li>
 					<li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName()=='layout-light' ? 'active' : '' }}" href="{{ route('layout-light') }}" target="_blank"><i data-feather="anchor"></i><span>{{ trans('lang.Starter kit') }}</span></a></li>
@@ -533,7 +533,7 @@
 						<ul class="sidebar-submenu" style="display: {{request()->route()->getPrefix() == '/editors' ? 'block' : 'none;' }};">
 							<li><a href="{{route('summernote')}}" class="{{ Route::currentRouteName()=='summernote' ? 'active' : '' }}">Summer Note</a></li>
 	                        <li><a href="{{route('ckeditor')}}" class="{{ Route::currentRouteName()=='ckeditor' ? 'active' : '' }}">CK editor</a></li>
-	                        <li><a href="{{route('simple-mde')}}" class="{{ Route::currentRouteName()=='simple-mde' ? 'active' : '' }}">MDE editor</a></li>
+	                        <li><a href="{{route('admin-mde')}}" class="{{ Route::currentRouteName()=='admin-mde' ? 'active' : '' }}">MDE editor</a></li>
 	                        <li><a href="{{route('ace-code-editor')}}" class="{{ Route::currentRouteName()=='ace-code-editor' ? 'active' : '' }}">ACE code editor</a></li>
 						</ul>
 					</li>

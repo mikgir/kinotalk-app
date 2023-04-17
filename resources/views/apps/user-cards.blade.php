@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'User Cards')
 
 @section('css')
@@ -22,7 +22,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img src="{{ asset('assets/images/dashboard-5/profile.png') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -39,7 +39,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">1,908</h5><span class="f-light">Posts</span>
 				</li>
@@ -57,7 +57,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img class="img-fluid" src="{{ asset('assets/images/avtar/3.jpg') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -74,7 +74,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">875</h5><span class="f-light">Posts</span>
 				</li>
@@ -92,7 +92,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img class="img-fluid" src="{{ asset('assets/images/avtar/11.jpg') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -109,7 +109,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">1,274</h5><span class="f-light">Posts</span>
 				</li>
@@ -127,7 +127,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img class="img-fluid" src="{{ asset('assets/images/avtar/16.jpg') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -144,7 +144,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">500</h5><span class="f-light">Posts</span>
 				</li>
@@ -162,7 +162,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img class="img-fluid" src="{{ asset('assets/images/user/7.jpg') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -179,7 +179,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">460</h5><span class="f-light">Posts</span>
 				</li>
@@ -197,7 +197,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img class="img-fluid" src="{{ asset('assets/images/avtar/4.jpg') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -214,7 +214,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">547</h5><span class="f-light">Posts</span>
 				</li>
@@ -232,7 +232,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img class="img-fluid" src="{{ asset('assets/images/user/1.jpg') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -249,7 +249,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">868</h5><span class="f-light">Posts</span>
 				</li>
@@ -267,7 +267,7 @@
 	  <div class="col-xl-4 col-sm-6 col-xxl-3 col-ed-4 box-col-4">
 		<div class="card social-profile">
 		  <div class="card-body">
-			<div class="social-img-wrap"> 
+			<div class="social-img-wrap">
 			  <div class="social-img"><img class="img-fluid" src="{{ asset('assets/images/user/2.png') }}" alt="profile"></div>
 			  <div class="edit-icon">
 				<svg>
@@ -284,7 +284,7 @@
 				<li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
 				<li><a href="https://rss.app/" target="_blank"><i class="fa fa-rss"></i></a></li>
 			  </ul>
-			  <ul class="social-follow"> 
+			  <ul class="social-follow">
 				<li>
 				  <h5 class="mb-0">972</h5><span class="f-light">Posts</span>
 				</li>

@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Ecommerce')
 
 @section('css')
@@ -19,14 +19,14 @@
 
 @section('content')
 <div class="container-fluid">
-    <div class="row"> 
+    <div class="row">
       <div class="col-xxl-3 col-xl-4 box-col-4">
-        <div class="row"> 
+        <div class="row">
           <div class="col-xl-12 col-sm-6">
             <div class="card crypto-main-card">
-              <div class="card-body"> 
-                <div class="deposit-wrap"> 
-                  <div> 
+              <div class="card-body">
+                <div class="deposit-wrap">
+                  <div>
                     <h5>Cryptocurrency just got even better.</h5>
                     <p>Lorem Ipsum is simply dummy text</p>
                     <button class="btn btn-white f-w-500">Deposit Now</button>
@@ -37,15 +37,15 @@
           </div>
           <div class="col-xl-12 col-sm-6">
             <div class="card widget-hover">
-              <div class="card-body radial-progress-card"> 
-                <div> 
+              <div class="card-body radial-progress-card">
+                <div>
                   <h6 class="mb-0">Average Sales Per Day</h6>
-                  <div class="sale-details"> 
+                  <div class="sale-details">
                     <h5 class="font-primary mb-0">45,908</h5><span class="f-12 f-light f-w-500"><i data-feather="arrow-up"></i>+5.7%</span>
                   </div>
                   <p class="f-light"> The point of using Lorem Ipsum</p>
                 </div>
-                <div class="radial-chart-wrap"> 
+                <div class="radial-chart-wrap">
                   <div id="radial-chart"> </div>
                 </div>
               </div>
@@ -53,40 +53,40 @@
           </div>
           <div class="col-xl-12 col-sm-6">
             <div class="card widget-hover">
-              <div class="card-body radial-progress-card"> 
-                <div> 
+              <div class="card-body radial-progress-card">
+                <div>
                   <h6 class="mb-0">Average Profit Per Day</h6>
-                  <div class="sale-details"> 
+                  <div class="sale-details">
                     <h5 class="font-secondary mb-0">89.6%</h5><span class="f-12 f-light f-w-500"><i data-feather="arrow-up"></i>+2.7%</span>
                   </div>
                   <p class="f-light"> The point of using Lorem Ipsum</p>
                 </div>
-                <div class="radial-chart-wrap"> 
+                <div class="radial-chart-wrap">
                   <div id="radial-chart2"></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-xl-12 col-sm-6">
-            <div class="card widget-hover"> 
-              <div class="card-body radial-progress-card"> 
-                <div> 
+            <div class="card widget-hover">
+              <div class="card-body radial-progress-card">
+                <div>
                   <h6 class="mb-0">Average Visits Per Day</h6>
-                  <div class="sale-details"> 
+                  <div class="sale-details">
                     <h5 class="font-success mb-0">70k</h5><span class="f-12 f-light f-w-500"><i data-feather="arrow-up"></i>+1.5%</span>
                   </div>
                   <p class="f-light"> The point of using Lorem Ipsum</p>
                 </div>
-                <div class="radial-chart-wrap"> 
+                <div class="radial-chart-wrap">
                   <div id="radial-chart3"></div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-12"> 
+          <div class="col-sm-12">
             <div class="card tranaction-card">
               <div class="card-header card-no-border">
-                <div class="header-top"> 
+                <div class="header-top">
                   <h5>Transactions</h5>
                   <ul class="nav nav-tabs custom-tab" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -106,11 +106,11 @@
                   <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
                     <div class="table-responsive recent-table transaction-table">
                       <table class="table">
-                        <tbody> 
-                          <tr> 
-                            <td> 
+                        <tbody>
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy BTC</h6><span class="f-light">14 Mar, 2022</span>
                                 </div>
                               </div>
@@ -118,10 +118,10 @@
                             <td> <span class="f-light f-w-500">0.018 BTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell ETH</h6><span class="f-light">25 Mar, 2022</span>
                                 </div>
                               </div>
@@ -129,10 +129,10 @@
                             <td> <span class="f-light f-w-500">0.089 ETH</span></td>
                             <td> <span class="f-light f-w-500">$116.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy LTC</h6><span class="f-light">28 Mar, 2022</span>
                                 </div>
                               </div>
@@ -140,10 +140,10 @@
                             <td> <span class="f-light f-w-500">0.018 LTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy LTC</h6><span class="f-light">05 Apr, 2022</span>
                                 </div>
                               </div>
@@ -151,10 +151,10 @@
                             <td> <span class="f-light f-w-500">0.089 LTC</span></td>
                             <td> <span class="f-light f-w-500">$29.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell BTC</h6><span class="f-light">16 Apr, 2022</span>
                                 </div>
                               </div>
@@ -162,10 +162,10 @@
                             <td> <span class="f-light f-w-500">0.012 BTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy BTC</h6><span class="f-light">14 Mar, 2022</span>
                                 </div>
                               </div>
@@ -173,10 +173,10 @@
                             <td> <span class="f-light f-w-500">0.018 BTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell ETH</h6><span class="f-light">25 Mar, 2022</span>
                                 </div>
                               </div>
@@ -184,10 +184,10 @@
                             <td> <span class="f-light f-w-500">0.089 ETH</span></td>
                             <td> <span class="f-light f-w-500">$116.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy LTC</h6><span class="f-light">28 Mar, 2022</span>
                                 </div>
                               </div>
@@ -199,14 +199,14 @@
                       </table>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="buy" role="tabpanel" aria-labelledby="buy-tab"> 
+                  <div class="tab-pane fade" id="buy" role="tabpanel" aria-labelledby="buy-tab">
                     <div class="table-responsive recent-table transaction-table">
                       <table class="table">
-                        <tbody> 
-                          <tr> 
-                            <td> 
+                        <tbody>
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy LTC</h6><span class="f-light">30 Mar, 2022</span>
                                 </div>
                               </div>
@@ -214,10 +214,10 @@
                             <td> <span class="f-light f-w-500">0.010 LTC</span></td>
                             <td> <span class="f-light f-w-500">$105.00</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy ETH</h6><span class="f-light">05 Apr, 2022</span>
                                 </div>
                               </div>
@@ -225,10 +225,10 @@
                             <td> <span class="f-light f-w-500">0.075 ETH</span></td>
                             <td> <span class="f-light f-w-500">$120.74</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy BTC</h6><span class="f-light">14 Mar, 2022</span>
                                 </div>
                               </div>
@@ -236,10 +236,10 @@
                             <td> <span class="f-light f-w-500">0.018 BTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy LTC</h6><span class="f-light">05 Apr, 2022</span>
                                 </div>
                               </div>
@@ -247,10 +247,10 @@
                             <td> <span class="f-light f-w-500">0.089 LTC</span></td>
                             <td> <span class="f-light f-w-500">$29.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy BTC</h6><span class="f-light">17 Sep, 2022</span>
                                 </div>
                               </div>
@@ -258,10 +258,10 @@
                             <td> <span class="f-light f-w-500">0.08 BTC</span></td>
                             <td> <span class="f-light f-w-500">$380.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy LTC</h6><span class="f-light">30 Mar, 2022</span>
                                 </div>
                               </div>
@@ -269,10 +269,10 @@
                             <td> <span class="f-light f-w-500">0.010 LTC</span></td>
                             <td> <span class="f-light f-w-500">$105.00</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy ETH</h6><span class="f-light">05 Apr, 2022</span>
                                 </div>
                               </div>
@@ -280,10 +280,10 @@
                             <td> <span class="f-light f-w-500">0.075 ETH</span></td>
                             <td> <span class="f-light f-w-500">$120.74</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Buy BTC</h6><span class="f-light">14 Mar, 2022</span>
                                 </div>
                               </div>
@@ -298,11 +298,11 @@
                   <div class="tab-pane fade" id="sell" role="tabpanel" aria-labelledby="sell-tab">
                     <div class="table-responsive recent-table transaction-table">
                       <table class="table">
-                        <tbody> 
-                          <tr> 
-                            <td> 
+                        <tbody>
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell BTC</h6><span class="f-light">14 Mar, 2022</span>
                                 </div>
                               </div>
@@ -310,10 +310,10 @@
                             <td> <span class="f-light f-w-500">0.018 BTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell ETH</h6><span class="f-light">25 Mar, 2022</span>
                                 </div>
                               </div>
@@ -321,10 +321,10 @@
                             <td> <span class="f-light f-w-500">0.089 ETH</span></td>
                             <td> <span class="f-light f-w-500">$116.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell LTC</h6><span class="f-light">28 Mar, 2022</span>
                                 </div>
                               </div>
@@ -332,10 +332,10 @@
                             <td> <span class="f-light f-w-500">0.018 LTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell LTC</h6><span class="f-light">05 Apr, 2022</span>
                                 </div>
                               </div>
@@ -343,10 +343,10 @@
                             <td> <span class="f-light f-w-500">0.089 LTC</span></td>
                             <td> <span class="f-light f-w-500">$29.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell BTC</h6><span class="f-light">16 Apr, 2022</span>
                                 </div>
                               </div>
@@ -354,10 +354,10 @@
                             <td> <span class="f-light f-w-500">0.012 BTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell BTC</h6><span class="f-light">14 Mar, 2022</span>
                                 </div>
                               </div>
@@ -365,10 +365,10 @@
                             <td> <span class="f-light f-w-500">0.018 BTC</span></td>
                             <td> <span class="f-light f-w-500">$236.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-danger me-2" data-feather="trending-down"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell ETH</h6><span class="f-light">25 Mar, 2022</span>
                                 </div>
                               </div>
@@ -376,10 +376,10 @@
                             <td> <span class="f-light f-w-500">0.089 ETH</span></td>
                             <td> <span class="f-light f-w-500">$116.89</span></td>
                           </tr>
-                          <tr> 
-                            <td> 
+                          <tr>
+                            <td>
                               <div class="d-flex"> <i class="font-success me-2" data-feather="trending-up"></i>
-                                <div> 
+                                <div>
                                   <h6 class="f-14 mb-0">Sell LTC</h6><span class="f-light">28 Mar, 2022</span>
                                 </div>
                               </div>
@@ -398,81 +398,81 @@
         </div>
       </div>
       <div class="col-xxl-6 col-xl-8 box-col-8e">
-        <div class="row"> 
-          <div class="col-sm-4"> 
+        <div class="row">
+          <div class="col-sm-4">
             <div class="currency-widget warning">
               <div class="d-flex">
-                <div class="currency-icon-widget"> 
+                <div class="currency-icon-widget">
                   <svg>
                     <use href="{{ asset('assets/svg/icon-sprite.svg#beta') }}"></use>
                   </svg>
                 </div>
-                <div> 
+                <div>
                   <h6>Bitcoin <span class="f-light">BTC</span></h6>
                 </div>
               </div>
-              <div class="card"> 
+              <div class="card">
                 <div class="card-body d-flex">
                   <div class="currency-chart-wrap">
                     <div id="currency-chart"> </div>
                   </div>
-                  <div class="bg-light-warning text-center"> 
+                  <div class="bg-light-warning text-center">
                     <h5 class="mb-0">$21,43</h5><span class="f-12 f-w-500 font-warning"><i class="me-1" data-feather="trending-up"></i>+50%</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-4"> 
+          <div class="col-sm-4">
             <div class="currency-widget primary">
               <div class="d-flex">
-                <div class="currency-icon-widget"> 
+                <div class="currency-icon-widget">
                   <svg>
                     <use href="{{ asset('assets/svg/icon-sprite.svg#eth') }}"></use>
                   </svg>
                 </div>
-                <div> 
+                <div>
                   <h6>Ethereum <span class="f-light">ETC</span></h6>
                 </div>
               </div>
-              <div class="card"> 
+              <div class="card">
                 <div class="card-body d-flex">
                   <div class="currency-chart-wrap">
                     <div id="currency-chart2"></div>
                   </div>
-                  <div class="bg-light-primary text-center"> 
+                  <div class="bg-light-primary text-center">
                     <h5 class="mb-0">$7,450</h5><span class="f-12 f-w-500 font-primary"><i class="me-1" data-feather="trending-up"> </i>+35%</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-4"> 
+          <div class="col-sm-4">
             <div class="currency-widget success">
               <div class="d-flex">
-                <div class="currency-icon-widget"> 
+                <div class="currency-icon-widget">
                   <svg>
                     <use href="{{ asset('assets/svg/icon-sprite.svg#ltc') }}"></use>
                   </svg>
                 </div>
-                <div> 
+                <div>
                   <h6>Leave Travel <span class="f-light">LTC</span></h6>
                 </div>
               </div>
-              <div class="card"> 
+              <div class="card">
                 <div class="card-body d-flex">
                   <div class="currency-chart-wrap">
                     <div id="currency-chart3"></div>
                   </div>
-                  <div class="bg-light-success text-center"> 
+                  <div class="bg-light-success text-center">
                     <h5 class="mb-0">$2,198</h5><span class="f-12 f-w-500 font-success"><i class="me-1" data-feather="trending-up"> </i>+73%</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-12"> 
-            <div class="card market-card"> 
+          <div class="col-xl-12">
+            <div class="card market-card">
               <div class="card-header card-no-border">
                 <div class="header-top">
                   <h5>Market Graph</h5>
@@ -497,7 +497,7 @@
               </div>
               <div class="card-body pt-0">
                 <div class="row m-0 overall-card">
-                  <div class="col-xxl-8 col-xl-7 col-md-8 col-sm-7 p-0 box-col-7 col-ed-7">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                  <div class="col-xxl-8 col-xl-7 col-md-8 col-sm-7 p-0 box-col-7 col-ed-7">
                     <div class="market-chart-container">
                       <div id="market-chart"></div>
                     </div>
@@ -538,17 +538,17 @@
             </div>
           </div>
           <div class="col-xl-12">
-            <div class="card"> 
+            <div class="card">
               <div class="card-header card-no-border">
-                <div class="header-top"> 
+                <div class="header-top">
                   <h5>My Currencies</h5>
                 </div>
               </div>
               <div class="card-body pt-0">
-                <div class="recent-table table-responsive currency-table"> 
-                  <table class="table"> 
-                    <thead> 
-                      <tr> 
+                <div class="recent-table table-responsive currency-table">
+                  <table class="table">
+                    <thead>
+                      <tr>
                         <th class="f-light">Coin Name</th>
                         <th class="f-light">Price</th>
                         <th class="f-light">24h Change</th>
@@ -557,8 +557,8 @@
                         <th class="f-light">Action</th>
                       </tr>
                     </thead>
-                    <tbody> 
-                      <tr> 
+                    <tbody>
+                      <tr>
                         <td>
                           <div class="d-flex align-items-center gap-2">
                             <div class="currency-icon warning">
@@ -566,7 +566,7 @@
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#beta') }}"></use>
                               </svg>
                             </div>
-                            <div> 
+                            <div>
                               <h6 class="f-14 mb-0 f-w-400">Bitcoin</h6>
                             </div>
                           </div>
@@ -577,11 +577,11 @@
                         </td>
                         <td>$74,871.470</td>
                         <td>1.09634721</td>
-                        <td> 
+                        <td>
                           <button class="btn badge-light-primary">Trade</button>
                         </td>
                       </tr>
-                      <tr> 
+                      <tr>
                         <td>
                           <div class="d-flex align-items-center gap-2">
                             <div class="currency-icon success">
@@ -589,7 +589,7 @@
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#ltc') }}"></use>
                               </svg>
                             </div>
-                            <div> 
+                            <div>
                               <h6 class="f-14 mb-0 f-w-400">Litecoin</h6>
                             </div>
                           </div>
@@ -600,11 +600,11 @@
                         </td>
                         <td>$87,897.098</td>
                         <td>1.09675432</td>
-                        <td> 
+                        <td>
                           <button class="btn badge-light-primary">Trade</button>
                         </td>
                       </tr>
-                      <tr> 
+                      <tr>
                         <td>
                           <div class="d-flex align-items-center gap-2">
                             <div class="currency-icon primary">
@@ -612,7 +612,7 @@
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#eth') }}"></use>
                               </svg>
                             </div>
-                            <div> 
+                            <div>
                               <h6 class="f-14 mb-0 f-w-400">Eathereum</h6>
                             </div>
                           </div>
@@ -623,11 +623,11 @@
                         </td>
                         <td>$45,178.010</td>
                         <td>1.41557127</td>
-                        <td> 
+                        <td>
                           <button class="btn badge-light-primary">Trade</button>
                         </td>
                       </tr>
-                      <tr> 
+                      <tr>
                         <td>
                           <div class="d-flex align-items-center gap-2">
                             <div class="currency-icon secondary">
@@ -635,7 +635,7 @@
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#bin') }}"></use>
                               </svg>
                             </div>
-                            <div> 
+                            <div>
                               <h6 class="f-14 mb-0 f-w-400">Binance</h6>
                             </div>
                           </div>
@@ -646,11 +646,11 @@
                         </td>
                         <td>$64,100.066</td>
                         <td>1.78142254</td>
-                        <td> 
+                        <td>
                           <button class="btn badge-light-primary">Trade</button>
                         </td>
                       </tr>
-                      <tr> 
+                      <tr>
                         <td>
                           <div class="d-flex align-items-center gap-2">
                             <div class="currency-icon dark-green">
@@ -658,7 +658,7 @@
                                 <use href="{{ asset('assets/svg/icon-sprite.svg#te') }}"></use>
                               </svg>
                             </div>
-                            <div> 
+                            <div>
                               <h6 class="f-14 mb-0 f-w-400">Tether</h6>
                             </div>
                           </div>
@@ -669,7 +669,7 @@
                         </td>
                         <td>$61,574.218</td>
                         <td>1.574215</td>
-                        <td> 
+                        <td>
                           <button class="btn badge-light-primary">Trade</button>
                         </td>
                       </tr>
@@ -679,8 +679,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6"> 
-            <div class="card"> 
+          <div class="col-sm-6">
+            <div class="card">
               <div class="card-header card-no-border">
                 <div class="header-top gap-1">
                   <h5>Buy Coins</h5>
@@ -690,7 +690,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card-body pt-0"> 
+              <div class="card-body pt-0">
                 <form class="theme-form crypto-form">
                   <div class="mb-3">
                     <label class="form-label f-light" for="money">Enter your Money</label>
@@ -721,8 +721,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6"> 
-            <div class="card"> 
+          <div class="col-sm-6">
+            <div class="card">
               <div class="card-header card-no-border">
                 <div class="header-top gap-1">
                   <h5>Sell Coins</h5>
@@ -732,7 +732,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card-body pt-0"> 
+              <div class="card-body pt-0">
                 <form class="theme-form crypto-form">
                   <div class="mb-3">
                     <label class="form-label f-light" for="crypto-coin">Enter Crypto Coins</label>
@@ -776,10 +776,10 @@
                         <use href="{{ asset('assets/svg/icon-sprite.svg#pencil') }}"></use>
                       </svg></a></div><span class="f-light d-block">Your Balance </span>
                   <h5 class="mt-1">$768,987.90</h5>
-                  <ul> 
+                  <ul>
                     <li>
-                      <div class="balance-item danger"> 
-                        <div class="balance-icon-wrap"> 
+                      <div class="balance-item danger">
+                        <div class="balance-icon-wrap">
                           <div class="balance-icon"><i data-feather="arrow-down-right"></i></div>
                         </div>
                         <div> <span class="f-12 f-light">Investment  </span>
@@ -789,7 +789,7 @@
                     </li>
                     <li>
                       <div class="balance-item success">
-                        <div class="balance-icon-wrap"> 
+                        <div class="balance-icon-wrap">
                           <div class="balance-icon"><i data-feather="arrow-up-right"></i></div>
                         </div>
                         <div> <span class="f-12 f-light">Cash Back</span>
@@ -803,7 +803,7 @@
             </div>
           </div>
           <div class="col-xxl-12 order-xxl-0 order-1">
-            <div class="card portfolio-card"> 
+            <div class="card portfolio-card">
               <div class="card-header card-no-border">
                 <div class="header-top">
                   <h5 class="m-0">My Portfolio</h5>
@@ -816,84 +816,84 @@
                 </div>
               </div>
               <div class="card-body">
-                <div class="row"> 
+                <div class="row">
                   <div class="col-xxl-12 col-xl-7 col-sm-6 box-col-6">
-                    <div class="portfolio-chart-container"> 
+                    <div class="portfolio-chart-container">
                       <div id="portfolio-chart"> </div>
                     </div>
                   </div>
-                  <div class="col-xxl-12 col-xl-5 col-sm-6 box-col-6"> 
-                    <div class="portfolio-table recent-table table-responsive"> 
-                      <table class="table"> 
-                        <tr> 
-                          <td> 
+                  <div class="col-xxl-12 col-xl-5 col-sm-6 box-col-6">
+                    <div class="portfolio-table recent-table table-responsive">
+                      <table class="table">
+                        <tr>
+                          <td>
                             <div class="d-flex align-items-center gap-2">
                               <div class="currency-icon warning">
                                 <svg>
                                   <use href="{{ asset('assets/svg/icon-sprite.svg#beta') }}"></use>
                                 </svg>
                               </div>
-                              <div> 
+                              <div>
                                 <h6 class="f-14 mb-1">Bitcoin</h6>
                                 <div class="d-flex align-items-center gap-1"><span class="status bg-success"></span><span class="f-light">BTC</span></div>
                               </div>
                             </div>
                           </td>
-                          <td class="text-end"> 
+                          <td class="text-end">
                             <h6 class="f-14 f-w-400 mb-1">BTC 0.00876543</h6><span class="font-success">$14,987.13</span>
                           </td>
                         </tr>
-                        <tr> 
-                          <td> 
+                        <tr>
+                          <td>
                             <div class="d-flex align-items-center gap-2">
                               <div class="currency-icon success">
                                 <svg>
                                   <use href="{{ asset('assets/svg/icon-sprite.svg#ltc') }}"></use>
                                 </svg>
                               </div>
-                              <div> 
+                              <div>
                                 <h6 class="f-14 mb-1">Ethereum</h6>
                                 <div class="d-flex align-items-center gap-1"><span class="status bg-danger"></span><span class="f-light">ETH</span></div>
                               </div>
                             </div>
                           </td>
-                          <td class="text-end"> 
+                          <td class="text-end">
                             <h6 class="f-14 f-w-400 mb-1">ETC 1.60876543</h6><span class="font-danger">$49,987.13</span>
                           </td>
                         </tr>
-                        <tr> 
-                          <td> 
+                        <tr>
+                          <td>
                             <div class="d-flex align-items-center gap-2">
                               <div class="currency-icon primary">
                                 <svg>
                                   <use href="{{ asset('assets/svg/icon-sprite.svg#eth') }}"></use>
                                 </svg>
                               </div>
-                              <div> 
+                              <div>
                                 <h6 class="f-14 mb-1">Litecoin</h6>
                                 <div class="d-flex align-items-center gap-1"><span class="status bg-success"></span><span class="f-light">LTC</span></div>
                               </div>
                             </div>
                           </td>
-                          <td class="text-end"> 
+                          <td class="text-end">
                             <h6 class="f-14 f-w-400 mb-1">LTC 1.60876543</h6><span class="font-success">$35,571.25</span>
                           </td>
                         </tr>
-                        <tr> 
-                          <td> 
+                        <tr>
+                          <td>
                             <div class="d-flex align-items-center gap-2">
                               <div class="currency-icon light-blue">
                                 <svg>
                                   <use href="{{ asset('assets/svg/icon-sprite.svg#dash') }}"></use>
                                 </svg>
                               </div>
-                              <div> 
+                              <div>
                                 <h6 class="f-14 mb-1">Dash</h6>
                                 <div class="d-flex align-items-center gap-1"><span class="status bg-success"></span><span class="f-light">DSH</span></div>
                               </div>
                             </div>
                           </td>
-                          <td class="text-end"> 
+                          <td class="text-end">
                             <h6 class="f-14 f-w-400 mb-1">DSH 1.80741510</h6><span class="font-success">$17,047.30</span>
                           </td>
                         </tr>
@@ -905,7 +905,7 @@
             </div>
           </div>
           <div class="col-xxl-12 col-sm-6 box-col-6">
-            <div class="card"> 
+            <div class="card">
               <div class="card-header card-no-border">
                 <div class="header-top">
                   <h5 class="m-0">Activities</h5>
@@ -917,7 +917,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card-body pt-0 activity-card"> 
+              <div class="card-body pt-0 activity-card">
                 <div class="appointment-table customer-table table-responsive">
                   <table class="table table-bordernone">
                     <tbody>

@@ -71,7 +71,7 @@ var morris_chart = {
             lineColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ],
             labels: ["Series A", "Series B"]
         }), Morris.Bar({
-            element: "morris-simple-bar-chart",
+            element: "morris-admin-bar-chart",
             data: [{
                 x: "2011 Q1",
                 y: 3,

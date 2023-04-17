@@ -50,12 +50,12 @@
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper box-layout" id="pageWrapper">
         <!-- Page Header Start-->
-       @include('layouts.simple.header')
+       @include('layouts.admin.header')
         <!-- Page Header Ends-->
         <!-- Page Body Start-->
         <div class="page-body-wrapper">
             <!-- Page Sidebar Start-->
-            @include('layouts.simple.sidebar')
+            @include('layouts.admin.sidebar')
             <!-- Page Sidebar Ends-->
             <div class="page-body">
                 <div class="container-fluid">

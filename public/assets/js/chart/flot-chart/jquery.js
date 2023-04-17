@@ -54,7 +54,7 @@ var
 	// Make sure we trim BOM and NBSP (here's looking at you, Safari 5.0 and IE)
 	rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,
 
-	// A simple way to check for HTML strings
+	// A admin way to check for HTML strings
 	// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
 	rquickExpr = /^(?:[^#<]*(<[\w\W]+>)[^>]*$|#([\w\-]*)$)/,
 
@@ -5499,7 +5499,7 @@ jQuery.fn.extend({
 
 jQuery.fn.andSelf = jQuery.fn.addBack;
 
-// A painfully simple check to see if an element is disconnected
+// A painfully admin check to see if an element is disconnected
 // from a document (should be improved, where feasible).
 function isDisconnected( node ) {
 	return !node || !node.parentNode || node.parentNode.nodeType === 11;
@@ -6998,7 +6998,7 @@ function css_defaultDisplay( nodeName ) {
 		display = elem.css("display");
 	elem.remove();
 
-	// If the simple way fails,
+	// If the admin way fails,
 	// get element's real default display by attaching it to a temp iframe
 	if ( display === "none" || display === "" ) {
 		// Use the already-created iframe if possible
@@ -8574,7 +8574,7 @@ var fxNow, timerId,
 				if ( unit !== "px" && start ) {
 					// Iteratively approximate from a nonzero starting point
 					// Prefer the current property, because this process will be trivial if it uses the same units
-					// Fallback to end or a simple constant
+					// Fallback to end or a admin constant
 					start = jQuery.css( tween.elem, prop, true ) || end || 1;
 
 					do {
@@ -8975,7 +8975,7 @@ Tween.propHooks = {
 
 			// passing any value as a 4th parameter to .css will automatically
 			// attempt a parseFloat and fallback to a string if the parse fails
-			// so, simple values such as "10px" are parsed to Float.
+			// so, admin values such as "10px" are parsed to Float.
 			// complex values such as "rotate(1rad)" are returned as is.
 			result = jQuery.css( tween.elem, tween.prop, false, "" );
 			// Empty strings, null, undefined and "auto" are converted to 0.

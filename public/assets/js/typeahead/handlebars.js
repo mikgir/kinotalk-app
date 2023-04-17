@@ -252,8 +252,8 @@ var __module2__ = (function(__dependency1__, __dependency2__) {
         } else {
           for(var key in context) {
             if(context.hasOwnProperty(key)) {
-              if(data) { 
-                data.key = key; 
+              if(data) {
+                data.key = key;
                 data.index = i;
                 data.first = (i === 0);
               }
@@ -551,7 +551,7 @@ var __module7__ = (function(__dependency1__) {
       var params = this.params = rawParams.slice(1);
 
       // a mustache is an eligible helper if:
-      // * its id is simple (a single part, not `this` or `..`)
+      // * its id is admin (a single part, not `this` or `..`)
       var eligibleHelper = this.eligibleHelper = id.isSimple;
 
       // a mustache is definitely a helper if:
@@ -628,7 +628,7 @@ var __module7__ = (function(__dependency1__) {
       this.string   = dig.join('.');
       this.depth    = depth;
 
-      // an ID is simple if it only has one part, and that part is not
+      // an ID is admin if it only has one part, and that part is not
       // `..` or `this`.
       this.isSimple = parts.length === 1 && !this.isScoped && depth === 0;
 
@@ -693,9 +693,9 @@ var __module9__ = (function() {
 
   var $0 = $$.length - 1;
   switch (yystate) {
-  case 1: return new yy.ProgramNode($$[$0-1]); 
+  case 1: return new yy.ProgramNode($$[$0-1]);
   break;
-  case 2: return new yy.ProgramNode([]); 
+  case 2: return new yy.ProgramNode([]);
   break;
   case 3:this.$ = new yy.ProgramNode([], $$[$0-1], $$[$0]);
   break;
@@ -711,7 +711,7 @@ var __module9__ = (function() {
   break;
   case 9:this.$ = [$$[$0]];
   break;
-  case 10: $$[$0-1].push($$[$0]); this.$ = $$[$0-1]; 
+  case 10: $$[$0-1].push($$[$0]); this.$ = $$[$0-1];
   break;
   case 11:this.$ = new yy.BlockNode($$[$0-2], $$[$0-1].inverse, $$[$0-1], $$[$0]);
   break;
@@ -767,7 +767,7 @@ var __module9__ = (function() {
   break;
   case 37:this.$ = new yy.IdNode($$[$0]);
   break;
-  case 38: $$[$0-2].push({part: $$[$0], separator: $$[$0-1]}); this.$ = $$[$0-2]; 
+  case 38: $$[$0-2].push({part: $$[$0], separator: $$[$0-1]}); this.$ = $$[$0-2];
   break;
   case 39:this.$ = [{part: $$[$0]}];
   break;
@@ -1089,14 +1089,14 @@ var __module9__ = (function() {
                                        this.begin("mu");
                                      }
                                      if(yy_.yytext) return 14;
-                                   
+
   break;
   case 1:return 14;
   break;
   case 2:
                                      this.popState();
                                      return 14;
-                                   
+
   break;
   case 3:strip(0,4); this.popState(); return 15;
   break;
@@ -2260,7 +2260,7 @@ var __module10__ = (function(__dependency1__, __dependency2__, __dependency3__, 
       } else if (type === "simple") {
         this.simpleMustache(mustache);
 
-        // now that the simple mustache is resolved, we need to
+        // now that the admin mustache is resolved, we need to
         // evaluate it by executing `blockHelperMissing`
         this.opcode('pushProgram', program);
         this.opcode('pushProgram', inverse);
@@ -2269,7 +2269,7 @@ var __module10__ = (function(__dependency1__, __dependency2__, __dependency3__, 
       } else {
         this.ambiguousMustache(mustache, program, inverse);
 
-        // now that the simple mustache is resolved, we need to
+        // now that the admin mustache is resolved, we need to
         // evaluate it by executing `blockHelperMissing`
         this.opcode('pushProgram', program);
         this.opcode('pushProgram', inverse);

@@ -591,7 +591,7 @@
         }
     };
 
-    // Provide a cross-browser interface to a few simple drawing primitives
+    // Provide a cross-browser interface to a few admin drawing primitives
     $.fn.simpledraw = function (width, height, useExisting, interact) {
         var target, mhandler;
         if (useExisting && (target = this.data('_jqs_vcanvas'))) {
@@ -2546,7 +2546,7 @@
         }
     });
 
-    // Setup a very simple "virtual canvas" to make drawing the few shapes we need easier
+    // Setup a very admin "virtual canvas" to make drawing the few shapes we need easier
     // This is accessible as $(foo).simpledraw()
 
     VShape = createClass({

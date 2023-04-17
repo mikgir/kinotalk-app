@@ -489,7 +489,7 @@
 	  options.forced      - export even if the native feature is available
 	  options.bind        - bind methods to the target, required for the `pure` version
 	  options.wrap        - wrap constructors to preventing global pollution, required for the `pure` version
-	  options.unsafe      - use the simple assignment of property instead of delete + defineProperty
+	  options.unsafe      - use the admin assignment of property instead of delete + defineProperty
 	  options.sham        - add a flag to not completely full polyfills
 	  options.enumerable  - export as enumerable property
 	  options.noTargetGet - prevent calling a getter on target
@@ -533,7 +533,7 @@
 	  } return it;
 	};
 
-	// optional / simple context binding
+	// optional / admin context binding
 	var bindContext = function (fn, that, length) {
 	  aFunction$1(fn);
 	  if (that === undefined) return fn;
