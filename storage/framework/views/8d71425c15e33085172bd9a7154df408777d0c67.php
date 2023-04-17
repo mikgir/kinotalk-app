@@ -8,4 +8,4 @@
          </div>
      </div>
  </footer>
-<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/simple/footer.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/admin/footer.blade.php ENDPATH**/ ?>

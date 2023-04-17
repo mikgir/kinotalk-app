@@ -371,7 +371,7 @@
             </ul>
           </div>
           <script class="result-template" type="text/x-handlebars-template">
-            <div class="ProfileCard u-cf">                        
+            <div class="ProfileCard u-cf">
             <div class="ProfileCard-avatar"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-airplay m-0"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"></path><polygon points="12 15 17 21 7 21 12 15"></polygon></svg></div>
             <div class="ProfileCard-details">
             <div class="ProfileCard-realName">@{{name}}</div>
@@ -460,7 +460,7 @@
                       <i data-feather="git-pull-request"> </i><span>{{ trans('lang.File manager') }}</span>
                     </a>
                   </li>
-                  <li class="sidebar-list">  
+                  <li class="sidebar-list">
                     <label class="badge badge-info">{{ trans('lang.Latest') }}</label>
                     <a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName()=='kanban' ? 'active' : '' }}" href="{{route('kanban')}}">
                       <i data-feather="monitor"> </i><span>{{ trans('lang.Kanban Board') }}</span>
@@ -637,7 +637,7 @@
                       <li><a href="{{route('popover')}}" class="{{ Route::currentRouteName()=='popover' ? 'active' : '' }}">Popover</a></li>
                       <li><a href="{{route('tooltip')}}" class="{{ Route::currentRouteName()=='tooltip' ? 'active' : '' }}">Tooltip</a></li>
                       <li><a href="{{route('loader')}}" class="{{ Route::currentRouteName()=='loader' ? 'active' : '' }}">Spinners</a></li>
-                      <li><a href="{{route('dropdown')}}" class="{{ Route::currentRouteName()=='dropdown' ? 'active' : '' }}">Dropdown</a></li>  
+                      <li><a href="{{route('dropdown')}}" class="{{ Route::currentRouteName()=='dropdown' ? 'active' : '' }}">Dropdown</a></li>
                       <li><a href="{{route('accordion')}}" class="{{ Route::currentRouteName()=='accordion' ? 'active' : '' }}">Accordion</a></li>
                       <li>
                         <a class="submenu-title" href="#">Tabs
@@ -713,7 +713,7 @@
                       <li><a href="{{route('themify-icon')}}" class="{{ Route::currentRouteName()=='themify-icon' ? 'active' : '' }}">Thimify Icon</a></li>
                       <li><a href="{{route('feather-icon')}}" class="{{ Route::currentRouteName()=='feather-icon' ? 'active' : '' }}">Feather icon</a></li>
                       <li><a href="{{route('whether-icon')}}" class="{{ Route::currentRouteName()=='whether-icon' ? 'active' : '' }}">Whether Icon</a></li>
-                      <li><a href="{{route('simple-line-icon')}}" class="{{ Route::currentRouteName()=='simple-line-icon' ? 'active' : '' }}">Simple line Icon</a></li>
+                      <li><a href="{{route('admin-line-icon')}}" class="{{ Route::currentRouteName()=='admin-line-icon' ? 'active' : '' }}">Simple line Icon</a></li>
                       <li><a href="{{route('material-design-icon')}}" class="{{ Route::currentRouteName()=='material-design-icon' ? 'active' : '' }}">Material Design Icon</a></li>
                       <li><a href="{{route('pe7-icon')}}" class="{{ Route::currentRouteName()=='pe7-icon' ? 'active' : '' }}">pe7 icon</a></li>
                       <li><a href="{{route('typicons-icon')}}" class="{{ Route::currentRouteName()=='typicons-icon' ? 'active' : '' }}">Typicons icon</a></li>
@@ -734,7 +734,7 @@
                   <li class="sidebar-list">
                     <a class="sidebar-link sidebar-title" href="#"><i data-feather="bar-chart"></i><span>{{ trans('lang.Charts') }}</span>
                     </a>
-                    <ul class="sidebar-submenu"> 
+                    <ul class="sidebar-submenu">
                         <li><a href="{{route('echarts')}}" class="{{ Route::currentRouteName()=='echarts' ? 'active' : '' }}">Echarts</a></li>
                         <li><a href="{{route('chart-apex')}}" class="{{ Route::currentRouteName()=='chart-apex' ? 'active' : '' }}">Apex Chart</a></li>
                         <li><a href="{{route('chart-google')}}" class="{{ Route::currentRouteName()=='chart-google' ? 'active' : '' }}">Google Chart</a></li>
@@ -754,7 +754,7 @@
                                 <p>{{ trans('lang.All neccesory pages added') }}</p>
                     </div>
                   </li>
-                  
+
                   <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName()=='sample-page' ? 'active' : '' }}" href="{{route('sample-page')}}"><i data-feather="file-text"> </i><span>{{ trans('lang.Sample page') }}</span></a></li>
                   <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav {{ Route::currentRouteName()=='internationalization' ? 'active' : '' }}" href="{{route('internationalization')}}"><i data-feather="globe"> </i><span>{{ trans('lang.Internationalization') }}</span></a></li>
 
@@ -894,7 +894,7 @@
                     <ul class="sidebar-submenu">
                         <li><a href="{{route('summernote')}}" class="{{ Route::currentRouteName()=='summernote' ? 'active' : '' }}">Summer Note</a></li>
                         <li><a href="{{route('ckeditor')}}" class="{{ Route::currentRouteName()=='ckeditor' ? 'active' : '' }}">CK editor</a></li>
-                        <li><a href="{{route('simple-mde')}}" class="{{ Route::currentRouteName()=='simple-mde' ? 'active' : '' }}">MDE editor</a></li>
+                        <li><a href="{{route('admin-mde')}}" class="{{ Route::currentRouteName()=='admin-mde' ? 'active' : '' }}">MDE editor</a></li>
                         <li><a href="{{route('ace-code-editor')}}" class="{{ Route::currentRouteName()=='ace-code-editor' ? 'active' : '' }}">ACE code editor</a></li>
                     </ul>
                   </li>
@@ -1351,7 +1351,7 @@
     <script src="{{asset('assets/js/config.js')}}"></script>
     <!-- Plugins JS start-->
     <script src="{{asset('assets/js/sidebar-menu.js')}}"></script>
-    
+
     <script src="{{asset('assets/js/chart/apex-chart/moment.min.js')}}"></script>
     <script src="{{asset('assets/js/chart/apex-chart/apex-chart.js')}}"></script>
     <script src="{{asset('assets/js/chart/apex-chart/stock-prices.js')}}"></script>
@@ -1369,7 +1369,7 @@
     <script src="{{asset('assets/js/script.js')}}"></script>
     <script src="{{asset('assets/js/theme-customizer/customizer.js')}}"></script>
     <!-- Plugin used-->
-    <script type="text/javascript"> 
+    <script type="text/javascript">
         $('.other').hide();
         localStorage.clear();
         $(".page-wrapper").attr("class", "page-wrapper horizontal-wrapper material-type");

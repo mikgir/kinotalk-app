@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'AOS Animation')
 
 @section('css')

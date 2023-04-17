@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Sample Page')
 
 @section('css')

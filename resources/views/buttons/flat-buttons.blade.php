@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Flat Buttons')
 
 @section('css')
@@ -53,7 +53,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-info&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-warning&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-danger&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -90,7 +90,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-info btn-lg&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-warning btn-lg&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-danger btn-lg&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light btn-lg&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light btn-lg&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -127,7 +127,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-info btn-sm&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-warning btn-sm&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-danger btn-sm&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light btn-sm&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light btn-sm&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -164,7 +164,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-info btn-xs&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-warning btn-xs&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-danger btn-xs&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light btn-xs&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light btn-xs&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -201,7 +201,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-info active&quot;&gt;Active&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-warning active&quot;&gt;Active&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-danger active&quot;&gt;Active&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light active txt-dark&quot;&gt;Active&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light active txt-dark&quot;&gt;Active&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -238,7 +238,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-info disabled&quot;&gt;Disabled&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-warning disabled&quot;&gt;Disabled&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-danger disabled&quot;&gt;Disabled&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light disabled txt-dark&quot;&gt;Disabled&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light disabled txt-dark&quot;&gt;Disabled&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -269,7 +269,7 @@
 &lt;a class=&quot;btn btn-square btn-primary&quot; href=&quot;#&quot; data-bs-toggle=&quot;tooltip;&quot; title=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;link&lt;/button&gt;
 &lt;input class=&quot;btn btn-square btn-primary&quot; type=&quot;button&quot; value=&quot;Input&quot;  data-bs-toggle=&quot;tooltip;&quot; title=&quot;btn btn-secondary&quot;&gt;
 &lt;input class=&quot;btn btn-square btn-success&quot; type=&quot;submit&quot; value=&quot;Submit&quot; data-bs-toggle=&quot;tooltip&quot; title=&quot;btn btn-success&quot;&gt;
-&lt;button class=&quot;btn btn-square btn-info&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt; 
+&lt;button class=&quot;btn btn-square btn-info&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -306,7 +306,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-info&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-warning&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-danger&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-light txt-dark&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-light txt-dark&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -343,7 +343,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-info-2x&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-warning-2x&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-danger-2x&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-light-2x txt-dark&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-light-2x txt-dark&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -380,7 +380,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-info btn-lg&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-warning btn-lg&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-danger btn-lg&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-light btn-lg txt-dark&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-outline-light btn-lg txt-dark&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -528,7 +528,7 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-info-gradien&quot;&gt;Info button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-warning-gradien&quot;&gt;warning button&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-danger-gradien&quot;&gt;danger button&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light-gradien&quot;&gt;light button&lt;/button&gt; 
+&lt;button type=&quot;button&quot; class=&quot;btn btn-square btn-light-gradien&quot;&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>

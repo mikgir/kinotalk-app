@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'To-Do')
 
 @section('css')
@@ -373,7 +373,7 @@
 					  </div>
 					</div>
 				  </div>
-				  <div class="col-xl-12 m-t-30">   
+				  <div class="col-xl-12 m-t-30">
 					<div>
 					  <nav aria-label="...">
 						<ul class="pagination pagination-primary">

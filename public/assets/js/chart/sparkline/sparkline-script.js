@@ -74,7 +74,7 @@
         fillColor: 'rgba(247, 49, 100, 0.30)',
         highlightLineColor: 'rgba(247, 49, 100, 0.30)',
         highlightSpotColor: 'rgba(247, 49, 100, 0.8)'
-        
+
     });
     $("#custom-line-chart").sparkline([0, 5, 10, 7, 25, 20, 30], {
         type: 'line',
@@ -93,7 +93,7 @@
 var sparkline_chart = {
   init: function() {
     setTimeout(function(){
-        $("#simple-line-chart-sparkline").sparkline([5, 10, 20, 14, 17, 21, 20, 10, 4, 13,0, 10, 30, 40, 10, 15, 20], {
+        $("#admin-line-chart-sparkline").sparkline([5, 10, 20, 14, 17, 21, 20, 10, 4, 13,0, 10, 30, 40, 10, 15, 20], {
             type: 'line',
             width: '100%',
             height: '100%',

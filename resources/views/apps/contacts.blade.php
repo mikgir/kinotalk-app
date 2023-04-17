@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Contacts')
 
 @section('css')
@@ -53,7 +53,7 @@
                                                       <div class="col-sm-6">
                                                          <input class="form-control" id="con-name" type="text" required="" placeholder="First Name" autocomplete="off">
                                                       </div>
-                                                      <div class="col-sm-6">   
+                                                      <div class="col-sm-6">
                                                          <input class="form-control" id="con-last" type="text" required="" placeholder="Last Name" autocomplete="off">
                                                       </div>
                                                    </div>
@@ -442,7 +442,7 @@
                                                       <div class="col-sm-6">
                                                          <input class="form-control" id="first_name" type="text" required="" placeholder="First Name" value="first_name">
                                                       </div>
-                                                      <div class="col-sm-6">   
+                                                      <div class="col-sm-6">
                                                          <input class="form-control" id="last_name" type="text" required="" placeholder="Last Name" value="last_name">
                                                       </div>
                                                    </div>

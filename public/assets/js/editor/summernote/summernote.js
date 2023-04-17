@@ -1,5 +1,5 @@
 /**
- * Super simple wysiwyg editor v0.8.10
+ * Super admin wysiwyg editor v0.8.10
  * https://summernote.org
  *
  * Copyright 2013- Alan Hong. and other contributors
@@ -3764,7 +3764,7 @@ var Editor = /** @class */ (function () {
             })(idx);
             this.context.memo('help.formatH' + idx, this.lang.help['formatH' + idx]);
         }
-        
+
         this.insertParagraph = this.wrapCommand(function () {
             _this.typing.insertParagraph(_this.editable);
         });
@@ -6398,7 +6398,7 @@ var VideoDialog = /** @class */ (function () {
         else if (vMatch && vMatch[0].length) {
             $video = $$1('<iframe>')
                 .attr('frameborder', 0)
-                .attr('src', vMatch[0] + '/embed/simple')
+                .attr('src', vMatch[0] + '/embed/admin')
                 .attr('width', '600').attr('height', '600')
                 .attr('class', 'vine-embed');
         }

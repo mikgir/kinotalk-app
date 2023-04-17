@@ -20,7 +20,7 @@
 <script src="<?php echo e(asset('assets/js/header-slick.js')); ?>"></script>
 <?php echo $__env->yieldContent('script'); ?>
 
-<?php if(Route::current()->getName() != 'popover'): ?> 
+<?php if(Route::current()->getName() != 'popover'): ?>
 	<script src="<?php echo e(asset('assets/js/tooltip-init.js')); ?>"></script>
 <?php endif; ?>
 
@@ -37,4 +37,4 @@
 	new WOW().init();
 </script>
 <?php endif; ?>
-<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/simple/script.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/admin/script.blade.php ENDPATH**/ ?>

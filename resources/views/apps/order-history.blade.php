@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Recent Orders')
 
 @section('css')
@@ -28,14 +28,14 @@
          <div class="card-body">
            <div class="row g-sm-4 g-3">
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box">                                 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-6.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Top</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -46,14 +46,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-5.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#"> Women Shorts</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -64,14 +64,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-4.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Cyclamen  </a></h6>
                      </div>
                      <div class="rating"> <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -82,14 +82,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-3.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Men Solid Denim jacket</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -100,14 +100,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-2.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Blue shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -118,14 +118,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-1.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">red shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -136,14 +136,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-1.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Red shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -154,14 +154,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box">                                 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-6.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Top</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -172,14 +172,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-5.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women shorts</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -199,14 +199,14 @@
          <div class="card-body">
            <div class="row g-sm-4 g-3">
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box">                                 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-6.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Top</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -217,14 +217,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-5.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Shorts</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -235,14 +235,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-4.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Cyclamen</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -253,14 +253,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-3.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Men Solid Denim jacket</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -271,14 +271,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-3.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Blue shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -289,14 +289,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-2.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">red shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -307,14 +307,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box">                                 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-6.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Red shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -325,14 +325,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-5.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Top</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -343,14 +343,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-1.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women shorts</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -370,14 +370,14 @@
          <div class="card-body">
            <div class="row g-sm-4 g-3">
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box">                                 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-6.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Top</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -388,14 +388,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-5.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Shorts</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -406,14 +406,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-4.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Cyclamen</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -424,14 +424,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-3.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Men Solid Denim jacket</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -442,14 +442,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-2.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Blue shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -460,14 +460,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-1.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">red shirt </a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -478,14 +478,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-1.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Red shirt</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -496,14 +496,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box">                                 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-6.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women Top</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">
@@ -514,14 +514,14 @@
                </div>
              </div>
              <div class="col-xxl-4 col-md-6">
-               <div class="prooduct-details-box"> 
+               <div class="prooduct-details-box">
                  <div class="media"><img class="align-self-center img-fluid img-60" src="{{ asset('assets/images/ecommerce/product-table-5.png') }}" alt="#">
                    <div class="media-body ms-3">
                      <div class="product-name">
                        <h6><a href="#">Women shorts</a></h6>
                      </div>
                      <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                     <div class="price d-flex"> 
+                     <div class="price d-flex">
                        <div class="text-muted me-2">Price</div>: 210$
                      </div>
                      <div class="avaiabilty">

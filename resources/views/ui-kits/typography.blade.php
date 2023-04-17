@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Typography')
 
 @section('css')
@@ -180,7 +180,7 @@
                <span>Styling for common inline HTML5 elements.</span>
             </div>
             <div class="card-body">
-               <p>You can use the mark tag to 
+               <p>You can use the mark tag to
                   <mark>highlight</mark> text.
                </p>
                <p>
@@ -328,7 +328,7 @@
                   <blockquote class="blockquote">
                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                   </blockquote>
-                  <figcaption class="blockquote-footer">Someone famous in 
+                  <figcaption class="blockquote-footer">Someone famous in
                      <cite title="Source Title">Source Title</cite>
                   </figcaption>
                </div>
@@ -337,7 +337,7 @@
                   <blockquote class="blockquote">
                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                   </blockquote>
-                  <figcaption class="blockquote-footer">Someone famous in 
+                  <figcaption class="blockquote-footer">Someone famous in
                      <cite title="Source Title">Source Title</cite>
                   </figcaption>
                </div>
@@ -346,7 +346,7 @@
                   <blockquote class="blockquote">
                      <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
                   </blockquote>
-                  <figcaption class="blockquote-footer">Someone famous in 
+                  <figcaption class="blockquote-footer">Someone famous in
                      <cite title="Source Title">Source Title</cite>
                   </figcaption>
                </div>

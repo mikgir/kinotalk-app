@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Product Page')
 
 @section('css')
@@ -54,7 +54,7 @@
              <div class="product-page-details">
                <h3>Women Pink shirt.</h3>
              </div>
-             <div class="product-price">$26.00  
+             <div class="product-price">$26.00
                <del>$350.00 </del>
              </div>
              <ul class="product-color">

@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Edge Buttons')
 
 @section('css')
@@ -53,7 +53,7 @@
 &lt;button type="button" class="btn btn-pill btn-info"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-warning"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-danger"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-light"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-light"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -90,7 +90,7 @@
 &lt;button type="button" class="btn btn-pill btn-info btn-lg"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-warning btn-lg"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-danger btn-lg"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-light btn-lg"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-light btn-lg"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -127,7 +127,7 @@
 &lt;button type="button" class="btn btn-pill btn-info btn-sm"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-warning btn-sm"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-danger btn-sm"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-light btn-sm"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-light btn-sm"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -164,7 +164,7 @@
 &lt;button type="button" class="btn btn-pill btn-info active"&gt;Active&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-warning active"&gt;Active&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-danger active"&gt;Active&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-light active txt-dark"&gt;Active&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-light active txt-dark"&gt;Active&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -201,7 +201,7 @@
 &lt;button type="button" class="btn btn-pill btn-info disabled"&gt;Disabled&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-warning disabled"&gt;Disabled&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-danger disabled"&gt;Disabled&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-light disabled"&gt;Disabled&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-light disabled"&gt;Disabled&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -232,7 +232,7 @@
 &lt;a class=&quot;btn btn-pill btn-primary&quot; href=&quot;#&quot; data-bs-toggle=&quot;tooltip;&quot; title=&quot;btn btn-primary&quot; role=&quot;button&quot;&gt;link&lt;/button&gt;
 &lt;input class=&quot;btn btn-pill btn-primary&quot; type=&quot;button&quot; value=&quot;Input&quot;  data-bs-toggle=&quot;tooltip;&quot; title=&quot;btn btn-secondary&quot;&gt;
 &lt;input class=&quot;btn btn-pill btn-success&quot; type=&quot;submit&quot; value=&quot;Submit&quot; data-bs-toggle=&quot;tooltip&quot; title=&quot;btn btn-success&quot;&gt;
-&lt;button class=&quot;btn btn-pill btn-info&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt; 
+&lt;button class=&quot;btn btn-pill btn-info&quot; type=&quot;submit&quot;&gt;Button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -306,7 +306,7 @@
 &lt;button type="button" class="btn btn-pill btn-outline-info-2x"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-warning-2x"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-danger-2x"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-outline-light-2x txt-dark"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-outline-light-2x txt-dark"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -343,7 +343,7 @@
 &lt;button type="button" class="btn btn-pill btn-outline-info btn-lg"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-warning btn-lg"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-danger btn-lg"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-outline-light btn-lg txt-dark"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-outline-light btn-lg txt-dark"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -380,7 +380,7 @@
 &lt;button type="button" class="btn btn-pill btn-outline-info btn-sm"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-warning btn-sm"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-danger btn-sm"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-outline-light btn-sm txt-dark"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-outline-light btn-sm txt-dark"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -417,7 +417,7 @@
 &lt;button type="button" class="btn btn-pill btn-outline-info btn-xs"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-warning btn-xs"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-danger btn-xs"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-outline-light btn-xs txt-dark"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-outline-light btn-xs txt-dark"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -454,7 +454,7 @@
 &lt;button type="button" class="btn btn-pill btn-outline-info disabled"&gt;Disabled&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-warning disabled"&gt;Disabled&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-outline-danger disabled"&gt;Disabled&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-outline-light disabled txt-dark"&gt;Disabled&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-outline-light disabled txt-dark"&gt;Disabled&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>
@@ -491,7 +491,7 @@
 &lt;button type="button" class="btn btn-pill btn-info-gradien"&gt;Info button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-warning-gradien"&gt;warning button&lt;/button&gt;
 &lt;button type="button" class="btn btn-pill btn-danger-gradien"&gt;danger button&lt;/button&gt;
-&lt;button type="button" class="btn btn-pill btn-light-gradien.txt-dark"&gt;light button&lt;/button&gt; 
+&lt;button type="button" class="btn btn-pill btn-light-gradien.txt-dark"&gt;light button&lt;/button&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                               </div>
                         </div>

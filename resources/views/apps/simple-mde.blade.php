@@ -1,8 +1,8 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'MDE Editor')
 
 @section('css')
-<link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/simple-mde.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('assets/css/vendors/admin-mde.css')}}">
 @endsection
 
 @section('style')
@@ -59,6 +59,6 @@
 @endsection
 
 @section('script')
-<script src="{{asset('assets/js/editor/simple-mde/simplemde.min.js')}}"></script>
-<script src="{{asset('assets/js/editor/simple-mde/simplemde.custom.js')}}"></script>
+<script src="{{asset('assets/js/editor/admin-mde/simplemde.min.js')}}"></script>
+<script src="{{asset('assets/js/editor/admin-mde/simplemde.custom.js')}}"></script>
 @endsection

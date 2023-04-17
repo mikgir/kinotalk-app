@@ -485,7 +485,7 @@ var Chartist = {
           return multiValue;
 
         } else {
-          // We can return simple data
+          // We can return admin data
           return Chartist.getNumberOrUndefined(value);
         }
       }
@@ -799,7 +799,7 @@ var Chartist = {
     var EPSILON = 2.221E-16;
     bounds.step = Math.max(bounds.step, EPSILON);
     function safeIncrement(value, increment) {
-      // If increment is too small use *= (1+EPSILON) as a simple nextafter
+      // If increment is too small use *= (1+EPSILON) as a admin nextafter
       if (value === (value += increment)) {
       	value *= (1 + (increment > 0 ? EPSILON : -EPSILON));
       }
@@ -1233,14 +1233,14 @@ var Chartist = {
    *
    * Simple smoothing can be used instead of `Chartist.Smoothing.cardinal` if you'd like to get rid of the artifacts it produces sometimes. Simple smoothing produces less flowing lines but is accurate by hitting the points and it also doesn't swing below or above the given data point.
    *
-   * All smoothing functions within Chartist are factory functions that accept an options parameter. The simple interpolation function accepts one configuration parameter `divisor`, between 1 and ∞, which controls the smoothing characteristics.
+   * All smoothing functions within Chartist are factory functions that accept an options parameter. The admin interpolation function accepts one configuration parameter `divisor`, between 1 and ∞, which controls the smoothing characteristics.
    *
    * @example
    * var chart = new Chartist.Line('.ct-chart', {
    *   labels: [1, 2, 3, 4, 5],
    *   series: [[1, 2, 8, 1, 7]]
    * }, {
-   *   lineSmooth: Chartist.Interpolation.simple({
+   *   lineSmooth: Chartist.Interpolation.admin({
    *     divisor: 2,
    *     fillHoles: false
    *   })
@@ -1248,7 +1248,7 @@ var Chartist = {
    *
    *
    * @memberof Chartist.Interpolation
-   * @param {Object} options The options of the simple interpolation factory function.
+   * @param {Object} options The options of the admin interpolation factory function.
    * @return {Function}
    */
   Chartist.Interpolation.simple = function(options) {
@@ -1988,7 +1988,7 @@ var Chartist = {
 
 }(window, document, Chartist));
 ;/**
- * Chartist SVG module for simple SVG DOM abstraction
+ * Chartist SVG module for admin SVG DOM abstraction
  *
  * @module Chartist.Svg
  */
@@ -2348,7 +2348,7 @@ var Chartist = {
    * **Automatic unit conversion**
    * For the `dur` and the `begin` animate attribute you can also omit a unit by passing a number. The number will automatically be converted to milli seconds.
    * **Guided mode**
-   * The default behavior of SMIL animations with offset using the `begin` attribute is that the attribute will keep it's original value until the animation starts. Mostly this behavior is not desired as you'd like to have your element attributes already initialized with the animation `from` value even before the animation starts. Also if you don't specify `fill="freeze"` on an animate element or if you delete the animation after it's done (which is done in guided mode) the attribute will switch back to the initial value. This behavior is also not desired when performing simple one-time animations. For one-time animations you'd want to trigger animations immediately instead of relative to the document begin time. That's why in guided mode Chartist.Svg will also use the `begin` property to schedule a timeout and manually start the animation after the timeout. If you're using multiple SMIL definition objects for an attribute (in an array), guided mode will be disabled for this attribute, even if you explicitly enabled it.
+   * The default behavior of SMIL animations with offset using the `begin` attribute is that the attribute will keep it's original value until the animation starts. Mostly this behavior is not desired as you'd like to have your element attributes already initialized with the animation `from` value even before the animation starts. Also if you don't specify `fill="freeze"` on an animate element or if you delete the animation after it's done (which is done in guided mode) the attribute will switch back to the initial value. This behavior is also not desired when performing admin one-time animations. For one-time animations you'd want to trigger animations immediately instead of relative to the document begin time. That's why in guided mode Chartist.Svg will also use the `begin` property to schedule a timeout and manually start the animation after the timeout. If you're using multiple SMIL definition objects for an attribute (in an array), guided mode will be disabled for this attribute, even if you explicitly enabled it.
    * If guided mode is enabled the following behavior is added:
    * - Before the animation starts (even when delayed with `begin`) the animated attribute will be set already to the `from` value of the animation
    * - `begin` is explicitly set to `indefinite` so it can be started manually without relying on document begin time (creation)
@@ -3562,7 +3562,7 @@ var Chartist = {
    * @return {Object} An object which exposes the API for the created chart
    *
    * @example
-   * // Create a simple line chart
+   * // Create a admin line chart
    * var data = {
    *   // A labels array that can contain any sort of values
    *   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
@@ -4049,7 +4049,7 @@ var Chartist = {
    * @return {Object} An object which exposes the API for the created chart
    *
    * @example
-   * // Create a simple bar chart
+   * // Create a admin bar chart
    * var data = {
    *   labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'],
    *   series: [
