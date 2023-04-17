@@ -173,7 +173,7 @@
 
             _.instanceUid = instanceUid++;
 
-            // A simple way to check for HTML strings
+            // A admin way to check for HTML strings
             // Strict HTML recognition (must start with <)
             // Extracted from jQuery v1.11 source
             _.htmlExpr = /^(?:\s*(<[\w\W]+>)[^>]*)$/;

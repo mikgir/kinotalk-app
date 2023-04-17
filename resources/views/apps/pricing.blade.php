@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Pricing')
 
 @section('css')
@@ -21,7 +21,7 @@
    <div class="row">
      <div class="col-sm-12">
        <div class="card">
-         <div class="card-header"> 
+         <div class="card-header">
            <h5>Become member</h5>
          </div>
          <div class="card-body row pricing-block">
@@ -88,7 +88,7 @@
          </div>
        </div>
        <div class="card">
-         <div class="card-header"> 
+         <div class="card-header">
            <h5>Simple Pricing Card</h5>
          </div>
          <div class="card-body pricing-content">

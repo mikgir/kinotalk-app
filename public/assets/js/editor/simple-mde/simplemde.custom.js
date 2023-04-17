@@ -1,5 +1,5 @@
 
-// first demo of simple mde
+// first demo of admin mde
 (function($) {
     id = "editable";
     var simplemde = new SimpleMDE({
@@ -32,7 +32,7 @@
     }
 })(jQuery);
 
-// second demo of simple mde
+// second demo of admin mde
 var sample = [
     "### Instructions",
     "Enter text in the area on the left. For more info, click the ? (help) icon in the menu."

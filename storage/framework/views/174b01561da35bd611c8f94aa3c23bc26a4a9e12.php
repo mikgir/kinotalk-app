@@ -643,7 +643,7 @@
                         <ul class="sidebar-submenu">
                             <li><a href="<?php echo e(route('summernote')); ?>">Summer Note</a></li>
                             <li><a href="<?php echo e(route('ckeditor')); ?>">CK editor</a></li>
-                            <li><a href="<?php echo e(route('simple-mde')); ?>">MDE editor</a></li>
+                            <li><a href="<?php echo e(route('admin-mde')); ?>">MDE editor</a></li>
                             <li><a href="<?php echo e(route('ace-code-editor')); ?>">ACE code editor </a></li>
                         </ul>
                     </li>
@@ -669,4 +669,4 @@
         </nav>
     </div>
 </div>
-<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/simple/sidebar.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/admin/sidebar.blade.php ENDPATH**/ ?>

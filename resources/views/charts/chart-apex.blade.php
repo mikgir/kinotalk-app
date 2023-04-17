@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Apex Chart')
 
 @section('css')
@@ -63,7 +63,7 @@
 			<div class="card">
 				<div class="card-header">
 					<h5>
-						3d Bubble Chart 
+						3d Bubble Chart
 					</h5>
 				</div>
 				<div class="card-body">

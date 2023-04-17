@@ -44,12 +44,12 @@
     <!-- page-wrapper Start-->
     <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <!-- Page Header Start-->
-     @include('layouts.simple.header')
+     @include('layouts.admin.header')
       <!-- Page Header Ends                              -->
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-        @include('layouts.simple.sidebar')
+        @include('layouts.admin.sidebar')
         <!-- Page Sidebar Ends-->
         <div class="page-body">
           <div class="container-fluid">
@@ -60,7 +60,7 @@
                 </div>
                 <div class="col-6">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('index')}}">                                       
+                    <li class="breadcrumb-item"><a href="{{ route('index')}}">
                         <svg class="stroke-icon">
                           <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-home') }}"></use>
                         </svg></a></li>
@@ -101,7 +101,7 @@
                       <pre><code class="language-html" id="example-head">&lt;!-- Cod Box Copy begin --&gt;
 &lt;div class=&quot;card-body&quot;&gt;
 &lt;span&gt;Start Here&lt;/span&gt;
-&lt;/div&gt;    
+&lt;/div&gt;
 &lt;!-- Cod Box Copy end --&gt;</code></pre>
                     </div>
                   </div>

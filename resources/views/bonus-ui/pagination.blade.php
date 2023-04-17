@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Pagination')
 
 @section('css')
@@ -19,7 +19,7 @@
 @section('content')
 <div class="container-fluid">
 	<div class="row">
-		<!-- simple pagination-->
+		<!-- admin pagination-->
 		<div class="col-xl-6">
 			<div class="card">
 				<div class="card-header">

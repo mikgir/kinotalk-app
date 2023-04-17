@@ -1,4 +1,4 @@
-@extends('layouts.simple.master')
+@extends('layouts.admin.master')
 @section('title', 'Product')
 
 @section('css')
@@ -224,13 +224,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -255,7 +255,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Woman T-shirt</h4></a>
                  <p>Women Full Sleeve Printed Sweatshirt</p>
-                 <div class="product-price">$26.00 
+                 <div class="product-price">$26.00
                    <del>$350.00    </del>
                  </div>
                </div>
@@ -298,13 +298,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -329,7 +329,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Dream Beauty Fashion</h4></a>
                  <p>Tops for Women Stylish</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$360.00    </del>
                  </div>
                </div>
@@ -371,13 +371,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -445,13 +445,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -518,13 +518,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -550,7 +550,7 @@
                    <h4>Dream Beauty Fashion</h4></a>
                  <p>Tops for Women Stylish</p>
                  <div class="product-price">
-                                                             $30.00 
+                                                             $30.00
                    <del>$360.00  </del>
                  </div>
                </div>
@@ -593,13 +593,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -666,13 +666,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -697,7 +697,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Woman T-shirt</h4></a>
                  <p>Women Full Sleeve Printed Sweatshirt</p>
-                 <div class="product-price">$26.00 
+                 <div class="product-price">$26.00
                    <del>$350.00</del>
                  </div>
                </div>
@@ -739,13 +739,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -770,7 +770,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$25.00 
+                 <div class="product-price">$25.00
                    <del>$400.00    </del>
                  </div>
                </div>
@@ -812,13 +812,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -843,7 +843,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$25.00 
+                 <div class="product-price">$25.00
                    <del>$400.00    </del>
                  </div>
                </div>
@@ -885,13 +885,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -916,7 +916,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Cyclamen</h4></a>
                  <p>Stylish co-ord set 2 piece dress for women</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$350.00    </del>
                  </div>
                </div>
@@ -958,13 +958,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -989,7 +989,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Dream Beauty Fashion </h4></a>
                  <p>Tops for Women Stylish</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$360.00    </del>
                  </div>
                </div>
@@ -1031,13 +1031,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1062,7 +1062,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$25.00 
+                 <div class="product-price">$25.00
                    <del>$400.00    </del>
                  </div>
                </div>
@@ -1105,13 +1105,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1136,7 +1136,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Dream Beauty Fashion</h4></a>
                  <p>Tops for Women Stylish</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$360.00    </del>
                  </div>
                </div>
@@ -1178,13 +1178,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1209,7 +1209,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$25.00 
+                 <div class="product-price">$25.00
                    <del>$400.00    </del>
                  </div>
                </div>
@@ -1252,13 +1252,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1283,7 +1283,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Cyclamen</h4></a>
                  <p>Stylish co-ord set 2 piece dress for women</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$350.00    </del>
                  </div>
                </div>
@@ -1325,13 +1325,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1356,7 +1356,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Dream Beauty Fashion</h4></a>
                  <p>Tops for Women Stylish</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$360.00    </del>
                  </div>
                </div>
@@ -1398,13 +1398,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1471,13 +1471,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1502,7 +1502,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Woman T-shirt</h4></a>
                  <p>Women Full Sleeve Printed Sweatshirt</p>
-                 <div class="product-price">$26.00 
+                 <div class="product-price">$26.00
                    <del>$350.00    </del>
                  </div>
                </div>
@@ -1544,13 +1544,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1575,7 +1575,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$26.00                                              
+                 <div class="product-price">$26.00
                    <del>$350.00    </del>
                  </div>
                </div>
@@ -1617,13 +1617,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1648,7 +1648,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$25.00 
+                 <div class="product-price">$25.00
                    <del>$400.00    </del>
                  </div>
                </div>
@@ -1690,13 +1690,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1721,7 +1721,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Cyclamen</h4></a>
                  <p>Stylish co-ord set 2 piece dress for women</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$350.00    </del>
                  </div>
                </div>
@@ -1763,13 +1763,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1794,7 +1794,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>Dream Beauty Fashion</h4></a>
                  <p>Tops for Women Stylish</p>
-                 <div class="product-price">$30.00 
+                 <div class="product-price">$30.00
                    <del>$360.00    </del>
                  </div>
                </div>
@@ -1836,13 +1836,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1867,7 +1867,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$26.00 
+                 <div class="product-price">$26.00
                    <del>$350.00    </del>
                  </div>
                </div>
@@ -1909,13 +1909,13 @@
                            </div>
                            <div class="product-size">
                              <ul>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">M</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">L</button>
                                </li>
-                               <li> 
+                               <li>
                                  <button class="btn btn-outline-light" type="button">Xl</button>
                                </li>
                              </ul>
@@ -1940,7 +1940,7 @@
                  <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><a href="{{ route('product-page')}}">
                    <h4>VOXATI</h4></a>
                  <p>Men's Denim Jacket</p>
-                 <div class="product-price">$26.00 
+                 <div class="product-price">$26.00
                    <del>$350.00    </del>
                  </div>
                </div>

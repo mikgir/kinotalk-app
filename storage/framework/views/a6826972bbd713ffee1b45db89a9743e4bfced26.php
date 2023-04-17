@@ -20,4 +20,4 @@
 <!-- Responsive css-->
 <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/responsive.css')); ?>">
 
-<?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/layouts/simple/css.blade.php ENDPATH**/ ?>
+<?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/layouts/admin/css.blade.php ENDPATH**/ ?>

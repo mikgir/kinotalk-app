@@ -881,7 +881,7 @@ if (!document.createElement('canvas').getContext) {
     var W = 10;
     var H = 10;
     // Divide the shape into chunks if it's too long because IE has a limit
-    // somewhere for how long a VML shape can be. This simple division does
+    // somewhere for how long a VML shape can be. This admin division does
     // not work with fills, only strokes, unfortunately.
     var chunkSize = 5000;
 
@@ -939,11 +939,11 @@ if (!document.createElement('canvas').getContext) {
                          mr(p.xEnd), ',', mr(p.yEnd));
             break;
         }
-  
-  
+
+
         // TODO: Following is broken for curves due to
         //       move to proper paths.
-  
+
         // Figure out dimensions so we can do gradient fills
         // properly
         if (p) {
@@ -962,15 +962,15 @@ if (!document.createElement('canvas').getContext) {
         }
       }
       lineStr.push(' ">');
-  
+
       if (!aFill) {
         appendStroke(this, lineStr);
       } else {
         appendFill(this, lineStr, min, max);
       }
-  
+
       lineStr.push('</g_vml_:shape>');
-  
+
       this.element_.insertAdjacentHTML('beforeEnd', lineStr.join(''));
     }
   };

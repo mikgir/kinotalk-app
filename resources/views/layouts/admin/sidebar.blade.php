@@ -643,7 +643,7 @@
                         <ul class="sidebar-submenu">
                             <li><a href="{{ route('summernote')}}">Summer Note</a></li>
                             <li><a href="{{ route('ckeditor')}}">CK editor</a></li>
-                            <li><a href="{{ route('simple-mde')}}">MDE editor</a></li>
+                            <li><a href="{{ route('admin-mde')}}">MDE editor</a></li>
                             <li><a href="{{ route('ace-code-editor')}}">ACE code editor </a></li>
                         </ul>
                     </li>

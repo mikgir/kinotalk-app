@@ -20,4 +20,4 @@
 <!-- Responsive css-->
 <link rel="stylesheet" type="text/css" href="<?php echo e(asset('assets/css/responsive.css')); ?>">
 
-<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/simple/css.blade.php ENDPATH**/ ?>
+<?php /**PATH /home/webiots/Desktop/cuba-laravel/template/resources/views/layouts/admin/css.blade.php ENDPATH**/ ?>
