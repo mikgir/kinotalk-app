@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Livewire\Front\MainPage;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Session;
@@ -13,6 +14,7 @@ use Illuminate\Support\Facades\Session;
 Route::get('/', function () {
     return view('comingsoon.comingsoon-bg-video');
 });
+Route::get('/main', MainPage::class);
 
 //Route::get('/dashboard', function () {
 //    return view('dashboard');
