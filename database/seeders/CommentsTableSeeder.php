@@ -43,7 +43,7 @@ class CommentsTableSeeder extends Seeder
     {
         return [
             'parent_id' => $parent_id,
-            'user_id' => rand(2, 5),
+            'user_id' => rand(1, 5),
             'article_id' => $article_id,
             'body' => $body,
             'status' => $this->getStatus(),

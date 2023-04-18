@@ -11,17 +11,20 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+    public function run(): void
     {
         // \App\Models\User::factory(10)->create();
-        $this->call(UsersTableSeeder::class);
-        $this->call(LikeTypesTableSeeder::class);
-        $this->call(TagsTableSeeder::class);
-        $this->call(NewsCategoriesTableSeeder::class);
-        $this->call(ArticlesTableSeeder::class);
-        $this->call(CommentsTableSeeder::class);
-        $this->call(ArticleTagsTableSeeder::class);
-        $this->call(ArticleLikesTableSeeder::class);
-        $this->call(CommentLikesTableSeeder::class);
+        $this->call([
+            PermissionsSeeder::class,
+            UsersTableSeeder::class,
+            LikeTypesTableSeeder::class,
+            TagsTableSeeder::class,
+            NewsCategoriesTableSeeder::class,
+            ArticlesTableSeeder::class,
+            CommentsTableSeeder::class,
+            ArticleTagsTableSeeder::class,
+            ArticleLikesTableSeeder::class,
+            CommentLikesTableSeeder::class,
+        ]);
     }
 }
