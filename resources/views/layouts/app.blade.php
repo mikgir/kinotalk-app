@@ -15,47 +15,7 @@
 {{--        @vite(['resources/css/app.css', 'resources/js/app.js'])--}}
         @yield('style')
     </head>
-    <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="{{route('home')}}">KINOTALK</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            {{ Auth::user()->name }}
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                            <li>
-                                <x-dropdown-link :href="route('profile.edit')">
-                                    {{ __('Profile') }}
-                                </x-dropdown-link>
-                            </li>
-                            <li>
-                                <x-dropdown-link :href="route('admin.index')">
-                                    {{ __('Admin') }}
-                                </x-dropdown-link>
-                            </li>
-                            <li>
-                                <form method="POST" action="{{ route('logout') }}">
-                                    @csrf
-
-                                    <x-dropdown-link :href="route('logout')"
-                                                     onclick="event.preventDefault();
-                                                this.closest('form').submit();">
-                                        {{ __('Log Out') }}
-                                    </x-dropdown-link>
-                                </form>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <body @if(Route::current()->getName() == 'admin') onload="startTime()" @elseif (Route::current()->getName() == 'button-builder') class="button-builder" @endif>
 
         @yield('header')
 {{--        <div class="min-h-screen bg-gray-100 dark:bg-gray-900">--}}

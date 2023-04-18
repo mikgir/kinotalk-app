@@ -14,6 +14,7 @@ class AdminIndex extends Component
      */
     public function render(): Factory|View|Application
     {
-        return view('livewire.admin.admin-index');
+        return view('livewire.admin.admin-index')
+            ->layout('layouts.admin.master');
     }
 }
