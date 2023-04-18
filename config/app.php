@@ -177,6 +177,8 @@ return [
 
         Spatie\Permission\PermissionServiceProvider::class,
 
+        \Reliese\Coders\CodersServiceProvider::class,
+
     ],
 
     /*
