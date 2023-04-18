@@ -7,14 +7,15 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * Class CommentLike
- * 
+ *
  * @property int $user_id
  * @property int $comment_id
  * @property int $like_type_id
- * 
+ *
  * @property Comment $comment
  * @property LikeType $like_type
  * @property User $user
@@ -33,18 +34,18 @@ class CommentLike extends Model
 		'like_type_id' => 'int'
 	];
 
-	public function comment()
-	{
+	public function comment(): BelongsTo
+    {
 		return $this->belongsTo(Comment::class);
 	}
 
-	public function like_type()
-	{
+	public function like_type(): BelongsTo
+    {
 		return $this->belongsTo(LikeType::class);
 	}
 
-	public function user()
-	{
+	public function user(): BelongsTo
+    {
 		return $this->belongsTo(User::class);
 	}
 }

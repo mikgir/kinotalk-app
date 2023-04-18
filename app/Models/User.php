@@ -6,14 +6,22 @@
 
 namespace App\Models;
 
-use Carbon\Carbon;
+
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Permission\Traits\HasRoles;
+use Laravel\Sanctum\HasApiTokens;
+use Carbon\Carbon;
+
 
 /**
  * Class User
- * 
+ *
  * @property int $id
  * @property string $name
  * @property string $email
@@ -23,7 +31,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * 
+ *
  * @property Collection|ArticleLike[] $article_likes
  * @property Collection|Article[] $articles
  * @property Collection|CommentLike[] $comment_likes
@@ -32,8 +40,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *
  * @package App\Models
  */
-class User extends Model
+class User extends Authenticatable
 {
+    use HasApiTokens, HasFactory, Notifiable;
+    use HasRoles;
 	use SoftDeletes;
 	protected $table = 'users';
 
@@ -54,28 +64,28 @@ class User extends Model
 		'remember_token'
 	];
 
-	public function article_likes()
-	{
+	public function article_likes(): HasMany
+    {
 		return $this->hasMany(ArticleLike::class);
 	}
 
-	public function articles()
-	{
+	public function articles(): HasMany
+    {
 		return $this->hasMany(Article::class);
 	}
 
-	public function comment_likes()
-	{
+	public function comment_likes(): HasMany
+    {
 		return $this->hasMany(CommentLike::class);
 	}
 
-	public function comments()
-	{
+	public function comments(): HasMany
+    {
 		return $this->hasMany(Comment::class);
 	}
 
-	public function roles()
-	{
-		return $this->belongsToMany(Role::class, 'user_roles');
-	}
+//	public function roles(): BelongsToMany
+//    {
+//		return $this->belongsToMany(Role::class, 'user_roles');
+//	}
 }
