@@ -29,7 +29,7 @@ class ArticlesTableSeeder extends Seeder
             $body = $faker->sentence(rand(50, 100));
 
             $data[] = [
-                'user_id' => rand(2, 5),
+                'user_id' => rand(1, 4),
                 'news_category_id' => rand(1, 5),
                 'title' => $title,
                 'excerpt' => Str::substr($body, 0, 100),
