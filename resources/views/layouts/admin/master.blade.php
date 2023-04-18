@@ -5,7 +5,7 @@
 @endsection
 
 @section('main')
-    {{-- @dd(Route::current()->getName()); --}}
+{{--     @dd(Route::current()->getName());--}}
     <div class="loader-wrapper">
         <div class="loader-index"><span></span></div>
         <svg>
@@ -64,12 +64,12 @@
     @include('layouts.admin.script')
     <!-- Plugin used-->
 
-    {{-- <script type="text/javascript">
-      if ($(".page-wrapper").hasClass("horizontal-wrapper")) {
-            $(".according-menu.other" ).css( "display", "none" );
-            $(".sidebar-submenu" ).css( "display", "block" );
-      }
-    </script> --}}
+{{--     <script type="text/javascript">--}}
+{{--      if ($(".page-wrapper").hasClass("horizontal-wrapper")) {--}}
+{{--            $(".according-menu.other" ).css( "display", "none" );--}}
+{{--            $(".sidebar-submenu" ).css( "display", "block" );--}}
+{{--      }--}}
+{{--    </script> --}}
 @endsection
 
 

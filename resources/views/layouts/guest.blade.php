@@ -18,10 +18,11 @@
     <body>
 
     @include('layouts.temp_navigation')
+       @yield('header')
        @yield('main')
 
 
-
-    @yield('script')
+        @yield('footer')
+        @yield('script')
     </body>
 </html>

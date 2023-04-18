@@ -12,16 +12,16 @@ class Localization
     /**
      * Handle an incoming request.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param Request $request
      * @param  \Closure  $next
-     * @return mixed
+     * @return void
      */
 
     public function __construct(Application $app, Request $request) {
         $this->app = $app;
         $this->request = $request;
     }
-    
+
     public function handle(Request $request, Closure $next)
     {
         $this->app->setLocale(session()->get('locale') ?? 'en');
