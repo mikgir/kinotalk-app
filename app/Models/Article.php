@@ -9,11 +9,14 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class Article
- * 
+ *
  * @property int $id
  * @property int $user_id
  * @property int $news_category_id
@@ -30,7 +33,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * 
+ *
  * @property NewsCategory $news_category
  * @property User $user
  * @property Collection|ArticleLike[] $article_likes
@@ -65,28 +68,28 @@ class Article extends Model
 		'featured'
 	];
 
-	public function news_category()
-	{
+	public function news_category(): BelongsTo
+    {
 		return $this->belongsTo(NewsCategory::class);
 	}
 
-	public function user()
-	{
+	public function user(): BelongsTo
+    {
 		return $this->belongsTo(User::class);
 	}
 
-	public function article_likes()
-	{
+	public function article_likes(): HasMany
+    {
 		return $this->hasMany(ArticleLike::class);
 	}
 
-	public function tags()
-	{
+	public function tags(): BelongsToMany
+    {
 		return $this->belongsToMany(Tag::class, 'article_tags');
 	}
 
-	public function comments()
-	{
+	public function comments(): HasMany
+    {
 		return $this->hasMany(Comment::class);
 	}
 }

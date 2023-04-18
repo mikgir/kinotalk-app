@@ -9,10 +9,12 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * Class Comment
- * 
+ *
  * @property int $id
  * @property int|null $parent_id
  * @property int $user_id
@@ -22,7 +24,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property bool $featured
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * 
+ *
  * @property Article $article
  * @property Comment|null $comment
  * @property User $user
@@ -51,28 +53,28 @@ class Comment extends Model
 		'featured'
 	];
 
-	public function article()
-	{
+	public function article(): BelongsTo
+    {
 		return $this->belongsTo(Article::class);
 	}
 
-	public function comment()
-	{
+	public function comment(): BelongsTo
+    {
 		return $this->belongsTo(Comment::class, 'parent_id');
 	}
 
-	public function user()
-	{
+	public function user(): BelongsTo
+    {
 		return $this->belongsTo(User::class);
 	}
 
-	public function comment_likes()
-	{
+	public function comment_likes(): HasMany
+    {
 		return $this->hasMany(CommentLike::class);
 	}
 
-	public function comments()
-	{
+	public function comments(): HasMany
+    {
 		return $this->hasMany(Comment::class, 'parent_id');
 	}
 }

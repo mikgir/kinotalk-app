@@ -9,11 +9,13 @@ namespace App\Models;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class User
- * 
+ *
  * @property int $id
  * @property string $name
  * @property string $email
@@ -23,7 +25,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $deleted_at
- * 
+ *
  * @property Collection|ArticleLike[] $article_likes
  * @property Collection|Article[] $articles
  * @property Collection|CommentLike[] $comment_likes
@@ -54,28 +56,28 @@ class User extends Model
 		'remember_token'
 	];
 
-	public function article_likes()
-	{
+	public function article_likes(): HasMany
+    {
 		return $this->hasMany(ArticleLike::class);
 	}
 
-	public function articles()
-	{
+	public function articles(): HasMany
+    {
 		return $this->hasMany(Article::class);
 	}
 
-	public function comment_likes()
-	{
+	public function comment_likes(): HasMany
+    {
 		return $this->hasMany(CommentLike::class);
 	}
 
-	public function comments()
-	{
+	public function comments(): HasMany
+    {
 		return $this->hasMany(Comment::class);
 	}
 
-	public function roles()
-	{
+	public function roles(): BelongsToMany
+    {
 		return $this->belongsToMany(Role::class, 'user_roles');
 	}
 }
