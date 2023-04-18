@@ -14,6 +14,11 @@
                                     {{ Auth::user()->name }}
                                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                         <li>
+                                            <x-dropdown-link :href="route('main')">
+                                                {{ __('Main') }}
+                                            </x-dropdown-link>
+                                        </li>
+                                        <li>
                                             <x-dropdown-link :href="route('profile.edit')">
                                                 {{ __('Profile') }}
                                             </x-dropdown-link>

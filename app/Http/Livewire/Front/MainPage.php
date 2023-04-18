@@ -15,6 +15,7 @@ class MainPage extends Component
     public function render(): Factory|View|Application
     {
         return view('livewire.front.main-page')
-            ->layout('layouts.front.master');
+            ->extends('layouts.front.master')
+            ->section('main');
     }
 }
