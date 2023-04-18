@@ -15,22 +15,37 @@ class UsersTableSeeder extends Seeder
      */
     public function run(): void
     {
-        if (User::count() == 0) {
+        $users = $this->getUsers();
+
+        foreach ($users as $user) {
             User::create([
-                'name' => 'Admin',
-                'email' => 'admin@admin.com',
-                'password' => bcrypt('12345678'),
+                'id' => $user['id'],
+                'name' => $user['name'],
+                'email' => $user['email'],
+                'password' => bcrypt($user['password']),
                 'remember_token' => Str::random(60),
             ]);
-
-            for ($i = 1; $i < 5; $i++) {
-                User::create([
-                    'name' => 'User' . $i,
-                    'email' => 'user' . $i . '@admin.com',
-                    'password' => bcrypt('12345678'),
-                    'remember_token' => Str::random(60),
-                ]);
-            }
         }
+
+        User::find(1)->assignRole('super_admin');
+        User::find(2)->assignRole('moderator');
+        User::find(3)->assignRole('author');
+        User::find(4)->assignRole('author');
+        User::find(5)->assignRole('user');
+    }
+
+    private function getUsers(): array
+    {
+        return json_decode($this->getFile(), true);
+    }
+
+    private function getFile(): bool|string
+    {
+        return file_get_contents($this->getPath());
+    }
+
+    private function getPath(): string
+    {
+        return 'database/seeders/json_resources/users.json';
     }
 }
