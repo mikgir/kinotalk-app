@@ -12,7 +12,8 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        // не нужен после установки spatie/laravel-permission
+        // не нужен после установки
+        // spatie/laravel-permission
         Schema::create('user_roles', function (Blueprint $table) {
             $table->bigInteger('user_id')->unsigned()->index();
             $table->bigInteger('role_id')->unsigned()->index();
