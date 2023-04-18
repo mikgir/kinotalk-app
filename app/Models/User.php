@@ -6,12 +6,18 @@
 
 namespace App\Models;
 
-use Carbon\Carbon;
+
+// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\Permission\Traits\HasRoles;
+use Laravel\Sanctum\HasApiTokens;
+use Carbon\Carbon;
+
 
 /**
  * Class User
@@ -34,8 +40,10 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *
  * @package App\Models
  */
-class User extends Model
+class User extends Authenticatable
 {
+    use HasApiTokens, HasFactory, Notifiable;
+    use HasRoles;
 	use SoftDeletes;
 	protected $table = 'users';
 
@@ -76,8 +84,8 @@ class User extends Model
 		return $this->hasMany(Comment::class);
 	}
 
-	public function roles(): BelongsToMany
-    {
-		return $this->belongsToMany(Role::class, 'user_roles');
-	}
+//	public function roles(): BelongsToMany
+//    {
+//		return $this->belongsToMany(Role::class, 'user_roles');
+//	}
 }
