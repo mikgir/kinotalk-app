@@ -28,6 +28,7 @@ class TagsTableSeeder extends Seeder
             $data[] = [
                 'name' => $value,
                 'slug' => Str::slug($value),
+                'normalized' => Str::lower($value),
                 'created_at' => now(),
             ];
         }

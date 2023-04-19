@@ -7,6 +7,8 @@
 namespace App\Models;
 
 use Carbon\Carbon;
+use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentTaggable\Taggable;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -44,6 +46,8 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class Article extends Model
 {
+    use Taggable;
+    use Sluggable;
 	use SoftDeletes;
 	protected $table = 'articles';
 
@@ -83,13 +87,17 @@ class Article extends Model
 		return $this->hasMany(ArticleLike::class);
 	}
 
-	public function tags(): BelongsToMany
-    {
-		return $this->belongsToMany(Tag::class, 'article_tags');
-	}
 
 	public function comments(): HasMany
     {
 		return $this->hasMany(Comment::class);
 	}
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'title'
+            ]
+        ];
+    }
 }

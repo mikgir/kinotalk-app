@@ -22,7 +22,6 @@ class DatabaseSeeder extends Seeder
             NewsCategoriesTableSeeder::class,
             ArticlesTableSeeder::class,
             CommentsTableSeeder::class,
-            ArticleTagsTableSeeder::class,
             ArticleLikesTableSeeder::class,
             CommentLikesTableSeeder::class,
         ]);

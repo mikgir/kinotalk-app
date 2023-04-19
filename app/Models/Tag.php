@@ -7,10 +7,11 @@
 namespace App\Models;
 
 use Carbon\Carbon;
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-
+use Cviebrock\EloquentTaggable\Models\Tag as ArticleTag;
 /**
  * Class Tag
  *
@@ -24,8 +25,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
  *
  * @package App\Models
  */
-class Tag extends Model
+class Tag extends ArticleTag
 {
+    use Sluggable;
+
 	protected $table = 'tags';
 
 	protected $fillable = [
@@ -33,8 +36,13 @@ class Tag extends Model
 		'slug'
 	];
 
-	public function articles(): BelongsToMany
+
+    public function sluggable(): array
     {
-		return $this->belongsToMany(Article::class, 'article_tags');
-	}
+        return [
+            'slug' => [
+                'source' => 'name'
+            ]
+        ];
+    }
 }
