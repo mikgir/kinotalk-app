@@ -15,33 +15,33 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * Class Permission
  *
- * @property int $id
- * @property string $name
- * @property string $guard_name
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
+ * @property int                             $id
+ * @property string                          $name
+ * @property string                          $guard_name
+ * @property Carbon|null                     $created_at
+ * @property Carbon|null                     $updated_at
  *
  * @property Collection|ModelHasPermission[] $model_has_permissions
- * @property Collection|Role[] $roles
+ * @property Collection|Role[]               $roles
  *
  * @package App\Models
  */
 class Permission extends Model
 {
-	protected $table = 'permissions';
+    protected $table = 'permissions';
 
-	protected $fillable = [
-		'name',
-		'guard_name'
-	];
+    protected $fillable = [
+        'name',
+        'guard_name'
+    ];
 
-	public function model_has_permissions(): HasMany
+    public function model_has_permissions(): HasMany
     {
-		return $this->hasMany(ModelHasPermission::class);
-	}
+        return $this->hasMany(ModelHasPermission::class);
+    }
 
-	public function roles(): BelongsToMany
+    public function roles(): BelongsToMany
     {
-		return $this->belongsToMany(Role::class, 'role_has_permissions');
-	}
+        return $this->belongsToMany(Role::class, 'role_has_permissions');
+    }
 }

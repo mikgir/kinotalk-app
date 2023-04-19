@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Artisan;
 
 class DatabaseSeeder extends Seeder
 {
@@ -13,11 +14,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        Artisan::call('love:reaction-type-add --default');
         $this->call([
             PermissionsSeeder::class,
             UsersTableSeeder::class,
-            LikeTypesTableSeeder::class,
             TagsTableSeeder::class,
             NewsCategoriesTableSeeder::class,
             ArticlesTableSeeder::class,
