@@ -27,7 +27,7 @@
     </div>
     <!-- Loader ends-->
     <!-- page-wrapper Start-->
-    @include('layouts.temp_navigation')
+{{--    @include('layouts.temp_navigation')--}}
     @yield('content')
     <!-- latest jquery-->
     @include('layouts.comingsoon.script')

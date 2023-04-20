@@ -5,9 +5,17 @@ namespace App\Repositories;
 use App\Contracts\Repositories\ArticleRepositoryInterface;
 use App\Models\Article;
 use App\Models\NewsCategory;
+use Illuminate\Database\Eloquent\Collection;
 
 class ArticleRepository implements ArticleRepositoryInterface
 {
+    /**
+     * @return Collection
+     */
+    public function all(): Collection
+    {
+        return Article::all();
+    }
     public function oneById(Article $article): object
     {
         return Article::where('id', '=', $article->id)->get();
