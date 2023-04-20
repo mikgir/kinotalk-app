@@ -7,6 +7,7 @@
 namespace App\Models;
 
 use Carbon\Carbon;
+use Cviebrock\EloquentSluggable\Sluggable;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -15,13 +16,13 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Class NewsCategory
  *
- * @property int $id
- * @property int $order
- * @property string $name
- * @property string $slug
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $deleted_at
+ * @property int                  $id
+ * @property int                  $order
+ * @property string               $name
+ * @property string               $slug
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $deleted_at
  *
  * @property Collection|Article[] $articles
  *
@@ -29,21 +30,32 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  */
 class NewsCategory extends Model
 {
-	use SoftDeletes;
-	protected $table = 'news_categories';
+    use Sluggable;
+    use SoftDeletes;
 
-	protected $casts = [
-		'order' => 'int'
-	];
+    protected $table = 'news_categories';
 
-	protected $fillable = [
-		'order',
-		'name',
-		'slug'
-	];
+    protected $casts = [
+        'order' => 'int'
+    ];
 
-	public function articles(): HasMany
+    protected $fillable = [
+        'order',
+        'name',
+        'slug'
+    ];
+
+    public function articles(): HasMany
     {
-		return $this->hasMany(Article::class);
-	}
+        return $this->hasMany(Article::class);
+    }
+
+    public function sluggable(): array
+    {
+        return [
+            'slug' => [
+                'source' => 'name'
+            ]
+        ];
+    }
 }

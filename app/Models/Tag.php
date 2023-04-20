@@ -7,34 +7,41 @@
 namespace App\Models;
 
 use Carbon\Carbon;
+use Cviebrock\EloquentSluggable\Sluggable;
+use Cviebrock\EloquentTaggable\Models\Tag as ArticleTag;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 /**
  * Class Tag
  *
- * @property int $id
- * @property string $name
- * @property string $slug
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
+ * @property int                  $id
+ * @property string               $name
+ * @property string               $slug
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
  *
  * @property Collection|Article[] $articles
  *
  * @package App\Models
  */
-class Tag extends Model
+class Tag extends ArticleTag
 {
-	protected $table = 'tags';
+    use Sluggable;
 
-	protected $fillable = [
-		'name',
-		'slug'
-	];
+    protected $table = 'tags';
 
-	public function articles(): BelongsToMany
+    protected $fillable = [
+        'name',
+        'slug'
+    ];
+
+
+    public function sluggable(): array
     {
-		return $this->belongsToMany(Article::class, 'article_tags');
-	}
+        return [
+            'slug' => [
+                'source' => 'name'
+            ]
+        ];
+    }
 }

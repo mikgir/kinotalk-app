@@ -31,8 +31,11 @@ class CommentsTableSeeder extends Seeder
             $data[] = $this->getComment($article_id, $faker->sentence(rand(1, 20)), null);
 
             if ($hasParentProbability > 8) {
-                $data[] = $this->getComment($article_id, $faker->sentence(rand(1, 20)),
-                    $i + 1 + $hasParentCount++);
+                $data[] = $this->getComment(
+                    $article_id,
+                    $faker->sentence(rand(1, 20)),
+                    $i + 1 + $hasParentCount++
+                );
             }
         }
 
@@ -56,9 +59,13 @@ class CommentsTableSeeder extends Seeder
     {
         $status_id = rand(1, 10);
 
-        if ($status_id == 1) $status = 'DRAFT';
-        elseif ($status_id == 2) $status = 'PENDING';
-        else $status = 'PUBLISHED';
+        if ($status_id == 1) {
+            $status = 'DRAFT';
+        } elseif ($status_id == 2) {
+            $status = 'PENDING';
+        } else {
+            $status = 'PUBLISHED';
+        }
 
         return $status;
     }

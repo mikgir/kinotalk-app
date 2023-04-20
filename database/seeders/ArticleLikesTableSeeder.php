@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Article;
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Artisan;
 
 class ArticleLikesTableSeeder extends Seeder
 {
@@ -14,29 +16,22 @@ class ArticleLikesTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('article_likes')->insert($this->getData());
-    }
+        Artisan::call('love:register-reactants', ['--model' => "App\Models\Article"]);
 
-    private function getData(): array
-    {
-        $data = [];
+        $react = ['Like', 'Dislike'];
+        $k = array_rand($react);
+        $v = $react[$k];
 
-        for ($i = 0; $i < 20; $i++) {
-            for ($j = 1; $j < 5; $j++) {
-                for ($k = 0; $k < 4; $k++) {
-                    $willGetLikeProbability = rand(1, 10);
-
-                    if ($willGetLikeProbability > 5) {
-                        $data[] = [
-                            'article_id' => $i + 1,
-                            'user_id' => $j + 1,
-                            'like_type_id' => $k + 1,
-                        ];
-                    }
-                }
+        for ($i = 0; $i < 15; $i++) {
+            $user = User::find(rand(1, 5));
+            $reacterFacade = $user->viaLoveReacter();
+            $article = Article::find(rand(1, 20));
+            $reactantFacade = $article->viaLoveReactant();
+            if (!$reactantFacade->isReactedBy($user, $v)) {
+                $reacterFacade->reactTo($article, $v);
             }
         }
-
-        return $data;
     }
+
+
 }

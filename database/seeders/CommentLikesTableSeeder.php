@@ -2,8 +2,10 @@
 
 namespace Database\Seeders;
 
+use App\Models\Comment;
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Artisan;
 
 class CommentLikesTableSeeder extends Seeder
 {
@@ -14,32 +16,20 @@ class CommentLikesTableSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('comment_likes')->insert($this->getData());
-    }
+        Artisan::call('love:register-reactants', ['--model' => "App\Models\Comment"]);
 
-    private function getData(): array
-    {
-        $data = [];
+        $react = ['Like', 'Dislike'];
+        $k = array_rand($react);
+        $v = $react[$k];
 
-        for ($i = 0; $i < 50; $i++) {
-            for ($j = 1; $j < 5; $j++) {
-                $hasNoLike = true;
-
-                for ($k = 0; $k < 2; $k++) {
-                    $willGetLikeProbability = rand(1, 10);
-
-                    if ($hasNoLike && $willGetLikeProbability > 5) {
-                        $data[] = [
-                            'comment_id' => $i + 1,
-                            'user_id' => $j + 1,
-                            'like_type_id' => $k + 1,
-                        ];
-                        $hasNoLike = false;
-                    }
-                }
+        for ($i = 0; $i < 30; $i++) {
+            $user = User::find(rand(1, 5));
+            $reacterFacade = $user->viaLoveReacter();
+            $comment = Comment::find(rand(1, 56));
+            $reactantFacade = $comment->viaLoveReactant();
+            if (!$reactantFacade->isReactedBy($user, $v)) {
+                $reacterFacade->reactTo($comment, $v);
             }
         }
-
-        return $data;
     }
 }
