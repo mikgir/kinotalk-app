@@ -22,6 +22,21 @@ class PermissionsSeeder extends Seeder
         $this->data = $this->getRoles();
     }
 
+    private function getRoles(): array
+    {
+        return json_decode($this->getFile(), true);
+    }
+
+    private function getFile(): bool|string
+    {
+        return file_get_contents($this->getPath());
+    }
+
+    private function getPath(): string
+    {
+        return database_path("seeders/json_resources/permission_roles.json");
+    }
+
     private function seedRoles(): void
     {
         // Reset cached roles and permissions
@@ -51,20 +66,5 @@ class PermissionsSeeder extends Seeder
 
             $role->givePermissionTo($builtPerms);
         }
-    }
-
-    private function getRoles(): array
-    {
-        return json_decode($this->getFile(), true);
-    }
-
-    private function getFile(): bool|string
-    {
-        return file_get_contents($this->getPath());
-    }
-
-    private function getPath(): string
-    {
-        return database_path("seeders/json_resources/permission_roles.json");
     }
 }

@@ -1,6 +1,6 @@
 "use strict";
 var morris_chart = {
-    init: function() {
+    init: function () {
         Morris.Area({
             element: 'graph123',
             behaveLikeLine: true,
@@ -28,7 +28,7 @@ var morris_chart = {
             xkey: 'x',
             ykeys: ['y', 'z'],
             labels: ['Y', 'Z'],
-            lineColors: [CubaAdminConfig.secondary , CubaAdminConfig.primary ],
+            lineColors: [CubaAdminConfig.secondary, CubaAdminConfig.primary],
         }), Morris.Line({
             element: "morris-line-chart",
             data: [{
@@ -68,7 +68,7 @@ var morris_chart = {
                 }],
             xkey: "y",
             ykeys: ["a", "b"],
-            lineColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+            lineColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
             labels: ["Series A", "Series B"]
         }), Morris.Bar({
             element: "morris-admin-bar-chart",
@@ -98,7 +98,7 @@ var morris_chart = {
                 }],
             xkey: "x",
             ykeys: ["y", "z", "a"],
-            barColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ,"#51bb25"],
+            barColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, "#51bb25"],
             labels: ["Y", "Z", "A"]
         }), Morris.Bar({
             element: "bar-line-chart-morris",
@@ -142,7 +142,7 @@ var morris_chart = {
             ykeys: ["y"],
             labels: ["Y"],
             barColors: [CubaAdminConfig.primary]
-        }), $(function() {
+        }), $(function () {
             var b = [{
                 period: "2012-10-01",
                 licensed: 5000,
@@ -177,13 +177,13 @@ var morris_chart = {
             Morris.Bar({
                 element: 'x-lable-morris-chart',
                 data: b,
-                barColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+                barColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
                 xkey: "period",
                 ykeys: ["licensed", "sorned"],
                 labels: ["Licensed", "SORN"],
                 xLabelAngle: 60
             })
-        }), $(function() {
+        }), $(function () {
             for (var c = [], d = 0; d <= 360; d += 10) c.push({
                 x: d,
                 y: 1.5 + 1.5 * Math.sin(Math.PI * d / 180).toFixed(4)
@@ -196,13 +196,13 @@ var morris_chart = {
                 labels: ["sin(x)"],
                 parseTime: !1,
                 lineColors: [CubaAdminConfig.primary],
-                hoverCallback: function(a, b, c, d) {
+                hoverCallback: function (a, b, c, d) {
                     return c.replace("sin(x)", "1.5 + 1.5 sin(" + d.x + ")")
                 },
                 xLabelMargin: 10,
                 integerYLabels: !0
             })
-        }), $(function() {
+        }), $(function () {
             var b = [{
                 period: "2012-10-30",
                 licensed: 2000,
@@ -257,12 +257,12 @@ var morris_chart = {
                 element: 'x-Labels-Diagonally-morris-chart',
                 data: b,
                 xkey: "period",
-                lineColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary],
+                lineColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
                 ykeys: ["licensed", "sorned"],
                 labels: ["Licensed", "SORN"],
                 xLabelAngle: 60
             })
-        }), $(function() {
+        }), $(function () {
             Morris.Donut({
                 element: 'donut-color-chart-morris',
                 data: [{
@@ -283,15 +283,15 @@ var morris_chart = {
                     }],
                 backgroundColor: "rgba(68, 102, 242, 0.5)",
                 labelColor: "#999999",
-                colors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ,"#f8d62b" ,"#51bb25" ,"rgba(248, 214, 43, 1)", "#51bb25" ,"#f8d62b"],
-                formatter: function(a) {
+                colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, "#f8d62b", "#51bb25", "rgba(248, 214, 43, 1)", "#51bb25", "#f8d62b"],
+                formatter: function (a) {
                     return a + "%"
                 }
             });
         }),
-            $(function() {
+            $(function () {
                 var e = 0,
-                    f = function(a) {
+                    f = function (a) {
                         for (var b = [], c = 0; c <= 360; c += 10) {
                             var d = (a + c) % 360;
                             b.push({
@@ -303,7 +303,7 @@ var morris_chart = {
                         return b
                     },
                     g = Morris.Line({
-                        element:'updating-data-morris-chart',
+                        element: 'updating-data-morris-chart',
                         data: f(0),
                         xkey: "x",
                         ykeys: ["y", "z"],
@@ -312,13 +312,13 @@ var morris_chart = {
                         ymin: -1,
                         ymax: 1,
                         hideHover: !0,
-                        lineColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ],
+                        lineColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary],
                     }),
-                    h = function() {
+                    h = function () {
                         e++, g.setData(f(5 * e)), $(".reloadStatus").text(e + " reloads")
                     };
                 setInterval(h, 100)
-            }), $(function() {
+            }), $(function () {
             Morris.Bar({
                 element: 'stacked-bar-chart',
                 data: [{
@@ -373,13 +373,13 @@ var morris_chart = {
                 xkey: "x",
                 ykeys: ["y", "z", "a"],
                 labels: ["A", "Y", "Z"],
-                barColors: [CubaAdminConfig.primary , CubaAdminConfig.secondary ,"#51bb25" ,"#f8d62b" ,"#a927f9", CubaAdminConfig.secondary , CubaAdminConfig.primary ],
+                barColors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, "#51bb25", "#f8d62b", "#a927f9", CubaAdminConfig.secondary, CubaAdminConfig.primary],
                 stacked: !0
             });
         });
     }
 };
-(function($) {
+(function ($) {
     "use strict";
     morris_chart.init()
 })(jQuery);

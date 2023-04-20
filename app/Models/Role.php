@@ -15,39 +15,39 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 /**
  * Class Role
  *
- * @property int $id
- * @property string $name
- * @property string $guard_name
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
+ * @property int                       $id
+ * @property string                    $name
+ * @property string                    $guard_name
+ * @property Carbon|null               $created_at
+ * @property Carbon|null               $updated_at
  *
  * @property Collection|ModelHasRole[] $model_has_roles
- * @property Collection|Permission[] $permissions
- * @property Collection|User[] $users
+ * @property Collection|Permission[]   $permissions
+ * @property Collection|User[]         $users
  *
  * @package App\Models
  */
 class Role extends Model
 {
-	protected $table = 'roles';
+    protected $table = 'roles';
 
-	protected $fillable = [
-		'name',
-		'guard_name'
-	];
+    protected $fillable = [
+        'name',
+        'guard_name'
+    ];
 
-	public function model_has_roles(): HasMany
+    public function model_has_roles(): HasMany
     {
-		return $this->hasMany(ModelHasRole::class);
-	}
+        return $this->hasMany(ModelHasRole::class);
+    }
 
-	public function permissions(): BelongsToMany
+    public function permissions(): BelongsToMany
     {
-		return $this->belongsToMany(Permission::class, 'role_has_permissions');
-	}
+        return $this->belongsToMany(Permission::class, 'role_has_permissions');
+    }
 
-	public function users(): BelongsToMany
+    public function users(): BelongsToMany
     {
-		return $this->belongsToMany(User::class, 'user_roles');
-	}
+        return $this->belongsToMany(User::class, 'user_roles');
+    }
 }
