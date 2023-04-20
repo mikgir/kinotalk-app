@@ -64,6 +64,10 @@ Route::get('/category/{newsCategory}/articles', [Article::class, 'getByNewsCateg
     ->where('newsCategory', '\d+')
     ->name('category.articles');
 
+Route::get('/articles', [Article::class, 'getById'])
+    ->where('article', '\d+')
+    ->name('article');
+
 Route::get('/articles/{article}', [Article::class, 'getById'])
     ->where('article', '\d+')
     ->name('article');
