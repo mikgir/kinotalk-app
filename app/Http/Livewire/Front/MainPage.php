@@ -16,6 +16,6 @@ class MainPage extends Component
     {
         return view('livewire.front.main-page')
             ->extends('layouts.front.master')
-            ->section('main');
+            ->section('content');
     }
 }
