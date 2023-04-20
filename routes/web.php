@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Admin\AdminIndex;
+use App\Http\Livewire\Front\Articles;
 use App\Http\Livewire\Front\MainPage;
 use App\Http\Livewire\Front\NewsCategory;
 use App\Http\Livewire\Front\Article;
@@ -16,6 +17,7 @@ Route::get('/', function () {
     return view('comingsoon.comingsoon-bg-video');
 });
 Route::get('/main', MainPage::class)->name('main');
+Route::get('/articles', Articles::class)->name('articles');
 
 
 Route::middleware('auth')->group(function () {
@@ -64,11 +66,11 @@ Route::get('/category/{newsCategory}/articles', [Article::class, 'getByNewsCateg
     ->where('newsCategory', '\d+')
     ->name('category.articles');
 
-Route::get('/articles', [Article::class, 'getById'])
+Route::get('/article', [Article::class, 'getById'])
     ->where('article', '\d+')
     ->name('article');
 
-Route::get('/articles/{article}', [Article::class, 'getById'])
+Route::get('/article/{article}', [Article::class, 'getById'])
     ->where('article', '\d+')
     ->name('article');
 
