@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Article;
 use Faker\Factory;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -17,6 +18,12 @@ class ArticlesTableSeeder extends Seeder
     public function run(): void
     {
         DB::table('articles')->insert($this->getData());
+
+        $articles = Article::all();
+
+        foreach ($articles as $article) {
+            $article->tagById($this->array_fill_rand(2, 1, 10));
+        }
     }
 
     private function getData(): array
@@ -49,10 +56,34 @@ class ArticlesTableSeeder extends Seeder
     {
         $status_id = rand(1, 10);
 
-        if ($status_id == 1) $status = 'DRAFT';
-        elseif ($status_id == 2) $status = 'PENDING';
-        else $status = 'PUBLISHED';
+        if ($status_id == 1) {
+            $status = 'DRAFT';
+        } elseif ($status_id == 2) {
+            $status = 'PENDING';
+        } else {
+            $status = 'PUBLISHED';
+        }
 
         return $status;
+    }
+
+    function array_fill_rand($limit, $min = false, $max = false)
+    {
+        $limit = (int)$limit;
+        $array = array();
+
+        if ($min !== false && $max !== false) {
+            $min = (int)$min;
+            $max = (int)$max;
+            for ($i = 0; $i < $limit; $i++) {
+                $array[$i] = rand($min, $max);
+            }
+        } else {
+            for ($i = 0; $i < $limit; $i++) {
+                $array[$i] = rand();
+            }
+        }
+
+        return $array;
     }
 }

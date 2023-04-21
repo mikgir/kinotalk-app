@@ -21,13 +21,24 @@ class TagsTableSeeder extends Seeder
     private function getData(): array
     {
         $data = [];
-        $arr = ['Сериал', 'Оскар', 'Фильм', 'Знаменитости', 'Автор',
-            'Книга', 'Режиссёр', 'Культура', 'Голливуд', 'Искусство'];
+        $arr = [
+            'Сериал',
+            'Оскар',
+            'Фильм',
+            'Знаменитости',
+            'Автор',
+            'Книга',
+            'Режиссёр',
+            'Культура',
+            'Голливуд',
+            'Искусство'
+        ];
 
         foreach ($arr as $value) {
             $data[] = [
                 'name' => $value,
                 'slug' => Str::slug($value),
+                'normalized' => Str::lower($value),
                 'created_at' => now(),
             ];
         }

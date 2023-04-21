@@ -1,4 +1,3 @@
-
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
 * or more contributor license agreements.  See the NOTICE file
@@ -98,14 +97,15 @@
     // It will AFFECT interaction in the automatic testing.
     if (typeof MutationObserver !== 'undefined') {
         // Must be set as soon as possible(before chart is created)
-        var observer = new MutationObserver(function() {
+        var observer = new MutationObserver(function () {
             if (document.body) {
                 document.body.style.cssText = 'overflow:overlay!important';
                 observer.disconnect();
             }
         });
         observer.observe(document.documentElement, {childList: true});
-    };
+    }
+    ;
 
     // It is not a good solution.
     // Do not need it any more:

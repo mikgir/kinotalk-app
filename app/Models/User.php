@@ -8,81 +8,85 @@ namespace App\Models;
 
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
+use Carbon\Carbon;
+use Cog\Contracts\Love\Reacterable\Models\Reacterable as ReacterableInterface;
+use Cog\Laravel\Love\Reacterable\Models\Traits\Reacterable;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Permission\Traits\HasRoles;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
-use Carbon\Carbon;
+use Spatie\Permission\Traits\HasRoles;
 
 
 /**
  * Class User
  *
- * @property int $id
- * @property string $name
- * @property string $email
- * @property Carbon|null $email_verified_at
- * @property string $password
- * @property string|null $remember_token
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $deleted_at
+ * @property int                      $id
+ * @property string                   $name
+ * @property string                   $email
+ * @property Carbon|null              $email_verified_at
+ * @property string                   $password
+ * @property string|null              $remember_token
+ * @property Carbon|null              $created_at
+ * @property Carbon|null              $updated_at
+ * @property string|null              $deleted_at
  *
  * @property Collection|ArticleLike[] $article_likes
- * @property Collection|Article[] $articles
+ * @property Collection|Article[]     $articles
  * @property Collection|CommentLike[] $comment_likes
- * @property Collection|Comment[] $comments
- * @property Collection|Role[] $roles
+ * @property Collection|Comment[]     $comments
+ * @property Collection|Role[]        $roles
  *
  * @package App\Models
  */
-class User extends Authenticatable
+class User extends Authenticatable implements ReacterableInterface
 {
     use HasApiTokens, HasFactory, Notifiable;
     use HasRoles;
-	use SoftDeletes;
-	protected $table = 'users';
+    use SoftDeletes;
+    use Reacterable;
 
-	protected $casts = [
-		'email_verified_at' => 'datetime'
-	];
+    protected $table = 'users';
 
-	protected $hidden = [
-		'password',
-		'remember_token'
-	];
+    protected $casts = [
+        'email_verified_at' => 'datetime'
+    ];
 
-	protected $fillable = [
-		'name',
-		'email',
-		'email_verified_at',
-		'password',
-		'remember_token'
-	];
+    protected $hidden = [
+        'password',
+        'remember_token'
+    ];
 
-	public function article_likes(): HasMany
+    protected $fillable = [
+        'name',
+        'email',
+        'email_verified_at',
+        'password',
+        'remember_token'
+    ];
+
+    public function article_likes(): HasMany
     {
-		return $this->hasMany(ArticleLike::class);
-	}
+        return $this->hasMany(ArticleLike::class);
+    }
 
-	public function articles(): HasMany
+    public function articles(): HasMany
     {
-		return $this->hasMany(Article::class);
-	}
+        return $this->hasMany(Article::class);
+    }
 
-	public function comment_likes(): HasMany
+    public function comment_likes(): HasMany
     {
-		return $this->hasMany(CommentLike::class);
-	}
+        return $this->hasMany(CommentLike::class);
+    }
 
-	public function comments(): HasMany
+    public function comments(): HasMany
     {
-		return $this->hasMany(Comment::class);
-	}
+        return $this->hasMany(Comment::class);
+    }
 
 //	public function roles(): BelongsToMany
 //    {

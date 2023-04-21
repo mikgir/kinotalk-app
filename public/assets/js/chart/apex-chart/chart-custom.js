@@ -1451,8 +1451,8 @@ var options = {
         zoom: {
             enabled: false
         },
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     dataLabels: {
@@ -1483,7 +1483,7 @@ var options = {
     legend: {
         horizontalAlign: 'left'
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors: [CubaAdminConfig.primary]
 
 }
 
@@ -1499,8 +1499,8 @@ var options1 = {
     chart: {
         height: 350,
         type: 'area',
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     dataLabels: {
@@ -1526,7 +1526,7 @@ var options1 = {
             format: 'dd/MM/yy HH:mm'
         },
     },
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary ]
+    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary]
 }
 
 var chart1 = new ApexCharts(
@@ -1541,8 +1541,8 @@ var options2 = {
     chart: {
         height: 350,
         type: 'bar',
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     plotOptions: {
@@ -1559,7 +1559,7 @@ var options2 = {
     xaxis: {
         categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan', 'United States', 'China', 'Germany'],
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors: [CubaAdminConfig.primary]
 }
 
 var chart2 = new ApexCharts(
@@ -1574,8 +1574,8 @@ var options3 = {
     chart: {
         height: 350,
         type: 'bar',
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     plotOptions: {
@@ -1622,7 +1622,7 @@ var options3 = {
             }
         }
     },
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary , '#51bb25']
+    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25']
 }
 
 var chart3 = new ApexCharts(
@@ -1654,8 +1654,8 @@ var options = {
     chart: {
         height: 350,
         type: 'bubble',
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     dataLabels: {
@@ -1713,7 +1713,7 @@ var options = {
     stroke: {
         width: 0
     },
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary , '#51bb25', '#f8d62b']
+    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25', '#f8d62b']
 }
 
 var chart = new ApexCharts(
@@ -1728,14 +1728,14 @@ var options4 = {
     chart: {
         height: 350,
         type: 'candlestick',
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     plotOptions: {
         candlestick: {
             colors: {
-                upward: CubaAdminConfig.primary ,
+                upward: CubaAdminConfig.primary,
                 downward: CubaAdminConfig.secondary
             }
         }
@@ -1995,7 +1995,7 @@ var options4 = {
             enabled: true
         }
     },
-    colors:['#000000']
+    colors: ['#000000']
 }
 
 var chart4 = new ApexCharts(
@@ -2019,8 +2019,8 @@ var options5 = {
     chart: {
         type: 'line',
         height: 350,
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     stroke: {
@@ -2041,7 +2041,7 @@ var options5 = {
             sizeOffset: 4
         }
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors: [CubaAdminConfig.primary]
 
 }
 
@@ -2136,8 +2136,8 @@ var options6 = {
         height: 350,
         type: 'line',
         id: 'areachart-2',
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     dataLabels: {
@@ -2163,7 +2163,7 @@ var options6 = {
     xaxis: {
         type: 'datetime',
     },
-    colors:[ CubaAdminConfig.primary ]
+    colors: [CubaAdminConfig.primary]
 }
 
 var chart6 = new ApexCharts(
@@ -2179,8 +2179,8 @@ var options7 = {
         height: 350,
         type: 'line',
         stacked: false,
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     stroke: {
@@ -2206,7 +2206,7 @@ var options7 = {
         data: [30, 25, 36, 30, 45, 35, 64, 52, 59, 36, 39]
     }],
     fill: {
-        opacity: [0.85,0.25,1],
+        opacity: [0.85, 0.25, 1],
         gradient: {
             inverseColors: false,
             shade: 'light',
@@ -2216,12 +2216,12 @@ var options7 = {
             stops: [0, 100, 100, 100]
         }
     },
-    labels: ['01/01/2003', '02/01/2003','03/01/2003','04/01/2003','05/01/2003','06/01/2003','07/01/2003','08/01/2003','09/01/2003','10/01/2003','11/01/2003'],
+    labels: ['01/01/2003', '02/01/2003', '03/01/2003', '04/01/2003', '05/01/2003', '06/01/2003', '07/01/2003', '08/01/2003', '09/01/2003', '10/01/2003', '11/01/2003'],
     markers: {
         size: 0
     },
     xaxis: {
-        type:'datetime'
+        type: 'datetime'
     },
     yaxis: {
         min: 0
@@ -2231,8 +2231,8 @@ var options7 = {
         intersect: false,
         y: {
             formatter: function (y) {
-                if(typeof y !== "undefined") {
-                    return  y.toFixed(0) + " views";
+                if (typeof y !== "undefined") {
+                    return y.toFixed(0) + " views";
                 }
                 return y;
 
@@ -2244,7 +2244,7 @@ var options7 = {
             useSeriesColors: true
         },
     },
-    colors:[CubaAdminConfig.secondary , '#51bb25' , CubaAdminConfig.primary ]
+    colors: [CubaAdminConfig.secondary, '#51bb25', CubaAdminConfig.primary]
 }
 
 var chart7 = new ApexCharts(
@@ -2273,7 +2273,7 @@ var options8 = {
             }
         }
     }],
-    colors:[ CubaAdminConfig.primary , CubaAdminConfig.secondary , '#51bb25', '#a927f9', '#f8d62b']
+    colors: [CubaAdminConfig.primary, CubaAdminConfig.secondary, '#51bb25', '#a927f9', '#f8d62b']
 }
 
 var chart8 = new ApexCharts(
@@ -2301,7 +2301,7 @@ var options9 = {
             }
         }
     }],
-    colors:['#dc3545', '#f8d62b', CubaAdminConfig.primary , '#51bb25', '#a927f9']
+    colors: ['#dc3545', '#f8d62b', CubaAdminConfig.primary, '#51bb25', '#a927f9']
 }
 
 var chart9 = new ApexCharts(
@@ -2316,8 +2316,8 @@ var options10 = {
     chart: {
         height: 350,
         type: 'radar',
-        toolbar:{
-          show: false
+        toolbar: {
+            show: false
         }
     },
     series: [{
@@ -2348,7 +2348,7 @@ var options10 = {
     },
     tooltip: {
         y: {
-            formatter: function(val) {
+            formatter: function (val) {
                 return val
             }
         }
@@ -2356,8 +2356,8 @@ var options10 = {
     yaxis: {
         tickAmount: 7,
         labels: {
-            formatter: function(val, i) {
-                if(i % 2 === 0) {
+            formatter: function (val, i) {
+                if (i % 2 === 0) {
                     return val
                 } else {
                     return ''
@@ -2365,7 +2365,7 @@ var options10 = {
             }
         }
     },
-    colors:['#fd2e64']
+    colors: ['#fd2e64']
 }
 
 var chart10 = new ApexCharts(
@@ -2425,7 +2425,7 @@ var options11 = {
             }
         }
     }],
-    colors:[ CubaAdminConfig.secondary , '#51bb25', '#f8d62b', CubaAdminConfig.primary ]
+    colors: [CubaAdminConfig.secondary, '#51bb25', '#f8d62b', CubaAdminConfig.primary]
 
 
 }

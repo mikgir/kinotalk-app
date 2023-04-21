@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Admin\AdminIndex;
 use App\Http\Livewire\Front\MainPage;
+use App\Http\Livewire\Front\NewsCategory;
+use App\Http\Livewire\Front\Article;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Session;
@@ -55,5 +57,19 @@ Route::get('/clear-cache', function () {
     return "Cache is cleared";
 })->name('clear.cache');
 
+Route::get('/newsCategories', [NewsCategory::class, 'getAll'])
+    ->name('newsCategories');
+
+Route::get('/category/{newsCategory}/articles', [Article::class, 'getByNewsCategoryId'])
+    ->where('newsCategory', '\d+')
+    ->name('category.articles');
+
+Route::get('/articles', [Article::class, 'getById'])
+    ->where('article', '\d+')
+    ->name('article');
+
+Route::get('/articles/{article}', [Article::class, 'getById'])
+    ->where('article', '\d+')
+    ->name('article');
 
 require __DIR__.'/auth.php';

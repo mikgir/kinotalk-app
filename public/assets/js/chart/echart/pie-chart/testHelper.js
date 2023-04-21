@@ -1,4 +1,3 @@
-
 /*
 * Licensed to the Apache Software Foundation (ASF) under one
 * or more contributor license agreements.  See the NOTICE file
@@ -228,8 +227,7 @@
     testHelper.createChart = function (echarts, domOrId, option, opt) {
         if (typeof opt === 'number') {
             opt = {height: opt};
-        }
-        else {
+        } else {
             opt = opt || {};
         }
 
@@ -291,21 +289,21 @@
         var chart;
         if (typeof chartOrDomId === 'string') {
             hostDOMEl = document.getElementById(chartOrDomId);
-        }
-        else {
+        } else {
             chart = chartOrDomId;
             hostDOMEl = chartOrDomId.getDom();
         }
         var failErr;
+
         function assert(cond) {
             if (!cond) {
                 throw new Error();
             }
         }
+
         try {
             checkerFn(assert);
-        }
-        catch (err) {
+        } catch (err) {
             console.error(err);
             failErr = err;
         }
@@ -435,6 +433,7 @@
         var dom = chart.getDom();
         var width = dom.clientWidth;
         var height = dom.clientHeight;
+
         function resize() {
             var newWidth = dom.clientWidth;
             var newHeight = dom.clientHeight;
@@ -444,11 +443,11 @@
                 height = newHeight;
             }
         }
+
         if (window.attachEvent) {
             // Use builtin resize in IE
             window.attachEvent('onresize', chart.resize);
-        }
-        else if (window.addEventListener) {
+        } else if (window.addEventListener) {
             window.addEventListener('resize', resize, false);
         }
     };
@@ -532,22 +531,22 @@
         return !!TYPED_ARRAY[objToString.call(value)]
             ? 'typedArray'
             : typeof type === 'function'
-            ? 'function'
-            : typeStr === '[object Array]'
-            ? 'array'
-            : typeStr === '[object Number]'
-            ? 'number'
-            : typeStr === '[object Boolean]'
-            ? 'boolean'
-            : typeStr === '[object String]'
-            ? 'string'
-            : typeStr === '[object RegExp]'
-            ? 'regexp'
-            : typeStr === '[object Date]'
-            ? 'date'
-            : !!value && type === 'object'
-            ? 'object'
-            : null;
+                ? 'function'
+                : typeStr === '[object Array]'
+                    ? 'array'
+                    : typeStr === '[object Number]'
+                        ? 'number'
+                        : typeStr === '[object Boolean]'
+                            ? 'boolean'
+                            : typeStr === '[object String]'
+                                ? 'string'
+                                : typeStr === '[object RegExp]'
+                                    ? 'regexp'
+                                    : typeStr === '[object Date]'
+                                        ? 'date'
+                                        : !!value && type === 'object'
+                                            ? 'object'
+                                            : null;
     };
 
     /**
@@ -588,7 +587,7 @@
             var subCodeIndent = (new Array((depth + 1) * indent + 1)).join(' ');
             var hasLineBreak = false;
 
-            var preStr = key != null ? (key + ': ' ) : '';
+            var preStr = key != null ? (key + ': ') : '';
             var str;
 
             var objType = getType(obj);
@@ -639,8 +638,8 @@
                     str = ''
                         + preStr + '{' + (hasLineBreak ? lineBreak : '')
                         + (childBuilder.length
-                            ? (hasLineBreak ? subCodeIndent : '') + childBuilder.join(',' + (hasLineBreak ? lineBreak + subCodeIndent: ' ')) + (hasLineBreak ? lineBreak: '')
-                            : ''
+                                ? (hasLineBreak ? subCodeIndent : '') + childBuilder.join(',' + (hasLineBreak ? lineBreak + subCodeIndent : ' ')) + (hasLineBreak ? lineBreak : '')
+                                : ''
                         )
                         + (hasLineBreak ? codeIndent : '') + '}';
                     break;
@@ -840,14 +839,12 @@
                     alertIllegal(line);
                 }
                 ctx[line.attr] = line.val;
-            }
-            else if (line.method) {
+            } else if (line.method) {
                 if (!line.hasOwnProperty('arguments')) {
                     alertIllegal(line);
                 }
                 ctx[line.method].apply(ctx, line.arguments);
-            }
-            else {
+            } else {
                 alertIllegal(line);
             }
         }
@@ -880,8 +877,7 @@
                 htmlLine.push('</tr>');
                 html.push(htmlLine.join(''));
             }
-        }
-        else if (sourceFormat === 'objectRows') {
+        } else if (sourceFormat === 'objectRows') {
             for (var i = 0; i < data.length && i <= dataTableLimit; i++) {
                 var line = data[i];
                 var htmlLine = ['<tr>'];
@@ -896,8 +892,7 @@
                 htmlLine.push('</tr>');
                 html.push(htmlLine.join(''));
             }
-        }
-        else if (sourceFormat === 'keyedColumns') {
+        } else if (sourceFormat === 'keyedColumns') {
             for (var key in data) {
                 var htmlLine = ['<tr>'];
                 htmlLine.push('<td class="test-data-table-key">' + testHelper.encodeHTML(key) + '</td>');
@@ -925,16 +920,13 @@
 
                 if (item == null) {
                     continue;
-                }
-                else if (item.length) {
+                } else if (item.length) {
                     return 'arrayRows';
-                }
-                else if (typeof data === 'object') {
+                } else if (typeof data === 'object') {
                     return 'objectRows';
                 }
             }
-        }
-        else if (typeof data === 'object') {
+        } else if (typeof data === 'object') {
             return 'keyedColumns';
         }
     }
@@ -943,8 +935,8 @@
         var html = isObject(obj)
             ? testHelper.encodeHTML(printObject(obj, key))
             : obj
-            ? obj.toString()
-            : '';
+                ? obj.toString()
+                : '';
 
         return [
             '<pre class="test-print-object">',
