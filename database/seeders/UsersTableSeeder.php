@@ -24,6 +24,7 @@ class UsersTableSeeder extends Seeder
                 'email' => $user['email'],
                 'password' => bcrypt($user['password']),
                 'remember_token' => Str::random(60),
+                'avatar' => 'users/' . $user['id'] . '.png',
             ]);
         }
 
