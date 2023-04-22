@@ -6,7 +6,7 @@
                     <div class="blog-post-wrapper">
                             <div class="latest__post-item">
                                 <div class="latest__post-thumb tgImage__hover">
-                                    <a href="#"><img src="{{asset('assets/front/img/lifestyle/MrsMaisel.png')}}" alt="img"></a>
+                                    <a href="#"><img src="<?php echo e(asset('assets/front/img/lifestyle/MrsMaisel.png')); ?>" alt="img"></a>
                                 </div>
                                 <div class="latest__post-content">
                                     <ul class="tgbanner__content-meta list-wrap">
@@ -27,7 +27,7 @@
 
                         <div class="latest__post-item">
                             <div class="latest__post-thumb tgImage__hover">
-                                <a href="#"><img src="{{asset('assets/front/img/lifestyle/marvel.png')}}" alt="img"></a>
+                                <a href="#"><img src="<?php echo e(asset('assets/front/img/lifestyle/marvel.png')); ?>" alt="img"></a>
                             </div>
                             <div class="latest__post-content">
                                 <ul class="tgbanner__content-meta list-wrap">
@@ -45,7 +45,7 @@
                         </div>
                         <div class="latest__post-item">
                             <div class="latest__post-thumb tgImage__hover">
-                                <a href="#"><img src="{{asset('assets/front/img/lifestyle/VeryStrangeThings.png')}}" alt="img"></a>
+                                <a href="#"><img src="<?php echo e(asset('assets/front/img/lifestyle/VeryStrangeThings.png')); ?>" alt="img"></a>
                             </div>
                             <div class="latest__post-content">
                                 <ul class="tgbanner__content-meta list-wrap">
@@ -63,7 +63,7 @@
                         </div>
                         <div class="latest__post-item">
                             <div class="latest__post-thumb tgImage__hover">
-                                <a href="#"><img src="{{asset('assets/front/img/lifestyle/Fisher.png')}}" alt="img"></a>
+                                <a href="#"><img src="<?php echo e(asset('assets/front/img/lifestyle/Fisher.png')); ?>" alt="img"></a>
                             </div>
                             <div class="latest__post-content">
                                 <ul class="tgbanner__content-meta list-wrap">
@@ -81,7 +81,7 @@
                         </div>
                         <div class="latest__post-item">
                             <div class="latest__post-thumb tgImage__hover">
-                                <a href="#"><img src="{{asset('assets/front/img/lifestyle/Oceans.png')}}" alt="img"></a>
+                                <a href="#"><img src="<?php echo e(asset('assets/front/img/lifestyle/Oceans.png')); ?>" alt="img"></a>
                             </div>
                             <div class="latest__post-content">
                                 <ul class="tgbanner__content-meta list-wrap">
@@ -113,7 +113,7 @@
                         <div class="widget sidebar-widget">
                             <div class="tgAbout-me">
                                 <div class="tgAbout-thumb">
-                                    <img src="{{asset('assets/front/img/others/People6.png')}}" alt="me">
+                                    <img src="<?php echo e(asset('assets/front/img/others/People6.png')); ?>" alt="me">
                                 </div>
                                 <div class="tgAbout-info">
                                     <p class="intro"><span>Любовь и Сериалы</span></p>
@@ -130,27 +130,27 @@
                             <h4 class="widget-title">Популярная категория</h4>
                             <ul class="list-wrap">
                                 <li>
-                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/Mira.png')}}" alt="img"></a></div>
+                                    <div class="thumb"><a href="#"><img src="<?php echo e(asset('assets/front/img/category/Mira.png')); ?>" alt="img"></a></div>
                                     <a href="#">Новинки кино</a>
                                     <span class="float-right">12</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/ForrestGump.png')}}" alt="img"></a></div>
+                                    <div class="thumb"><a href="#"><img src="<?php echo e(asset('assets/front/img/category/ForrestGump.png')); ?>" alt="img"></a></div>
                                     <a href="#">Классика кино</a>
                                     <span class="float-right">10</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/Sansara.png')}}" alt="img"></a></div>
+                                    <div class="thumb"><a href="#"><img src="<?php echo e(asset('assets/front/img/category/Sansara.png')); ?>" alt="img"></a></div>
                                     <a href="#">Сериалы</a>
                                     <span class="float-right">08</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/TheBBTheory.png')}}" alt="img"></a></div>
+                                    <div class="thumb"><a href="#"><img src="<?php echo e(asset('assets/front/img/category/TheBBTheory.png')); ?>" alt="img"></a></div>
                                     <a href="#">Ситкомы</a>
                                     <span class="float-right">06</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/FrozenGround.png')}}" alt="img"></a></div>
+                                    <div class="thumb"><a href="#"><img src="<?php echo e(asset('assets/front/img/category/FrozenGround.png')); ?>" alt="img"></a></div>
                                     <a href="#">В фокусе</a>
                                     <span class="float-right">06</span>
                                 </li>
@@ -164,3 +164,4 @@
 </main>
 
 
+<?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/livewire/front/articles.blade.php ENDPATH**/ ?>

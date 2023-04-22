@@ -90,15 +90,15 @@
                     <div class="tgmenu__wrap">
                         <nav class="tgmenu__nav">
                             <div class="logo d-block d-md-none">
-                                <a href="#" class="logo-dark"><img src="{{asset('assets/front/img/logo/b_kinotalk.png')}}" alt="Logo"></a>
-                                <a href="#" class="logo-light"><img src="{{asset('assets/front/img/logo/w_kinotalk.png')}}" alt="Logo"></a>
+                                <a href="{{route('main')}}" class="logo-dark"><img src="{{asset('assets/front/img/logo/b_kinotalk.png')}}" alt="Logo"></a>
+                                <a href="{{route('main')}}" class="logo-light"><img src="{{asset('assets/front/img/logo/w_kinotalk.png')}}" alt="Logo"></a>
                             </div>
                             <div class="offcanvas-toggle">
                                 <a href="#"><i class="flaticon-menu-bar"></i></a>
                             </div>
                             <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
                                 <ul class="navigation">
-                                    <li class="active menu-item-has-children"><a href="#">Главные новости</a>
+                                    <li class="active menu-item-has-children"><a href="{{route('main')}}">Главные новости</a>
                                         <ul class="sub-menu">
                                             <li class="active"><a href="#">Главные новости</a></li>
                                             <li><a href="#">Новинки кино</a></li>
@@ -108,7 +108,7 @@
                                             <li><a href="#">Кассовые сборы за месяц</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="#">Статьи</a></li>
+                                    <li><a href="{{route('articles')}}">Статьи</a></li>
                                     <li><a href="#">Авторы</a></li>
                                     <li class="menu-item-has-children"><a href="#">Популярное</a>
                                         <ul class="sub-menu">
