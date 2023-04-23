@@ -12,6 +12,13 @@ use App\Models\Article as ArticleModel;
 
 class Article extends Component
 {
+    public $article;
+
+    public function mount($id)
+    {
+        $this->article = \App\Models\Article::find($id);
+    }
+
     /**
      * @param NewsCategory $newsCategory
      * @param ArticleRepository $articleRepository

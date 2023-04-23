@@ -11,6 +11,13 @@ use Livewire\Component;
 
 class NewsCategory extends Component
 {
+    public $categories;
+
+    public function mount()
+    {
+
+    }
+
     /**
      * @param NewsCategoryRepository $newsCategoryRepository
      * @return Factory|View|Application
@@ -19,7 +26,7 @@ class NewsCategory extends Component
     {
         $newsCategories = $newsCategoryRepository->all();
         return view('livewire.front.news-category', [
-           'newsCategories' => $newsCategories,
+            'newsCategories' => $newsCategories,
         ]);
     }
 }

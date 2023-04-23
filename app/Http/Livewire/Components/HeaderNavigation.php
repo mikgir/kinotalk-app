@@ -1,20 +1,21 @@
 <?php
 
-namespace App\Http\Livewire\Front;
+namespace App\Http\Livewire\Components;
 
-use App\Repositories\ArticleRepository;
+use App\Repositories\NewsCategoryRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
+use App\Models\NewsCategory;
 
-class Articles extends Component
+class HeaderNavigation extends Component
 {
-    public $articles;
+    public $categories;
 
     public function mount()
     {
-        $this->articles = ArticleRepository::all();
+        $this->categories = NewsCategory::all();
     }
 
     /**
@@ -22,8 +23,6 @@ class Articles extends Component
      */
     public function render(): Factory|View|Application
     {
-        return view('livewire.front.articles')
-            ->extends('layouts.front.master')
-            ->section('content');
+        return view('livewire.components.header-navigation');
     }
 }

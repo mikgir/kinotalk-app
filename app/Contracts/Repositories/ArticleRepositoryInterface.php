@@ -4,6 +4,7 @@ namespace App\Contracts\Repositories;
 
 use App\Models\Article;
 use App\Models\NewsCategory;
+use phpDocumentor\Reflection\Types\Collection;
 
 interface ArticleRepositoryInterface
 {
