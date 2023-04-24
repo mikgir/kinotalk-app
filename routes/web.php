@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('comingsoon.comingsoon-bg-video');
 });
 Route::get('/main', MainPage::class)->name('main');
+Route::get('/articles', Articles::class)->name('articles');
 
 Route::middleware('auth')->group(function () {
     Route::get('/home',[HomeController::class, 'index'])->name('home');
