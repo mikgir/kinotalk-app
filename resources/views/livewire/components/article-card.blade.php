@@ -1,6 +1,6 @@
 <div class="latest__post-item">
     <div class="latest__post-thumb tgImage__hover">
-        <a href="#"><img src="{{asset($image)}}" alt="img"></a>
+        <a href="#"><img src="{{asset($image)}}" style="width: 820px; height: auto" alt="img"></a>
     </div>
     <div class="latest__post-content">
         <ul class="tgbanner__content-meta list-wrap">

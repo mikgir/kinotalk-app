@@ -19,6 +19,16 @@ Route::get('/', function () {
 Route::get('/main', MainPage::class)->name('main');
 Route::get('/articles', Articles::class)->name('articles');
 
+Route::get('/newsCategories', NewsCategory::class)->name('newsCategories');
+
+Route::get('/category/{newsCategory}/articles', ShowArticlesByNewsCategory::class)
+    ->where('newsCategory', '\d+')
+    ->name('category.articles');
+
+Route::get('/article/{article}', ShowArticleById::class)
+    ->where('article', '\d+')
+    ->name('article');
+
 Route::middleware('auth')->group(function () {
     Route::get('/home',[HomeController::class, 'index'])->name('home');
     Route::get('/admin', AdminIndex::class)->name('admin.index');
@@ -58,15 +68,5 @@ Route::get('/clear-cache', function () {
     return "Cache is cleared";
 })->name('clear.cache');
 
-Route::get('/newsCategories', NewsCategory::class)->name('newsCategories');
-Route::get('/articles', Articles::class)->name('articles');
-
-Route::get('/category/{newsCategory}/articles', ShowArticlesByNewsCategory::class)
-    ->where('newsCategory', '\d+')
-    ->name('category.articles');
-
-Route::get('/article/{article}', ShowArticleById::class)
-    ->where('article', '\d+')
-    ->name('article');
 
 require __DIR__.'/auth.php';
