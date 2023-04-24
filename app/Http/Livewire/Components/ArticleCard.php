@@ -25,12 +25,12 @@ class ArticleCard extends Component
      */
     public function mount(Article $article, ArticleRepository $articleRepository): void
     {
-        $this->article = $articleRepository->oneById($article);
-        $this->article_id= $article->id;
+        $this->article = $article;
+        $this->article_id = $article->id;
         $this->title = $article->title;
         $this->image = $article->image;
         $this->excerpt = $article->excerpt;
-        $this->pub_date= $article->updated_at;
+        $this->pub_date = $article->updated_at;
     }
 
     /**
