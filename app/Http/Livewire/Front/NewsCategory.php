@@ -6,27 +6,30 @@ use App\Repositories\NewsCategoryRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Collection;
 use Livewire\Component;
 
 class NewsCategory extends Component
 {
-    public $categories;
-
-    public function mount()
-    {
-
-    }
+    public $newsCategories;
 
     /**
      * @param NewsCategoryRepository $newsCategoryRepository
+     * @return void
+     */
+    public function mount(NewsCategoryRepository $newsCategoryRepository): void
+    {
+        $this->newsCategories = $newsCategoryRepository->all();
+    }
+
+    /**
      * @return Factory|View|Application
      */
-    public function getAll(NewsCategoryRepository $newsCategoryRepository): Factory|View|Application
+    public function render(): Factory|View|Application
     {
-        $newsCategories = $newsCategoryRepository->all();
         return view('livewire.front.news-category', [
-            'newsCategories' => $newsCategories,
-        ]);
+            'newsCategories' => $this->newsCategories,
+        ])
+            ->extends('layouts.front.master')
+            ->section('content');
     }
 }

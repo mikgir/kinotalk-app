@@ -23,6 +23,6 @@ class ArticleRepository implements ArticleRepositoryInterface
 
     public function getByNewsCategory(NewsCategory $newsCategory): object
     {
-        return Article::where('news_category_id', '=', $newsCategory->id)->get();
+        return Article::where('news_category_id', '=', $newsCategory->id)->orderByDesc('created_at')->get();
     }
 }

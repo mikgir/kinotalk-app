@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Front;
+namespace App\Http\Livewire\Front\Articles;
 
 use App\Repositories\ArticleRepository;
 use Illuminate\Contracts\Foundation\Application;
@@ -12,9 +12,9 @@ class Articles extends Component
 {
     public $articles;
 
-    public function mount()
+    public function mount(ArticleRepository $articleRepository)
     {
-        $this->articles = ArticleRepository::all();
+        $this->articles = $articleRepository->all();
     }
 
     /**
@@ -22,7 +22,7 @@ class Articles extends Component
      */
     public function render(): Factory|View|Application
     {
-        return view('livewire.front.articles')
+        return view('livewire.front.articles.articles')
             ->extends('layouts.front.master')
             ->section('content');
     }
