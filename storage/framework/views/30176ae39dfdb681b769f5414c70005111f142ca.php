@@ -4,6 +4,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-7">
                     <div class="blog-post-wrapper">
+
                         <?php $__currentLoopData = $articles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $article): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <?php
 if (! isset($_instance)) {
@@ -21,98 +22,6 @@ if (! isset($_instance)) {
 echo $html;
 ?>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                         <div class="pagination__wrap">
                             <ul class="list-wrap">

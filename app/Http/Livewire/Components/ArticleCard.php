@@ -12,14 +12,21 @@ use Livewire\Component;
 class ArticleCard extends Component
 {
     public $article;
+    public $article_id;
     public $title;
     public $image;
     public $excerpt;
     public $pub_date;
 
-    public function mount(Article $article, ArticleRepository $articleRepository)
+    /**
+     * @param Article $article
+     * @param ArticleRepository $articleRepository
+     * @return void
+     */
+    public function mount(Article $article, ArticleRepository $articleRepository): void
     {
         $this->article = $articleRepository->oneById($article);
+        $this->article_id= $article->id;
         $this->title = $article->title;
         $this->image = $article->image;
         $this->excerpt = $article->excerpt;
