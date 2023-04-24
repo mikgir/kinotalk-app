@@ -23,7 +23,7 @@
                                     </ul>
                                 </li>
                                 <li><a href="<?php echo e(route('articles')); ?>">Статьи</a></li>
-                                <li><a href="#">Авторы</a></li>
+                                <li><a href="<?php echo e(route('authors')); ?>">Авторы</a></li>
                                 <li class="menu-item-has-children"><a href="#">Популярное</a>
                                     <ul class="sub-menu">
                                         <li><a href="#">Статьи</a></li>

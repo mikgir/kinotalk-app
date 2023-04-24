@@ -3,9 +3,10 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Admin\AdminIndex;
-use App\Http\Livewire\Front\Articles\Articles;
+use App\Http\Livewire\Front\Articles;
 use App\Http\Livewire\Front\Articles\ShowArticleById;
 use App\Http\Livewire\Front\Articles\ShowArticlesByNewsCategory;
+use App\Http\Livewire\Front\Authors;
 use App\Http\Livewire\Front\MainPage;
 use App\Http\Livewire\Front\NewsCategory;
 use Illuminate\Support\Facades\Artisan;
@@ -18,6 +19,7 @@ Route::get('/', function () {
 });
 Route::get('/main', MainPage::class)->name('main');
 Route::get('/articles', Articles::class)->name('articles');
+Route::get('/authors', Authors::class)->name('authors');
 
 Route::get('/newsCategories', NewsCategory::class)->name('newsCategories');
 

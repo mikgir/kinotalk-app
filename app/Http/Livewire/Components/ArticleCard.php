@@ -3,7 +3,9 @@
 namespace App\Http\Livewire\Components;
 
 use App\Models\Article;
+use App\Models\User;
 use App\Repositories\ArticleRepository;
+use App\Repositories\UserRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -17,13 +19,14 @@ class ArticleCard extends Component
     public $image;
     public $excerpt;
     public $pub_date;
+    public $author;
+    public $category;
 
     /**
      * @param Article $article
-     * @param ArticleRepository $articleRepository
      * @return void
      */
-    public function mount(Article $article, ArticleRepository $articleRepository): void
+    public function mount(Article $article): void
     {
         $this->article = $article;
         $this->article_id = $article->id;
