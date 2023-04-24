@@ -18,7 +18,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Article
+ * Class ShowArticleById
  *
  * @property int $id
  * @property int $user_id
