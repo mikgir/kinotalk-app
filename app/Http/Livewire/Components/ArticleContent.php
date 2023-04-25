@@ -16,9 +16,8 @@ class ArticleContent extends Component
     /**
      * @param Article $article
      * @param ArticleRepository $repository
-     * @return void
      */
-    public function mount(Article $article, ArticleRepository $repository): void
+    public function mount(Article $article, ArticleRepository $repository)
     {
         $this->article = $repository->getOne($article);
 

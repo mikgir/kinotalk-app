@@ -15,9 +15,8 @@ class ArticlePage extends Component
 
     /**
      * @param Article $article
-     * @return void
      */
-    public function mount(Article $article): void
+    public function mount(Article $article)
     {
         $this->article = $article;
 

@@ -3,9 +3,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xl-8 col-lg-7">
-
-                    <livewire:components.article-card :article="$article"/>
-
+                   <livewire:components.article-content :article="$article"/>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6">
                     <aside class="blog-sidebar">
@@ -29,37 +27,27 @@
                             <h4 class="widget-title">Популярная категория</h4>
                             <ul class="list-wrap">
                                 <li>
-                                    <div class="thumb"><a href="#"><img
-                                                src="{{asset('assets/front/img/category/Mira.png')}}" alt="img"></a>
-                                    </div>
+                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/Mira.png')}}" alt="img"></a></div>
                                     <a href="#">Новинки кино</a>
                                     <span class="float-right">12</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img
-                                                src="{{asset('assets/front/img/category/ForrestGump.png')}}" alt="img"></a>
-                                    </div>
+                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/ForrestGump.png')}}" alt="img"></a></div>
                                     <a href="#">Классика кино</a>
                                     <span class="float-right">10</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img
-                                                src="{{asset('assets/front/img/category/Sansara.png')}}" alt="img"></a>
-                                    </div>
+                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/Sansara.png')}}" alt="img"></a></div>
                                     <a href="#">Сериалы</a>
                                     <span class="float-right">08</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img
-                                                src="{{asset('assets/front/img/category/TheBBTheory.png')}}" alt="img"></a>
-                                    </div>
+                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/TheBBTheory.png')}}" alt="img"></a></div>
                                     <a href="#">Ситкомы</a>
                                     <span class="float-right">06</span>
                                 </li>
                                 <li>
-                                    <div class="thumb"><a href="#"><img
-                                                src="{{asset('assets/front/img/category/FrozenGround.png')}}" alt="img"></a>
-                                    </div>
+                                    <div class="thumb"><a href="#"><img src="{{asset('assets/front/img/category/FrozenGround.png')}}" alt="img"></a></div>
                                     <a href="#">В фокусе</a>
                                     <span class="float-right">06</span>
                                 </li>
