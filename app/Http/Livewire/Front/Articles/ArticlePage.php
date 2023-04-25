@@ -1,21 +1,26 @@
 <?php
 
-namespace App\Http\Livewire\Front;
+namespace App\Http\Livewire\Front\Articles;
 
-use App\Repositories\ArticleRepository;
+use App\Models\Article;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
-use function view;
 
-class Articles extends Component
+class ArticlePage extends Component
 {
-    public $articles;
+    public $article;
 
-    public function mount(ArticleRepository $articleRepository)
+
+    /**
+     * @param Article $article
+     * @return void
+     */
+    public function mount(Article $article): void
     {
-        $this->articles = $articleRepository->getAll();
+        $this->article = $article;
+
     }
 
     /**
@@ -23,7 +28,7 @@ class Articles extends Component
      */
     public function render(): Factory|View|Application
     {
-        return view('livewire.front.articles.articles')
+        return view('livewire.front.articles.show-article')
             ->extends('layouts.front.master')
             ->section('content');
     }
