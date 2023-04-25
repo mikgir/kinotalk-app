@@ -377,9 +377,10 @@ blockquote {
 .blog-avatar {
     &-wrap {
         background: var(--tg-common-color-white);
-        text-align: center;
-        margin-top: 110px;
-        padding: 0 85px 50px;
+       /* text-align: center;*/
+        margin-top: 75px;
+        padding: 0 20px 20px;
+        display: flex;
         @media #{$lg} {
             padding: 0 35px 40px;
         }
