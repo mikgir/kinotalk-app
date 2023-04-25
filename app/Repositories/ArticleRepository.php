@@ -9,20 +9,55 @@ use Illuminate\Database\Eloquent\Collection;
 
 class ArticleRepository implements ArticleRepositoryInterface
 {
+
+    /**
+     * @param Article $article
+     * @return object
+     */
+    public function getOne(Article $article): object
+    {
+        return Article::find($article->id);
+    }
+
     /**
      * @return Collection
      */
-    public function all(): Collection
+    public function getAll(): Collection
     {
         return Article::all();
     }
-    public function oneById(Article $article): object
+
+    /**
+     * @param Article $article
+     * @return object
+     */
+    public function create(Article $article): object
     {
-        return Article::where('id', '=', $article->id)->get();
+        // TODO: Implement create() method.
     }
 
+    /**
+     * @param Article $article
+     * @return object
+     */
+    public function update(Article $article): object
+    {
+        // TODO: Implement update() method.
+    }
+
+    /**
+     * @param NewsCategory $newsCategory
+     * @return object
+     */
     public function getByNewsCategory(NewsCategory $newsCategory): object
     {
-        return Article::where('news_category_id', '=', $newsCategory->id)->orderByDesc('created_at')->get();
+        return NewsCategory::with('article')->paginate(1);
+    }
+
+
+
+    public function destroy(Article $article): void
+    {
+        // TODO: Implement destroy() method.
     }
 }

@@ -2,23 +2,20 @@
 
 namespace App\Http\Livewire\Front;
 
-use App\Repositories\NewsCategoryRepository;
+use App\Repositories\ArticleRepository;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Livewire\Component;
+use function view;
 
-class NewsCategory extends Component
+class Articles extends Component
 {
-    public $newsCategories;
+    public $articles;
 
-    /**
-     * @param NewsCategoryRepository $newsCategoryRepository
-     * @return void
-     */
-    public function mount(NewsCategoryRepository $newsCategoryRepository): void
+    public function mount(ArticleRepository $articleRepository)
     {
-        $this->newsCategories = $newsCategoryRepository->all();
+        $this->articles = $articleRepository->all();
     }
 
     /**
@@ -26,7 +23,7 @@ class NewsCategory extends Component
      */
     public function render(): Factory|View|Application
     {
-        return view('livewire.front.news-category')
+        return view('livewire.front.articles.articles')
             ->extends('layouts.front.master')
             ->section('content');
     }
