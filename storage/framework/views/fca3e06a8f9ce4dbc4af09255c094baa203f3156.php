@@ -21,25 +21,25 @@
                     <table class="table">
                         <thead>
                         <tr class="border-bottom-primary">
-                            <th scope="col">Id</th>
-                            <th scope="col">Наименование</th>
-                            <th scope="col">Order</th>
-                            <th scope="col">Дата создания </th>
-                            <th scope="col">Дата изменения</th>
-                            <th scope="col">Изменить</th>
-                            <th scope="col">Удалить</th>
+                            <th class="text-center" scope="col">Id</th>
+                            <th class="text-center" scope="col">Наименование</th>
+                            <th class="text-center" scope="col">Order</th>
+                            <th class="text-center" scope="col">Дата создания </th>
+                            <th class="text-center" scope="col">Дата изменения</th>
+                            <th class="text-center" scope="col">Изменить</th>
+                            <th class="text-center" scope="col">Удалить</th>
                         </tr>
                         </thead>
                         <tbody>
                         <?php $__currentLoopData = $newsCategories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $newsCategory): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <tr class="border-bottom-secondary">
-                            <th scope="row"><?php echo e($newsCategory->id); ?></th>
-                            <td><?php echo e($newsCategory->name); ?></td>
-                            <td><?php echo e($newsCategory->order); ?></td>
-                            <td><?php echo e($newsCategory->created_at); ?></td>
-                            <td><?php echo e($newsCategory->updated_at); ?></td>
-                            <td><a href="<?php echo e(route('admin.news.categories.edit', $newsCategory->id)); ?>" class="btn btn-outline-success">EDIT</a></td>
-                            <td> <a href="<?php echo e(route('admin.news.categories.delete', $newsCategory->id)); ?>" class="btn btn-outline-danger">DELETE</a></td>
+                            <th class="text-center" scope="row"><?php echo e($newsCategory->id); ?></th>
+                            <td class="text-center"><?php echo e($newsCategory->name); ?></td>
+                            <td class="text-center"><?php echo e($newsCategory->order); ?></td>
+                            <td class="text-center"><?php echo e($newsCategory->created_at); ?></td>
+                            <td class="text-center"><?php echo e($newsCategory->updated_at); ?></td>
+                            <td class="text-center"><a href="<?php echo e(route('admin.news.categories.edit', $newsCategory->id)); ?>" class="btn btn-outline-success">EDIT</a></td>
+                            <td class="text-center"> <a href="<?php echo e(route('admin.news.categories.delete', $newsCategory->id)); ?>" class="btn btn-outline-danger">DELETE</a></td>
                         </tr>
                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                         </tbody>
