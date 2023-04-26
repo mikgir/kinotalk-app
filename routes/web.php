@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Admin\AdminIndex;
+use App\Http\Livewire\Admin\Users\UsersList;
 use App\Http\Livewire\Front\Articles;
 use App\Http\Livewire\Front\Articles\ArticlePage;
 use App\Http\Livewire\Front\Articles\ShowArticlesByNewsCategory;
@@ -81,6 +82,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         ->name('news.categories.edit');
     Route::get('/newsCategories/delete/{newsCategory}', DeleteNewsCategories::class)
         ->name('news.categories.delete');
+    Route::get('/users/show', UsersList::class)
+        ->name('users.show');
 });
 
 require __DIR__.'/auth.php';
