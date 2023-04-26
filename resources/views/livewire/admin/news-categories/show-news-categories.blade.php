@@ -21,25 +21,25 @@
                     <table class="table">
                         <thead>
                         <tr class="border-bottom-primary">
-                            <th scope="col">Id</th>
-                            <th scope="col">Наименование</th>
-                            <th scope="col">Order</th>
-                            <th scope="col">Дата создания </th>
-                            <th scope="col">Дата изменения</th>
-                            <th scope="col">Изменить</th>
-                            <th scope="col">Удалить</th>
+                            <th class="text-center" scope="col">Id</th>
+                            <th class="text-center" scope="col">Наименование</th>
+                            <th class="text-center" scope="col">Order</th>
+                            <th class="text-center" scope="col">Дата создания </th>
+                            <th class="text-center" scope="col">Дата изменения</th>
+                            <th class="text-center" scope="col">Изменить</th>
+                            <th class="text-center" scope="col">Удалить</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach ($newsCategories as $newsCategory)
                         <tr class="border-bottom-secondary">
-                            <th scope="row">{{$newsCategory->id}}</th>
-                            <td>{{$newsCategory->name}}</td>
-                            <td>{{$newsCategory->order}}</td>
-                            <td>{{$newsCategory->created_at}}</td>
-                            <td>{{$newsCategory->updated_at}}</td>
-                            <td><a href="{{route('admin.news.categories.edit', $newsCategory->id)}}" class="btn btn-outline-success">EDIT</a></td>
-                            <td> <a href="{{route('admin.news.categories.delete', $newsCategory->id)}}" class="btn btn-outline-danger">DELETE</a></td>
+                            <th class="text-center" scope="row">{{$newsCategory->id}}</th>
+                            <td class="text-center">{{$newsCategory->name}}</td>
+                            <td class="text-center">{{$newsCategory->order}}</td>
+                            <td class="text-center">{{$newsCategory->created_at}}</td>
+                            <td class="text-center">{{$newsCategory->updated_at}}</td>
+                            <td class="text-center"><a href="{{route('admin.news.categories.edit', $newsCategory->id)}}" class="btn btn-outline-success">EDIT</a></td>
+                            <td class="text-center"> <a href="{{route('admin.news.categories.delete', $newsCategory->id)}}" class="btn btn-outline-danger">DELETE</a></td>
                         </tr>
                         @endforeach
                         </tbody>
