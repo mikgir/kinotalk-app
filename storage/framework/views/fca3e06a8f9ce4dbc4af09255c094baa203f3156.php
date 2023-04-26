@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php $__env->startSection('breadcrumb-title'); ?>
     <h3>Таблица категорий</h3>
 <?php $__env->stopSection(); ?>
