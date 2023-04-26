@@ -1767,16 +1767,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v9.52.7",
+            "version": "v9.52.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "675ea868fe36b18c8303e954aac540e6b1caa677"
+                "reference": "16454f17a2585c4589f721655fc5133270aadf8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/675ea868fe36b18c8303e954aac540e6b1caa677",
-                "reference": "675ea868fe36b18c8303e954aac540e6b1caa677",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/16454f17a2585c4589f721655fc5133270aadf8c",
+                "reference": "16454f17a2585c4589f721655fc5133270aadf8c",
                 "shasum": ""
             },
             "require": {
@@ -1961,20 +1961,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2023-04-25T13:44:05+00:00"
+            "time": "2023-04-18T13:44:55+00:00"
         },
         {
             "name": "laravel/sanctum",
-            "version": "v3.2.3",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "6281ce796d464592867f768eb890642aa1954bd0"
+                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/6281ce796d464592867f768eb890642aa1954bd0",
-                "reference": "6281ce796d464592867f768eb890642aa1954bd0",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/d09d69bac55708fcd4a3b305d760e673d888baf9",
+                "reference": "d09d69bac55708fcd4a3b305d760e673d888baf9",
                 "shasum": ""
             },
             "require": {
@@ -1988,7 +1988,6 @@
             "require-dev": {
                 "mockery/mockery": "^1.0",
                 "orchestra/testbench": "^7.0|^8.0",
-                "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^9.3"
             },
             "type": "library",
@@ -2027,7 +2026,7 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2023-04-25T16:15:12+00:00"
+            "time": "2023-01-13T15:41:49+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -3612,16 +3611,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.16",
+            "version": "v0.11.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "151b145906804eea8e5d71fea23bfb470c904bfb"
+                "reference": "5350ce0ec8ecf2c5b5cf554cd2496f97b444af85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/151b145906804eea8e5d71fea23bfb470c904bfb",
-                "reference": "151b145906804eea8e5d71fea23bfb470c904bfb",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/5350ce0ec8ecf2c5b5cf554cd2496f97b444af85",
+                "reference": "5350ce0ec8ecf2c5b5cf554cd2496f97b444af85",
                 "shasum": ""
             },
             "require": {
@@ -3682,9 +3681,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.16"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.15"
             },
-            "time": "2023-04-26T12:53:57+00:00"
+            "time": "2023-04-07T21:57:09+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -7764,16 +7763,16 @@
         },
         {
             "name": "laravel-lang/lang",
-            "version": "12.21.4",
+            "version": "12.21.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Laravel-Lang/lang.git",
-                "reference": "f270a9de8ae3f865185d3fba0fb12b7764869a4a"
+                "reference": "d984be751718c8b4d57a5f5579c411b2bef3b61f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/f270a9de8ae3f865185d3fba0fb12b7764869a4a",
-                "reference": "f270a9de8ae3f865185d3fba0fb12b7764869a4a",
+                "url": "https://api.github.com/repos/Laravel-Lang/lang/zipball/d984be751718c8b4d57a5f5579c411b2bef3b61f",
+                "reference": "d984be751718c8b4d57a5f5579c411b2bef3b61f",
                 "shasum": ""
             },
             "require": {
@@ -7826,7 +7825,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-04-24T08:48:59+00:00"
+            "time": "2023-04-18T07:40:44+00:00"
         },
         {
             "name": "laravel-lang/publisher",
@@ -7998,16 +7997,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.21.5",
+            "version": "v1.21.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "27af207bb1c53faddcba34c7528b3e969f6a646d"
+                "reference": "5e59b4a57181020477e2b18943b27493638e3f89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/27af207bb1c53faddcba34c7528b3e969f6a646d",
-                "reference": "27af207bb1c53faddcba34c7528b3e969f6a646d",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/5e59b4a57181020477e2b18943b27493638e3f89",
+                "reference": "5e59b4a57181020477e2b18943b27493638e3f89",
                 "shasum": ""
             },
             "require": {
@@ -8059,7 +8058,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2023-04-24T13:29:38+00:00"
+            "time": "2023-03-30T12:28:55+00:00"
         },
         {
             "name": "maximebf/debugbar",
@@ -8800,16 +8799,16 @@
         },
         {
             "name": "phpstan/phpdoc-parser",
-            "version": "1.20.3",
+            "version": "1.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpdoc-parser.git",
-                "reference": "6c04009f6cae6eda2f040745b6b846080ef069c2"
+                "reference": "f545fc30978190a056832aa7ed995e36a66267f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/6c04009f6cae6eda2f040745b6b846080ef069c2",
-                "reference": "6c04009f6cae6eda2f040745b6b846080ef069c2",
+                "url": "https://api.github.com/repos/phpstan/phpdoc-parser/zipball/f545fc30978190a056832aa7ed995e36a66267f3",
+                "reference": "f545fc30978190a056832aa7ed995e36a66267f3",
                 "shasum": ""
             },
             "require": {
@@ -8839,9 +8838,9 @@
             "description": "PHPDoc parser with support for nullable, intersection and generic types",
             "support": {
                 "issues": "https://github.com/phpstan/phpdoc-parser/issues",
-                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.20.3"
+                "source": "https://github.com/phpstan/phpdoc-parser/tree/1.19.1"
             },
-            "time": "2023-04-25T09:01:03+00:00"
+            "time": "2023-04-18T11:30:56+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
