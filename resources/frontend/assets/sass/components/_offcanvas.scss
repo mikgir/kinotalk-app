@@ -1,4 +1,4 @@
-@use '../utils/index' as *;
+@use '../utils' as *;
 
 /*=============================
     00. OffCanvas Menu
@@ -108,7 +108,7 @@
             margin-top: 35px;
         }
     }
-
+    
     &__contact {
         margin: auto 0 0;
         @media #{$xl} {

@@ -25,7 +25,7 @@ class CommentLikesTableSeeder extends Seeder
         for ($i = 0; $i < 30; $i++) {
             $user = User::find(rand(1, 5));
             $reacterFacade = $user->viaLoveReacter();
-            $comment = Comment::find(rand(1, 56));
+            $comment = Comment::find(rand(1, 50));
             $reactantFacade = $comment->viaLoveReactant();
             if (!$reactantFacade->isReactedBy($user, $v)) {
                 $reacterFacade->reactTo($comment, $v);

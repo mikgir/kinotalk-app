@@ -3,6 +3,7 @@
     @section('style')
        @include('layouts.front.css')
     @endsection
+
     @section('preloader')
         <!-- preloader -->
 {{--        <div id="preloader">--}}
@@ -36,3 +37,4 @@
     @section('script')
         @include('layouts.front.script')
     @endsection
+

@@ -4,6 +4,7 @@ namespace App\Repositories;
 
 use App\Contracts\Repositories\UserRepositoryInterface;
 
+
 class UserRepository implements UserRepositoryInterface
 {
 
@@ -16,4 +17,5 @@ class UserRepository implements UserRepositoryInterface
     {
         // TODO: Implement oneById() method.
     }
+
 }

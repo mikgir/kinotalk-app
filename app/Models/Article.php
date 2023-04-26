@@ -18,30 +18,30 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
- * Class Article
+ * Class ArticlePage
  *
- * @property int                      $id
- * @property int                      $user_id
- * @property int                      $news_category_id
- * @property string                   $title
- * @property string|null              $seo_title
- * @property string|null              $excerpt
- * @property string                   $body
- * @property string|null              $image
- * @property string                   $slug
- * @property string|null              $meta_description
- * @property string|null              $meta_keywords
- * @property string                   $status
- * @property bool                     $featured
- * @property Carbon|null              $created_at
- * @property Carbon|null              $updated_at
- * @property string|null              $deleted_at
+ * @property int $id
+ * @property int $user_id
+ * @property int $news_category_id
+ * @property string $title
+ * @property string|null $seo_title
+ * @property string|null $excerpt
+ * @property string $body
+ * @property string|null $image
+ * @property string $slug
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property string $status
+ * @property bool $featured
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $deleted_at
  *
- * @property NewsCategory             $news_category
- * @property User                     $user
+ * @property NewsCategory $news_category
+ * @property User $user
  * @property Collection|ArticleLike[] $article_likes
- * @property Collection|Tag[]         $tags
- * @property Collection|Comment[]     $comments
+ * @property Collection|Tag[] $tags
+ * @property Collection|Comment[] $comments
  *
  * @package App\Models
  */
@@ -94,6 +94,11 @@ class Article extends Model implements ReactableInterface
     public function comments(): HasMany
     {
         return $this->hasMany(Comment::class);
+    }
+
+    public function media(): HasMany
+    {
+        return $this->hasMany(ArticlesMedia::class);
     }
 
     public function sluggable(): array

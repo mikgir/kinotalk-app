@@ -4790,6 +4790,45 @@ input[type=color] {
   color: var(--tg-common-color-white);
 }
 
+.pagination__wrap-article ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 10px;
+  margin-top: 30px;
+}
+@media (max-width: 991.98px) {
+  .pagination__wrap-article ul {
+    justify-content: center;
+  }
+}
+.pagination__wrap-article ul li {
+  display: block;
+}
+.pagination__wrap-article ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 15px;
+  border: 2px solid var(--tg-border-1);
+  border-radius: 50%;
+  font-weight: var(--tg-fw-bold);
+  color: var(--tg-heading-color);
+}
+.pagination__wrap-article ul li a:hover {
+  border-color: var(--tg-theme-primary);
+  background-color: var(--tg-theme-primary);
+  color: var(--tg-common-color-white);
+}
+.pagination__wrap-article ul li.active a {
+  pointer-events: none;
+  border-color: var(--tg-theme-primary);
+  background-color: var(--tg-theme-primary);
+  color: var(--tg-common-color-white);
+}
+
 .blog-details-social {
   position: sticky;
   top: 80px;
@@ -5086,9 +5125,9 @@ blockquote .blockquote-cite .info span {
 
 .blog-avatar-wrap {
   background: var(--tg-common-color-white);
-  text-align: center;
-  margin-top: 110px;
-  padding: 0 85px 50px;
+  margin-top: 15px;
+  padding: 5px 5px 5px;
+  display: flex;
 }
 @media (max-width: 1199.98px) {
   .blog-avatar-wrap {
@@ -5096,7 +5135,7 @@ blockquote .blockquote-cite .info span {
   }
 }
 .blog-avatar-img {
-  margin: 0 0 40px;
+  /*  margin: 0 0 40px;*/
   position: relative;
 }
 @media (max-width: 767.98px) {
@@ -5105,12 +5144,10 @@ blockquote .blockquote-cite .info span {
   }
 }
 .blog-avatar-img img {
-  max-width: 120px;
+  max-width: 90px;
   border-radius: 50%;
 }
 .blog-avatar-img a {
-  display: inline-block;
-  position: relative;
   margin: -60px 0 0;
 }
 .blog-avatar-img i {
@@ -5129,11 +5166,12 @@ blockquote .blockquote-cite .info span {
   font-size: 12px;
 }
 .blog-avatar-content p {
-  margin: 0 0 25px;
+  margin: 10px 10px 20px;
+  font-size: 15px;
 }
 .blog-avatar-content .name {
-  font-size: 18px;
-  margin: 0 0 8px;
+  font-size: 15px;
+  margin: 10px 10px 8px;
 }
 .blog-avatar-content .designation {
   display: block;
