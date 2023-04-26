@@ -26,7 +26,7 @@
                     </li>
                     <li class="sidebar-main-title">
                         <div>
-                            <h6 class="lan-1">General</h6>
+                            <h6 class="lan-1">Главная</h6>
                         </div>
                     </li>
                     <li class="sidebar-list">
