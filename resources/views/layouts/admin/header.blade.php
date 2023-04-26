@@ -12,7 +12,7 @@
       </div>
     </form>
     <div class="header-logo-wrapper col-auto p-0">
-      <div class="logo-wrapper"><a href="{{ route('home')}}">
+      <div class="logo-wrapper"><a href="{{ route('main')}}">
               <h3>KINOTALK</h3>
 {{--              <img class="img-fluid" src="{{ asset('assets/images/logo/logo.png') }}" alt="">--}}
           </a></div>

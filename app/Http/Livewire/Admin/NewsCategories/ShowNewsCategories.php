@@ -27,9 +27,7 @@ class ShowNewsCategories extends Component
      */
     public function render(): Factory|View|Application
     {
-        return view('livewire.admin.news-categories.show-news-categories', [
-            'newsCategories' => $this->newsCategories,
-        ])
+        return view('livewire.admin.news-categories.show-news-categories')
             ->extends('layouts.admin.master')
             ->section('content');
     }
