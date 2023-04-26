@@ -18,6 +18,8 @@ use App\Http\Livewire\Admin\NewsCategories\CreateNewsCategory;
 use App\Http\Livewire\Admin\NewsCategories\EditNewsCategories;
 use App\Http\Livewire\Admin\NewsCategories\DeleteNewsCategories;
 
+use App\Http\Controllers\Admin\AdminController;
+
 Route::get('/', function () {
     return view('comingsoon.comingsoon-bg-video');
 });
@@ -34,9 +36,12 @@ Route::get('/category/{newsCategory}/articles', ShowArticlesByNewsCategory::clas
     ->where('newsCategory', '\d+')
     ->name('category.articles');
 
+include 'auth.php';
+include  'admin.php';
+
 Route::middleware('auth')->group(function () {
     Route::get('/home',[HomeController::class, 'index'])->name('home');
-    Route::get('/admin', AdminIndex::class)->name('admin.index');
+//    Route::get('/admin', AdminIndex::class)->name('admin.index');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -53,7 +58,7 @@ Route::get('lang/{locale}', function ($locale) {
     return redirect()->back();
 })->name('lang');
 
-require  __DIR__.'/examples=admin.php';
+include 'examples=admin.php';
 
 Route::get('layout-{light}', function ($light) {
     session()->put('layout', $light);
@@ -86,4 +91,4 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         ->name('users.show');
 });
 
-require __DIR__.'/auth.php';
+
