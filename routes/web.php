@@ -12,7 +12,10 @@ use App\Http\Livewire\Front\NewsCategory;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
-
+use App\Http\Livewire\Admin\NewsCategories\ShowNewsCategories;
+use App\Http\Livewire\Admin\NewsCategories\CreateNewsCategory;
+use App\Http\Livewire\Admin\NewsCategories\EditNewsCategories;
+use App\Http\Livewire\Admin\NewsCategories\DeleteNewsCategories;
 
 Route::get('/', function () {
     return view('comingsoon.comingsoon-bg-video');
@@ -69,5 +72,15 @@ Route::get('/clear-cache', function () {
     return "Cache is cleared";
 })->name('clear.cache');
 
+Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
+    Route::get('/newsCategories/show', ShowNewsCategories::class)
+        ->name('news.categories.show');
+    Route::get('/newsCategories/create', CreateNewsCategory::class)
+        ->name('news.categories.create');
+    Route::get('/newsCategories/edit/{newsCategory}', EditNewsCategories::class)
+        ->name('news.categories.edit');
+    Route::get('/newsCategories/delete/{newsCategory}', DeleteNewsCategories::class)
+        ->name('news.categories.delete');
+});
 
 require __DIR__.'/auth.php';
