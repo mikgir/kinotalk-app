@@ -1,11 +1,11 @@
-@section('breadcrumb-title')
+<?php $__env->startSection('breadcrumb-title'); ?>
     <h3>Категории</h3>
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('breadcrumb-items')
+<?php $__env->startSection('breadcrumb-items'); ?>
     <li class="breadcrumb-item">Категории</li>
     <li class="breadcrumb-item active">Редактирование категории</li>
-@endsection
+<?php $__env->stopSection(); ?>
 <div class="container-fluid basic_table">
     <div class="row">
         <div class="col-sm-12">
@@ -14,7 +14,7 @@
                     <h3>Редактирование категории</h3>
                 </div>
                 <div class="card-body">
-                    <form wire:submit.prevent="update({{ $newsCategory }})" class="form-control">
+                    <form wire:submit.prevent="update(<?php echo e($newsCategory); ?>)" class="form-control">
                         <div class="form-group">
                             <label for="Post name" class="col-form-label pt-0">Наименование</label>
                             <input wire:model="newsCategory.name" type="text" name="name" id="name" class="form-control" placeholder="Name of the post">
@@ -32,3 +32,4 @@
         </div>
     </div>
 </div>
+<?php /**PATH D:\OSPanel\domains\gb_kinotalk\kinotalk-app\resources\views/livewire/admin/news-categories/edit-news-categories.blade.php ENDPATH**/ ?>
