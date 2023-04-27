@@ -3,19 +3,22 @@
 namespace App\Repositories;
 
 use App\Contracts\Repositories\UserRepositoryInterface;
+use App\Models\User;
+use Illuminate\Database\Eloquent\Collection;
 
 
 class UserRepository implements UserRepositoryInterface
 {
-
-    public function all(): array
+    /**
+     * @return Collection
+     */
+    public function getAll(): Collection
     {
-        // TODO: Implement all() method.
+        return User::with('roles')->get();
     }
 
     public function oneById(int $id): object
     {
         // TODO: Implement oneById() method.
     }
-
 }
