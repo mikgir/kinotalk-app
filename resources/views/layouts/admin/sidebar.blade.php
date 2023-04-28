@@ -94,6 +94,34 @@
                             <li><a href="{{ route('admin.news.categories.create')}}">Создание категории</a></li>
                         </ul>
                     </li>
+                    <li class="sidebar-list">
+                        <label class="badge badge-light-secondary">New</label><a class="sidebar-link sidebar-title"
+                                                                                 href="#">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-project') }}"></use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#fill-project') }}"></use>
+                            </svg><span>Пользователи</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="{{ route('admin.users.show')}}">Список пользователей</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="sidebar-list">
+                        <label class="badge badge-light-secondary">New</label><a class="sidebar-link sidebar-title"
+                                                                                 href="#">
+                            <svg class="stroke-icon">
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-project') }}"></use>
+                            </svg>
+                            <svg class="fill-icon">
+                                <use href="{{ asset('assets/svg/icon-sprite.svg#fill-project') }}"></use>
+                            </svg><span>Статьи</span></a>
+                        <ul class="sidebar-submenu">
+                            <li><a href="{{ route('admin.articles.index')}}">Список статей</a></li>
+
+                        </ul>
+                    </li>
 {{--                    <li class="sidebar-list"><a class="sidebar-link sidebar-title link-nav" href="{{ route('file-manager')}}">--}}
 {{--                            <svg class="stroke-icon">--}}
 {{--                                <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-file') }}"></use>--}}

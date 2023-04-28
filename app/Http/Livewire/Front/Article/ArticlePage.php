@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Front\Articles;
+namespace App\Http\Livewire\Front\Article;
 
 use App\Models\Article;
 use Illuminate\Contracts\Foundation\Application;

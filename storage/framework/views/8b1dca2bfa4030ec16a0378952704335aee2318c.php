@@ -1,4 +1,4 @@
-
+<script src="<?php echo e(asset('assets/js/app.js')); ?>"></script>
  <!-- latest jquery-->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
  <!-- Bootstrap js-->
@@ -20,7 +20,7 @@
 <script src="<?php echo e(asset('assets/js/header-slick.js')); ?>"></script>
 <?php echo $__env->yieldContent('script'); ?>
 
-<?php if(Route::current()->getName() != 'popover'): ?> 
+<?php if(Route::current()->getName() != 'popover'): ?>
 	<script src="<?php echo e(asset('assets/js/tooltip-init.js')); ?>"></script>
 <?php endif; ?>
 

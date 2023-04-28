@@ -1,12 +1,13 @@
 <?php
 
+use App\Http\Controllers\Admin\Articles\ArticleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Livewire\Admin\AdminIndex;
 use App\Http\Livewire\Admin\Users\UsersList;
 use App\Http\Livewire\Front\Articles;
-use App\Http\Livewire\Front\Articles\ArticlePage;
-use App\Http\Livewire\Front\Articles\ShowArticlesByNewsCategory;
+use App\Http\Livewire\Front\Article\ArticlePage;
+use App\Http\Livewire\Front\Article\ShowArticlesByNewsCategory;
 use App\Http\Livewire\Front\Authors;
 use App\Http\Livewire\Front\MainPage;
 use App\Http\Livewire\Front\NewsCategory;
@@ -84,6 +85,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         ->name('news.categories.delete');
     Route::get('/users/show', UsersList::class)
         ->name('users.show');
+    Route::get('/articles', [ArticleController::class, 'index'])
+        ->name('articles.index');
 });
 
 require __DIR__.'/auth.php';

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire\Front\Articles;
+namespace App\Http\Livewire\Front\Article;
 
 use App\Repositories\ArticleRepository;
 use Illuminate\Contracts\Foundation\Application;
