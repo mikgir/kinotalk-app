@@ -31,7 +31,7 @@
     <?php echo $__env->yieldContent('content'); ?>
     <!-- latest jquery-->
     <?php echo $__env->make('layouts.comingsoon.script', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
-    <script src="<?php echo e(asset('assets/js/bootstrap/bootstrap.bundle.min.js')); ?>"></script>
+    <script src="<?php echo e(asset('assets/admin/js/bootstrap/bootstrap.bundle.min.js')); ?>"></script>
   </body>
 </html>
 <?php /**PATH D:\OSPanel\domains\kinoyalk_dev\resources\views/layouts/comingsoon/master.blade.php ENDPATH**/ ?>

@@ -37,7 +37,7 @@
                           <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="{{ route('dashboard-05')}}">
                                       <svg class="stroke-icon">
-                                          <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-home') }}"></use>
+                                          <use href="{{ asset('assets/admin/svg/icon-sprite.svg#stroke-home') }}"></use>
                                       </svg></a></li></li>
                               @yield('breadcrumb-items')
                           </ol>
@@ -58,10 +58,10 @@
         <!-- latest jquery-->
         <!-- Plugin used-->
 
-        {{-- <script type="text/javascript">
-          if ($(".page-wrapper").hasClass("horizontal-wrapper")) {
-                $(".according-menu.other" ).css( "display", "none" );
-                $(".sidebar-submenu" ).css( "display", "block" );
-          }
-        </script> --}}
+{{--         <script type="text/javascript">--}}
+{{--          if ($(".page-wrapper").hasClass("horizontal-wrapper")) {--}}
+{{--                $(".according-menu.other" ).css( "display", "none" );--}}
+{{--                $(".sidebar-submenu" ).css( "display", "block" );--}}
+{{--          }--}}
+{{--        </script> --}}
     @endsection

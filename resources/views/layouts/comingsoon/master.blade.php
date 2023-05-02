@@ -31,6 +31,6 @@
     @yield('content')
     <!-- latest jquery-->
     @include('layouts.comingsoon.script')
-    <script src="{{asset('assets/js/bootstrap/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets/admin/js/bootstrap/bootstrap.bundle.min.js')}}"></script>
   </body>
 </html>

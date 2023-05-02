@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     public function index(Request $request): View
     {
-        return view('dashboard.dashboard-05', [
+        return view('livewire.admin.admin-index', [
             'user' => $request->user(),
         ]);
     }

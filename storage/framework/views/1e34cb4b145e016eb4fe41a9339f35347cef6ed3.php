@@ -1,22 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <link rel="stylesheet" href="<?php echo e(asset('assets/front/css/bootstrap.min.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('assets/front/css/animate.min.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('assets/front/css/magnific-popup.css')); ?>">

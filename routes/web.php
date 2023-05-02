@@ -1,10 +1,7 @@
 <?php
 
-use App\Http\Controllers\Admin\Articles\ArticleController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
-use App\Http\Livewire\Admin\AdminIndex;
-use App\Http\Livewire\Admin\Users\UsersList;
 use App\Http\Livewire\Front\Articles;
 use App\Http\Livewire\Front\Article\ArticlePage;
 use App\Http\Livewire\Front\Article\ShowArticlesByNewsCategory;
@@ -37,12 +34,13 @@ Route::get('/category/{newsCategory}/articles', ShowArticlesByNewsCategory::clas
 
 Route::middleware('auth')->group(function () {
     Route::get('/home',[HomeController::class, 'index'])->name('home');
-    Route::get('/admin', AdminIndex::class)->name('admin.index');
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+require __DIR__.'/admin.php';
+require __DIR__ . '/examples_admin.php';
 
 //Language Change
 Route::get('lang/{locale}', function ($locale) {
@@ -54,7 +52,6 @@ Route::get('lang/{locale}', function ($locale) {
     return redirect()->back();
 })->name('lang');
 
-require  __DIR__.'/examples=admin.php';
 
 Route::get('layout-{light}', function ($light) {
     session()->put('layout', $light);
@@ -83,10 +80,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
         ->name('news.categories.edit');
     Route::get('/newsCategories/delete/{newsCategory}', DeleteNewsCategories::class)
         ->name('news.categories.delete');
-    Route::get('/users/show', UsersList::class)
-        ->name('users.show');
-    Route::get('/articles', [ArticleController::class, 'index'])
-        ->name('articles.index');
+//    Route::get('/articles', [ArticleController::class, 'index'])
+//        ->name('articles.index');
 });
 
 require __DIR__.'/auth.php';
+

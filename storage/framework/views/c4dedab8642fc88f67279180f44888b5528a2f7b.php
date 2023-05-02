@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('style'); ?>
     <?php echo $__env->make('layouts.admin.css', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <?php $__env->stopSection(); ?>
@@ -40,7 +38,7 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="<?php echo e(route('dashboard-05')); ?>">
                                             <svg class="stroke-icon">
-                                                <use href="<?php echo e(asset('assets/svg/icon-sprite.svg#stroke-home')); ?>"></use>
+                                                <use href="<?php echo e(asset('assets/admin/svg/icon-sprite.svg#stroke-home')); ?>"></use>
                                             </svg></a></li></li>
                                     <?php echo $__env->yieldContent('breadcrumb-items'); ?>
                                 </ol>

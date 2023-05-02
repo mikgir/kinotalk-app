@@ -1,4 +1,3 @@
-
 <?php $__env->startSection('title', 'Login-two'); ?>
 
 <?php $__env->startSection('content'); ?>

@@ -1,19 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script src="<?php echo e(asset('assets/front/js/vendor/jquery-3.6.0.min.js')); ?>"></script>
 <script src="<?php echo e(asset('assets/front/js/bootstrap.min.js')); ?>"></script>
 

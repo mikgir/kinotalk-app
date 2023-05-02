@@ -14,4 +14,9 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
         //
-    ]);
+    ])
+    .copyDirectory('resources/frontend/assets/css', 'public/assets/front/css')
+    .copyDirectory('resources/frontend/assets/sass', 'public/assets/front/sass')
+    .copyDirectory('resources/frontend/assets/js', 'public/assets/front/js')
+    .copyDirectory('resources/frontend/assets/fonts', 'public/assets/front/fonts')
+    .copyDirectory('resources/frontend/assets/img', 'public/assets/front/img')

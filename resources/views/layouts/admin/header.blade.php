@@ -48,11 +48,11 @@
         </li>
         <li>                         <span class="header-search">
             <svg>
-              <use href="{{ asset('assets/svg/icon-sprite.svg#search') }}"></use>
+              <use href="{{ asset('assets/admin/svg/icon-sprite.svg#search') }}"></use>
             </svg></span></li>
         <li class="onhover-dropdown">
           <svg>
-            <use href="{{ asset('assets/svg/icon-sprite.svg#star') }}"></use>
+            <use href="{{ asset('assets/admin/svg/icon-sprite.svg#star') }}"></use>
           </svg>
           <div class="onhover-show-div bookmark-flip">
             <div class="flip-card">
@@ -99,21 +99,21 @@
         <li>
           <div class="mode">
             <svg>
-              <use href="{{ asset('assets/svg/icon-sprite.svg#moon') }}"></use>
+              <use href="{{ asset('assets/admin/svg/icon-sprite.svg#moon') }}"></use>
             </svg>
           </div>
         </li>
         <li class="cart-nav onhover-dropdown">
           <div class="cart-box">
             <svg>
-              <use href="{{ asset('assets/svg/icon-sprite.svg#stroke-ecommerce') }}"></use>
+              <use href="{{ asset('assets/admin/svg/icon-sprite.svg#stroke-ecommerce') }}"></use>
             </svg><span class="badge rounded-pill badge-success">2</span>
           </div>
           <div class="cart-dropdown onhover-show-div">
             <h6 class="f-18 mb-0 dropdown-title">Cart</h6>
             <ul>
               <li>
-                <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="{{ asset('assets/images/other-images/cart-img.jpg') }}" alt="">
+                <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="{{ asset('assets/admin/images/other-images/cart-img.jpg') }}" alt="">
                   <div class="media-body"><span>Furniture Chair for Home</span>
                     <div class="qty-box">
                       <div class="input-group"><span class="input-group-prepend">
@@ -128,7 +128,7 @@
                 </div>
               </li>
               <li>
-                <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="{{ asset('assets/images/other-images/cart-img.jpg') }}" alt="">
+                <div class="media"><img class="img-fluid b-r-5 me-3 img-60" src="{{ asset('assets/admin/images/other-images/cart-img.jpg') }}" alt="">
                   <div class="media-body"><span>Furniture Chair for Home</span>
                     <div class="qty-box">
                       <div class="input-group"><span class="input-group-prepend">
@@ -152,7 +152,7 @@
         <li class="onhover-dropdown">
           <div class="notification-box">
             <svg>
-              <use href="{{ asset('assets/svg/icon-sprite.svg#notification') }}"></use>
+              <use href="{{ asset('assets/admin/svg/icon-sprite.svg#notification') }}"></use>
             </svg><span class="badge rounded-pill badge-secondary">4 </span>
           </div>
           <div class="onhover-show-div notification-dropdown">
@@ -175,7 +175,7 @@
           </div>
         </li>
         <li class="profile-nav onhover-dropdown pe-0 py-0">
-          <div class="media profile-media"><img class="b-r-10" src="{{ asset('assets/images/dashboard/profile.png') }}" alt="">
+          <div class="media profile-media"><img class="b-r-10" src="{{ asset('assets/admin/images/dashboard/profile.png') }}" alt="">
             <div class="media-body"><span>Emay Walter</span>
               <p class="mb-0 font-roboto">Admin <i class="middle fa fa-angle-down"></i></p>
             </div>
