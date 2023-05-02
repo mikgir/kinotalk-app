@@ -51,3 +51,10 @@
         }
     }
 }
+.breadcrumb-content-news{
+        background: var(--tg-common-color-gray);
+        padding: 24px 30px;
+        @media #{$xs} {
+            padding: 24px 25px;
+        }
+}
