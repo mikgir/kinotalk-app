@@ -1,4 +1,4 @@
-@use '../utils/index' as *;
+@use '../utils' as *;
 
 /*=============================
     15. Blog
@@ -99,6 +99,48 @@
             }
         }
     }
+}
+.pagination__wrap{
+    &-article {
+         & ul {
+        @include flexbox();
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px 10px;
+        margin-top: 30px;
+        @media #{$md} {
+            justify-content: center;
+        }
+        & li {
+            display: block;
+            & a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                font-size: 15px;
+                border: 2px solid var(--tg-border-1);
+                @include border-radius(50%);
+                font-weight: var(--tg-fw-bold);
+                color: var(--tg-heading-color);
+                &:hover {
+                    border-color: var(--tg-theme-primary);
+                    background-color: var(--tg-theme-primary);
+                    color: var(--tg-common-color-white);
+                }
+            }
+            &.active {
+                & a {
+                    pointer-events: none;
+                    border-color: var(--tg-theme-primary);
+                    background-color: var(--tg-theme-primary);
+                    color: var(--tg-common-color-white);
+                }
+            }
+        }
+    }
+}
 }
 .blog-details {
     &-social {
@@ -377,26 +419,24 @@ blockquote {
 .blog-avatar {
     &-wrap {
         background: var(--tg-common-color-white);
-        text-align: center;
-        margin-top: 110px;
-        padding: 0 85px 50px;
+        margin-top: 15px;
+        padding: 5px 5px 5px;
+        display: flex;
         @media #{$lg} {
             padding: 0 35px 40px;
         }
     }
     &-img {
-        margin: 0 0 40px;
+      /*  margin: 0 0 40px;*/
         position: relative;
         @media #{$xs} {
             margin: 0 0 30px;
         }
         & img {
-            max-width: 120px;
+            max-width: 90px;
             @include border-radius(50%);
         }
         & a {
-            display: inline-block;
-            position: relative;
             margin: -60px 0 0;
         }
         & i {
@@ -417,11 +457,12 @@ blockquote {
     }
     &-content {
         & p {
-            margin: 0 0 25px;
+            margin: 10px 10px 20px;
+            font-size: 15px;
         }
         & .name {
-            font-size: 18px;
-            margin: 0 0 8px;
+            font-size: 15px;
+            margin: 10px 10px 8px;
         }
         & .designation {
             display: block;

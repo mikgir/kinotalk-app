@@ -12,10 +12,10 @@
   <!-- Page Body Start-->
   <div class="container-fluid p-0">
     <div class="comingsoon auth-bg-video">
-      <video class="bgvideo-comingsoon" id="bgvid" poster="{{asset('assets/images/other-images/maintenance-bg.jpg')}}" playsinline="" autoplay="" muted="" loop="">
-        <source src="{{asset('assets/video/auth-bg.mp4')}}" type="video/mp4">
+      <video class="bgvideo-comingsoon" id="bgvid" poster="{{asset('assets/admin/images/other-images/maintenance-bg.jpg')}}" playsinline="" autoplay="" muted="" loop="">
+        <source src="{{asset('assets/admin/video/auth-bg.mp4')}}" type="video/mp4">
       </video>
-      <div class="comingsoon-inner text-center"><img src="{{asset('assets/images/other-images/coming-soon-Logo.png')}}" alt="">
+      <div class="comingsoon-inner text-center"><img src="{{asset('assets/admin/images/other-images/coming-soon-Logo.png')}}" alt="">
         <h5>МЫ СКОРО</h5>
         <div class="countdown" id="clockdiv">
           <ul>
@@ -32,5 +32,5 @@
 @endsection
 
 @section('script')
-<script src="{{asset('assets/js/countdown.js')}}"></script>
+<script src="{{asset('assets/admin/js/countdown.js')}}"></script>
 @endsection

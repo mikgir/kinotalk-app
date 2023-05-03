@@ -1,4 +1,4 @@
-@use '../utils/index' as *;
+@use '../utils' as *;
 
 /*=============================
     05. Trending Post
@@ -37,7 +37,7 @@
             }
             & img {
                 display: block;
-                height: 200px;
+                height: 255px;
                 object-fit: cover;
                 object-position: center;
                 @include transition(.4s);

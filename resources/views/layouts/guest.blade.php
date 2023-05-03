@@ -18,7 +18,6 @@
     <body>
         @yield('preloader')
 
-{{--    @include('layouts.temp_navigation')--}}
        @yield('header')
        @yield('main')
 
