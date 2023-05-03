@@ -38,7 +38,7 @@
                             </div>
                             <div class="col-6">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{ route('dashboard-05')}}">
+                                    <li class="breadcrumb-item"><a href="{{ route('admin.index')}}">
                                             <svg class="stroke-icon">
                                                 <use href="{{ asset('assets/admin/svg/icon-sprite.svg#stroke-home') }}"></use>
                                             </svg></a></li></li>

@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <x-auth-session-status class="mb-4" :status="session('status')" />
    <div class="row">
-      <div class="col-xl-5"><img class="bg-img bg-center" src="{{asset('assets/images/login/login-bg-2.jpg')}}" alt="looginpage"></div>
+      <div class="col-xl-5"><img class="bg-img bg-center" src="{{asset('assets/admin/images/login/login-bg-2.jpg')}}" alt="looginpage"></div>
       <div class="col-xl-7 p-0">
          <div class="login-card">
             <div>

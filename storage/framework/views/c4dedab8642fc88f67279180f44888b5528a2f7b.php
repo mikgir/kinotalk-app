@@ -36,7 +36,7 @@
                             </div>
                             <div class="col-6">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="<?php echo e(route('dashboard-05')); ?>">
+                                    <li class="breadcrumb-item"><a href="<?php echo e(route('admin.index')); ?>">
                                             <svg class="stroke-icon">
                                                 <use href="<?php echo e(asset('assets/admin/svg/icon-sprite.svg#stroke-home')); ?>"></use>
                                             </svg></a></li></li>

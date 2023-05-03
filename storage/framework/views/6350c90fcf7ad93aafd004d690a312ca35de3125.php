@@ -18,7 +18,7 @@
 <?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
 <?php endif; ?>
    <div class="row">
-      <div class="col-xl-5"><img class="bg-img bg-center" src="<?php echo e(asset('assets/images/login/login-bg-2.jpg')); ?>" alt="looginpage"></div>
+      <div class="col-xl-5"><img class="bg-img bg-center" src="<?php echo e(asset('assets/admin/images/login/login-bg-2.jpg')); ?>" alt="looginpage"></div>
       <div class="col-xl-7 p-0">
          <div class="login-card">
             <div>

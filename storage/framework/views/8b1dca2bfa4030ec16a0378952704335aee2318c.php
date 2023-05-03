@@ -26,16 +26,16 @@
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
 <script src="<?php echo e(asset('assets/admin/js/script.js')); ?>"></script>
-<script src="<?php echo e(asset('assets/admin/js/theme-customizer/customizer.js')); ?>"></script>
 
 
- <?php if(Route::current()->getName() == 'index'): ?>
-	<script src="<?php echo e(asset('assets/admin/js/layout-change.js')); ?>"></script>
-<?php endif; ?>
 
-<?php if(Route::currentRouteName() == 'index'): ?>
-<script>
-	new WOW().init();
-</script>
-<?php endif; ?>
+
+
+
+
+
+
+
+
+
 <?php /**PATH D:\OSPanel\domains\kinoyalk_dev\resources\views/layouts/admin/script.blade.php ENDPATH**/ ?>

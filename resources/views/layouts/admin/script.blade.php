@@ -26,15 +26,15 @@
 <!-- Plugins JS Ends-->
 <!-- Theme js-->
 <script src="{{asset('assets/admin/js/script.js')}}"></script>
-<script src="{{asset('assets/admin/js/theme-customizer/customizer.js')}}"></script>
+{{--<script src="{{asset('assets/admin/js/theme-customizer/customizer.js')}}"></script>--}}
 
 
- @if(Route::current()->getName() == 'index')
-	<script src="{{asset('assets/admin/js/layout-change.js')}}"></script>
-@endif
+{{-- @if(Route::current()->getName() == 'index')--}}
+{{--	<script src="{{asset('assets/admin/js/layout-change.js')}}"></script>--}}
+{{--@endif--}}
 
-@if(Route::currentRouteName() == 'index')
-<script>
-	new WOW().init();
-</script>
-@endif
+{{--@if(Route::currentRouteName() == 'index')--}}
+{{--<script>--}}
+{{--	new WOW().init();--}}
+{{--</script>--}}
+{{--@endif--}}

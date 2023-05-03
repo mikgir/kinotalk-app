@@ -18,7 +18,6 @@
     <body>
         <?php echo $__env->yieldContent('preloader'); ?>
 
-
        <?php echo $__env->yieldContent('header'); ?>
        <?php echo $__env->yieldContent('main'); ?>
 
